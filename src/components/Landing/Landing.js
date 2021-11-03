@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Landing.css";
 
 function Landing() {
@@ -16,7 +17,10 @@ function Landing() {
             >
               GAME UP
             </span>
-            <h1 className="mb-3 text-5xl font-bold leading-none text-gray-50 tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">
+            <h1
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+              className="mb-3 text-5xl font-bold leading-none text-gray-50 text-neutral-600 md:text-7xl lg:text-5xl"
+            >
               PLAY TO WIN
             </h1>
             <p className="mb-3 text-2xl md:text-3xl lg:text-xl leading-relaxed text-left text-gray-400">
@@ -27,12 +31,15 @@ function Landing() {
             </p>
             <div className="mt-3 max-w-7xl sm:flex">
               <div className="mt-3 rounded-lg sm:mt-0">
-                <button
-                  className="items-center block px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform rounded-xl hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                <Link
+                  to="overview-container"
+                  smooth={true}
+                  duration={500}
+                  className="items-center cursor-pointer block px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform rounded-xl hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                   style={{ backgroundColor: "rgb(59 76 157)" }}
                 >
                   Explore
-                </button>
+                </Link>
               </div>
             </div>
           </div>

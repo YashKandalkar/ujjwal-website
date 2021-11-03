@@ -2,7 +2,7 @@ import "./TeamMember.css";
 
 function TeamMember({ imagePath, text, role }) {
   return (
-    <div data-aos="fade-up" className="teamCard m-4">
+    <div data-aos="flip-right" className="teamCard m-4">
       <div className="circle">
         <div className="imgbox">
           <img className="team-member" src={imagePath} alt="ron" />

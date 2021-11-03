@@ -5,30 +5,30 @@ function Tokenomics() {
   return (
     <section id="tokenomics-container" className="py-16">
       <h1
-        data-aos="fade-up"
+        style={{ fontFamily: "'Montserrat', sans-serif" }}
+        data-aos="fade-down"
         className="
         text-gray-100
     text-center
       text-4xl
       font-bold
       leading-none
-      tracking-tighter
       text-neutral-600
       md:text-7xl
       lg:text-5xl"
       >
-        Tokenomics
+        TOKENOMICS
       </h1>
       <div className=" mt-24 px-4 sm:px-8 md:px-8 flex flex-col lg:flex-row md:justify-center md:items-center">
         <img
-          data-aos="fade-up"
+          data-aos="fade-up-right"
           id="tokenomics-img"
           src="/assets/tokenomics.png"
           alt="tokenomics"
           className="w-full md:w-96 lg:w-2/5 mb-8"
         />
         <div
-          data-aos="fade-up"
+          data-aos="fade-up-left"
           className="flex flex-col mx-auto lg:mx-0 items-start lg:ml-16"
         >
           <p className="text-gray-400 text-lg md:text-xl mb-4">

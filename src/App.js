@@ -10,11 +10,10 @@ import {
 import Footer from "./components/Footer/Footer";
 import Team from "./components/Team/Team";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
+import "aos/dist/aos.css";
 
 function App() {
-  AOS.init();
+  AOS.init({ delay: 500, duration: 1000 });
   return (
     <div className="App">
       <NavBar />

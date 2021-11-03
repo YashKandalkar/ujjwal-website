@@ -1,7 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter, faTelegram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faTwitter,
+  faTelegram,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
 
 import "./NavBar.css";
@@ -12,12 +16,28 @@ function NavBar() {
     <>
       <div className="bg-gray-900 text-gray-400 flex flex-row justify-end lg:px-24">
         <div className="flex flex-row py-4">
-          <a href="/" className="text-lg mr-3">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/gameup_tech"
+            className="text-lg mr-3"
+          >
             <FontAwesomeIcon icon={faTwitter} className="mx-1" />
+          </a>
+          <p target="_blank" className="text-lg mr-3 select-none">
+            |
+          </p>
+          <a
+            target="_blank"
+            href="http://t.me/gameup_tech"
+            rel="noopener noreferrer"
+            className="text-lg mr-3"
+          >
+            <FontAwesomeIcon icon={faTelegram} className="mx-1" />
           </a>
           <p className="text-lg mr-3 select-none">|</p>
           <a href="/" className="text-lg mr-3">
-            <FontAwesomeIcon icon={faTelegram} className="mx-1" />
+            <FontAwesomeIcon icon={faMedium} className="mx-1" />
           </a>
         </div>
       </div>

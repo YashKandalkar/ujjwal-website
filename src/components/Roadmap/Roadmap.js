@@ -30,14 +30,14 @@ function Roadmap() {
   return (
     <section id="roadmap-container" className="py-16">
       <h1
-        data-aos="fade-up"
+        style={{ fontFamily: "'Montserrat', sans-serif" }}
+        data-aos="zoom-in"
         className="
     text-gray-100
   text-center
   text-4xl
   font-bold
   leading-none
-  tracking-tighter
   text-neutral-600
   md:text-7xl
   lg:text-5xl
