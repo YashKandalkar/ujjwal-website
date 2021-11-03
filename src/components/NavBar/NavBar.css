@@ -1,0 +1,6 @@
+#navbar-links p:hover {
+  color: #fd996b;
+  cursor: pointer;
+  border-top: #fd996b solid 2px;
+  border-bottom: #fd996b solid 2px;
+}
