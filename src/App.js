@@ -1,6 +1,5 @@
 import "./App.css";
-import { NavBar, Landing } from "./components";
-import Overview from "./components/Overview/Overview";
+import { NavBar, Landing, Features, Overview } from "./components";
 
 function App() {
   return (
@@ -8,6 +7,7 @@ function App() {
       <NavBar />
       <Landing />
       <Overview />
+      <Features />
     </div>
   );
 }
