@@ -26,28 +26,28 @@ function Tokenomics() {
           className="w-full md:w-96 lg:w-2/5 mb-8"
         />
         <div className="flex flex-col mx-auto lg:mx-0 items-start lg:ml-16">
-          <p className="text-gray-400 text-lg md:text-xl mb-2">
+          <p className="text-gray-400 text-lg md:text-xl mb-4">
             Public Round: 3% (20% at TGE, 20% Monthly)
           </p>
-          <p className="text-gray-400 text-lg md:text-xl mb-2">
+          <p className="text-gray-400 text-lg md:text-xl mb-4">
             Seed Round: 5% (5% TGE & then 5% Monthly)
           </p>
-          <p className="text-gray-400 text-lg md:text-xl mb-2">
+          <p className="text-gray-400 text-lg md:text-xl mb-4">
             Liquidity: 5% (Will be used to add Liquidity to DEX & CEX)
           </p>
-          <p className="text-gray-400 text-lg md:text-xl mb-2">
+          <p className="text-gray-400 text-lg md:text-xl mb-4">
             Partners & Advisors: 5% (6 months cliff, then 5% monthly)
           </p>
-          <p className="text-gray-400 text-lg md:text-xl mb-2">
+          <p className="text-gray-400 text-lg md:text-xl mb-4">
             Development & Marketing: 7% (One month cliff, then 5% monthly)
           </p>
-          <p className="text-gray-400 text-lg md:text-xl mb-2">
+          <p className="text-gray-400 text-lg md:text-xl mb-4">
             Team: 10% (One year cliff, then 2% monthly)
           </p>
-          <p className="text-gray-400 text-lg md:text-xl mb-2">
+          <p className="text-gray-400 text-lg md:text-xl mb-4">
             Private Round: 15% (5% TGE & then 5% Monthly)
           </p>
-          <p className="text-gray-400 text-lg md:text-xl mb-2">
+          <p className="text-gray-400 text-lg md:text-xl mb-4">
             Rewards & Ecosystem: 50% (2% at TGE, followed by 4% every month)
           </p>
         </div>

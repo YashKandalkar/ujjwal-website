@@ -7,6 +7,8 @@ import {
   Tokenomics,
   Roadmap,
 } from "./components";
+import Footer from "./components/Footer/Footer";
+import Team from "./components/Team/Team";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Features />
       <Tokenomics />
       <Roadmap />
+      <Team />
+      <Footer />
     </div>
   );
 }

@@ -53,9 +53,9 @@ function Roadmap() {
           titleColor: "transparent",
           secondary: "transparent",
         }}
-        items={roadmapData.map((item) => ({
+        items={roadmapData.map((item, rIndex) => ({
           title: (
-            <div className="text-left">
+            <div key={rIndex} className="text-left">
               <p className="text-gray-100 text-base">{item.title}</p>
               {item.text.map((item, index) => (
                 <>

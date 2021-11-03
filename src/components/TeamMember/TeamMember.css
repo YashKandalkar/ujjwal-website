@@ -1,0 +1,74 @@
+.teamCard {
+  position: relative;
+  width: 290px;
+  height: 420px;
+  background-image: linear-gradient(
+    to left top,
+    #0c1639,
+    #0d1b44,
+    #10275c,
+    #113374,
+    #113f8d
+  );
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+.circle {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  height: 380px;
+  clip-path: circle();
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -16px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px rgba(17, 45, 103, 0.719);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.imgbox {
+  position: absolute;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-image: linear-gradient(
+    to right bottom,
+    #0c1639,
+    #0d1b44,
+    #10275c,
+    #113374,
+    #113f8d
+  );
+
+  transition: 0.5s;
+  transform-origin: top;
+}
+
+.team-member {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 100%;
+}
+
+.teamCard-content {
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+  width: 100%;
+  height: 110px;
+  padding: 30px;
+}

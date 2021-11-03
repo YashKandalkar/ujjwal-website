@@ -43,7 +43,7 @@ function Features() {
         FEATURES
       </h1>
 
-      <div className="grid max-w-7xl mx-auto gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-3 px-4 justify-items-center  md:px-24 mt-24">
+      <div className="flex flex-wrap max-w-7xl mx-auto gap-8 justify-center px-4 justify-items-center md:px-24 mt-24">
         {features.map((feature, index) => (
           <FeaturesItem
             key={index}

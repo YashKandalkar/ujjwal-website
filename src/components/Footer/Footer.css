@@ -1,0 +1,8 @@
+#footer {
+  background-color: #080d28;
+  background-image: url("../../css-assets/footerbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  min-height: 60vh;
+}
