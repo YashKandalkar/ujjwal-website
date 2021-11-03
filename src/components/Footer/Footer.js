@@ -20,7 +20,7 @@ function Footer() {
       <div className="flex my-auto flex-col">
         <p
           style={{ fontFamily: "'Montserrat', sans-serif" }}
-          className="text-4xl text-gray-100 mb-3"
+          className="text-3xl sm:text-4xl text-gray-100 mb-3"
         >
           Contact Us
         </p>
@@ -31,7 +31,7 @@ function Footer() {
       <div className="flex my-auto flex-col">
         <p
           style={{ fontFamily: "'Montserrat', sans-serif" }}
-          className="text-4xl text-gray-100 mb-3"
+          className="text-3xl sm:text-4xl text-gray-100 mb-3"
         >
           Socials
         </p>
