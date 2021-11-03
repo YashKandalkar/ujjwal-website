@@ -1,0 +1,8 @@
+#roadmap-container {
+  background-color: #0c1639;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%230d1b44' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%230f2050' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%2310255c' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23102b68' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23113174' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23113880' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23113F8D' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}

@@ -27,7 +27,7 @@ const features = [
 
 function Features() {
   return (
-    <section id="features-container" className="pt-16">
+    <section id="features-container" className="py-16">
       <h1
         className="
         text-gray-100
