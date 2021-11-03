@@ -34,6 +34,7 @@ function Team() {
   return (
     <section id="team-container" className="py-16">
       <h1
+        data-aos="fade-up"
         className="
     text-gray-100
   text-center

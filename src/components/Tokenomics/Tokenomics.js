@@ -5,6 +5,7 @@ function Tokenomics() {
   return (
     <section id="tokenomics-container" className="py-16">
       <h1
+        data-aos="fade-up"
         className="
         text-gray-100
     text-center
@@ -20,12 +21,16 @@ function Tokenomics() {
       </h1>
       <div className=" mt-24 px-4 sm:px-8 md:px-8 flex flex-col lg:flex-row md:justify-center md:items-center">
         <img
+          data-aos="fade-up"
           id="tokenomics-img"
           src="/assets/tokenomics.png"
           alt="tokenomics"
           className="w-full md:w-96 lg:w-2/5 mb-8"
         />
-        <div className="flex flex-col mx-auto lg:mx-0 items-start lg:ml-16">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col mx-auto lg:mx-0 items-start lg:ml-16"
+        >
           <p className="text-gray-400 text-lg md:text-xl mb-4">
             Public Round: 3% (20% at TGE, 20% Monthly)
           </p>

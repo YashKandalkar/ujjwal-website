@@ -30,6 +30,7 @@ function Roadmap() {
   return (
     <section id="roadmap-container" className="py-16">
       <h1
+        data-aos="fade-up"
         className="
     text-gray-100
   text-center

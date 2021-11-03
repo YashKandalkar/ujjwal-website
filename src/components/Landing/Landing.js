@@ -6,7 +6,10 @@ function Landing() {
     <section id="landing-container">
       <div className="px-4 py-12 pt-12 md:pt-16 mx-auto max-w-7xl sm:px-6 md:px-12 lg:py-24">
         <div className="flex flex-wrap  lg:justify-around flex-row items-center mx-auto max-w-7xl">
-          <div className="flex flex-col items-start mb-16 text-left ml-4 sm:ml-8 lg:ml-0">
+          <div
+            data-aos="fade-up"
+            className="flex flex-col items-start mb-16 text-left ml-4 sm:ml-8 lg:ml-0"
+          >
             <span
               className="mb-3 text-3xl lg:text-xl font-bold tracking-widest  uppercase"
               style={{ color: "rgb(59 76 157)" }}
@@ -33,7 +36,7 @@ function Landing() {
               </div>
             </div>
           </div>
-          <div className="mx-auto lg:mx-0 flex xl:mt-0">
+          <div data-aos="fade-up" className="mx-auto lg:mx-0 flex xl:mt-0">
             <img
               className="object-cover object-center mx-auto rounded-lg "
               alt="hero"

@@ -6,14 +6,20 @@ function Overview() {
     <section id="overview-container" className="flex items-center">
       <div className="px-4 py-12 w-full max-w-7xl sm:px-6 md:px-12 lg:py-24">
         <div className="flex flex-wrap lg:justify-around flex-col-reverse lg:flex-row items-center">
-          <div className="mx-auto max-w-lg lg:mx-0 flex xl:mt-0">
+          <div
+            data-aos="fade-up"
+            className="mx-auto max-w-lg lg:mx-0 flex xl:mt-0"
+          >
             <img
               className="object-cover z-0 object-center rounded-lg"
               alt="hero"
               src="/assets/overview.png"
             />
           </div>
-          <div className="flex flex-col max-w-md items-start mb-16 text-left">
+          <div
+            data-aos="fade-up"
+            className="flex flex-col max-w-md items-start mb-16 text-left"
+          >
             <h1 className="mb-3 text-gray-100 text-5xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">
               Overview
             </h1>

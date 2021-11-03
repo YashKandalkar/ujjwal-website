@@ -4,6 +4,7 @@ import "./FeaturesItem.css";
 function FeaturesItem({ imagePath, text }) {
   return (
     <div
+      data-aos="fade-up"
       className="items-center features-item rounded-lg shadow-2xl flex flex-col justify-center text-center px-3 py-6"
       style={{
         width: 300,
