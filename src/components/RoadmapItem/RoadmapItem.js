@@ -1,6 +1,6 @@
 import React from "react";
 
-function RoadmapItem({ iconPath, title, text, parity }) {
+function RoadmapItem({ iconPath, parity }) {
   return (
     <div
       className={`

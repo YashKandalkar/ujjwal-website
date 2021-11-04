@@ -35,40 +35,42 @@ function Footer() {
         >
           Socials
         </p>
-        <a
-          href="https://twitter.com/gameup_tech"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center flex-row mb-1"
-        >
-          <FontAwesomeIcon
-            icon={faTwitter}
-            className="mr-2 text-xl"
-            style={{ color: "#1e5ecb" }}
-          />
-          <p className="text-gray-400 text-xl">Twitter</p>
-        </a>
-        <a
-          href="http://t.me/gameup_tech"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center flex-row mb-1"
-        >
-          <FontAwesomeIcon
-            icon={faTelegram}
-            className="mr-2 text-xl"
-            style={{ color: "#1e5ecb" }}
-          />
-          <p className="text-gray-400 text-xl">Telegram</p>
-        </a>
-        <a href="/" className="flex items-center flex-row">
-          <FontAwesomeIcon
-            icon={faMedium}
-            className="mr-2 text-xl"
-            style={{ color: "#1e5ecb" }}
-          />
-          <p className="text-gray-400 text-xl">Medium</p>
-        </a>
+        <div className="flex justify-items-center sm:justify-start flex-row sm:flex-col">
+          <a
+            href="https://twitter.com/gameup_tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center flex-row mb-1"
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              className="mr-4 sm:mr-2 text-xl"
+              style={{ color: "#1e5ecb" }}
+            />
+            <p className="text-gray-400 hidden sm:block text-xl">Twitter</p>
+          </a>
+          <a
+            href="http://t.me/gameup_tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center flex-row mb-1"
+          >
+            <FontAwesomeIcon
+              icon={faTelegram}
+              className="mr-4 sm:mr-2 text-xl"
+              style={{ color: "#1e5ecb" }}
+            />
+            <p className="text-gray-400 hidden sm:block text-xl">Telegram</p>
+          </a>
+          <a href="/" className="flex items-center flex-row mb-1">
+            <FontAwesomeIcon
+              icon={faMedium}
+              className="mr-0 sm:mr-2 text-xl"
+              style={{ color: "#1e5ecb" }}
+            />
+            <p className="text-gray-400 hidden sm:block text-xl">Medium</p>
+          </a>
+        </div>
       </div>
     </footer>
   );

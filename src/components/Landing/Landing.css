@@ -1,4 +1,5 @@
 #landing-container {
   background-color: #070b28;
   background-size: cover;
+  min-height: 80vh;
 }

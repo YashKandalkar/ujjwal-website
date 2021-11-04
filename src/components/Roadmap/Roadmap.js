@@ -62,21 +62,23 @@ function Roadmap() {
         }}
         items={roadmapData.map((item, rIndex) => ({
           title: (
-            <div key={rIndex} className="text-left">
+            <div key={"title-item-" + rIndex} className="text-left">
               <p className="text-gray-100 text-base">{item.title}</p>
               {item.text.map((item, index) => (
-                <>
-                  <p key={index} className="text-gray-300 text-base">
-                    {item}
-                  </p>
-                </>
+                <p key={"text-" + index} className="text-gray-300 text-base">
+                  {item}
+                </p>
               ))}
             </div>
           ),
         }))}
       >
         {roadmapData.map((roadmap, index) => (
-          <RoadmapItem key={index} {...roadmap} parity={index} />
+          <RoadmapItem
+            key={"roadmap-item-" + index}
+            {...roadmap}
+            parity={index}
+          />
         ))}
       </Chrono>
     </section>

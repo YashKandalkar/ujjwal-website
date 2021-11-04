@@ -8,7 +8,7 @@ function FeaturesItem({ imagePath, text }) {
       className="items-center features-item rounded-lg shadow-2xl flex flex-col justify-center text-center px-3 py-6"
       style={{
         width: 300,
-        border: "1px solid #273b71",
+        outline: "1px solid #273b71",
         boxShadow: "0px 10px 15px 0px rgb(0 0 0 / 40%)",
       }}
     >

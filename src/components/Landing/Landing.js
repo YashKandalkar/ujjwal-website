@@ -9,7 +9,7 @@ function Landing() {
         <div className="flex flex-wrap  lg:justify-around flex-row items-center mx-auto max-w-7xl">
           <div
             data-aos="fade-up"
-            className="flex flex-col items-start mb-16 text-left ml-4 sm:ml-8 lg:ml-0"
+            className="flex flex-col items-start mb-4 sm:mb-16 text-left ml-4 sm:ml-8 lg:ml-0"
           >
             <span
               className="mb-3 text-3xl lg:text-2xl font-bold tracking-widest  uppercase"
@@ -27,7 +27,7 @@ function Landing() {
               }}
               className="mb-3 text-6xl font-bold leading-none  pr-3 sm:text-8xl lg:text-8xl"
             >
-              PLAY TO WIN
+              PLAY TO EARN
             </h1>
             <p className="mb-3 text-2xl md:text-3xl lg:text-xl text-left text-gray-400">
               Use your in-game Rewards <br />
@@ -51,7 +51,7 @@ function Landing() {
             <img
               className="object-cover object-center mx-auto rounded-lg "
               alt="hero"
-              style={{ width: "100%", maxWidth: 500 }}
+              style={{ width: "100%", maxWidth: 600 }}
               src="/assets/landing-hero-new.png"
             />
           </div>

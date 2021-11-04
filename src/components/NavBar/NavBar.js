@@ -14,7 +14,7 @@ function NavBar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <div className="bg-gray-900 text-gray-400 flex flex-row justify-end lg:px-24">
+      <div className="bg-gray-900 text-gray-400 flex flex-row justify-center sm:justify-end lg:px-24">
         <div className="flex flex-row py-4">
           <a
             target="_blank"
@@ -44,12 +44,12 @@ function NavBar() {
       <nav
         id="navbar"
         style={{ backgroundColor: "#252f5a" }}
-        className="relative flex flex-wrap items-center justify-between lg:pl-14 lg:pr-10 px-10 py-3 ml-0 xl:ml-14"
+        className="relative flex flex-wrap items-center justify-between lg:pl-14 lg:pr-10 px-0 sm:px-10 py-3 ml-0 xl:ml-14"
       >
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div className="container px-4  mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm  leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-300"
+              className="text-sm  leading-relaxed inline-block mr-4 px-6 sm:px-0 py-2 whitespace-nowrap uppercase text-gray-300"
               href="/"
             >
               <img src="/assets/logo.png" alt="logo" style={{ width: 180 }} />
