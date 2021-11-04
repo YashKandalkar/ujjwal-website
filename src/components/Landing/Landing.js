@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import "./Landing.css";
 
 function Landing() {
@@ -12,26 +12,30 @@ function Landing() {
             className="flex flex-col items-start mb-16 text-left ml-4 sm:ml-8 lg:ml-0"
           >
             <span
-              className="mb-3 text-3xl lg:text-xl font-bold tracking-widest  uppercase"
+              className="mb-3 text-3xl lg:text-2xl font-bold tracking-widest  uppercase"
               style={{ color: "rgb(59 76 157)" }}
             >
               GAME UP
             </span>
             <h1
-              style={{ fontFamily: "'Montserrat', sans-serif" }}
-              className="mb-3 text-5xl font-bold leading-none text-gray-50 text-neutral-600 md:text-7xl lg:text-5xl"
+              style={{
+                fontFamily: "'Heaters', 'Montserrat', sans-serif",
+                background:
+                  "linear-gradient(to bottom right, #fbbb60 0%, #f66445 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="mb-3 text-6xl font-bold leading-none  pr-3 sm:text-8xl lg:text-8xl"
             >
               PLAY TO WIN
             </h1>
-            <p className="mb-3 text-2xl md:text-3xl lg:text-xl leading-relaxed text-left text-gray-400">
-              Play, Invest, Exchange &
-              <br />
-              Join the Contest with high rewards <br />
-              at GameUp!
+            <p className="mb-3 text-2xl md:text-3xl lg:text-xl text-left text-gray-400">
+              Use your in-game Rewards <br />
+              in a Better way
             </p>
             <div className="mt-3 max-w-7xl sm:flex">
               <div className="mt-3 rounded-lg sm:mt-0">
-                <Link
+                {/* <Link
                   to="overview-container"
                   smooth={true}
                   duration={500}
@@ -39,7 +43,7 @@ function Landing() {
                   style={{ backgroundColor: "rgb(59 76 157)" }}
                 >
                   Explore
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -47,6 +51,7 @@ function Landing() {
             <img
               className="object-cover object-center mx-auto rounded-lg "
               alt="hero"
+              style={{ width: "100%", maxWidth: 500 }}
               src="/assets/landing-hero-new.png"
             />
           </div>

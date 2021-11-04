@@ -17,3 +17,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: Heaters;
+  src: url("./css-assets/Heaters.otf") format("opentype");
+}

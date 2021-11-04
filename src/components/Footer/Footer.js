@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer
       id="footer"
-      className="px-20 items-center py-20 pt-28 md:pt-0 md:py-0 gap-8 md:gap-0 md:justify-around flex flex-col md:flex-row"
+      className="px-20 items-center py-20 pt-28 md:pt-16 md:py-0 gap-8 md:gap-0 md:justify-around flex flex-col md:flex-row"
     >
       <img
         src={"/assets/logo.png"}

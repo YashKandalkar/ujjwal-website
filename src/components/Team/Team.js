@@ -34,18 +34,24 @@ function Team() {
   return (
     <section id="team-container" className="py-16">
       <h1
-        style={{ fontFamily: "'Montserrat', sans-serif" }}
+        style={{
+          fontFamily: "'Heaters', 'Montserrat', sans-serif",
+          background:
+            "linear-gradient(to bottom right, #fbbb60 0%, #f66445 100%)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+        }}
         data-aos="zoom-out"
         className="
     text-gray-100
-  text-center
-  text-4xl
-  font-bold
-  leading-none
-  text-neutral-600
-  md:text-7xl
-  lg:text-5xl
-  mb-16
+    text-center
+    font-bold
+    leading-none
+    text-neutral-600
+    tracking-wider
+    text-7xl
+    lg:text-8xl
+    mb-16
   "
       >
         Team
