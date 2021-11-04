@@ -33,7 +33,7 @@ function Overview() {
             >
               OVERVIEW
             </h1>
-            <p className="mb-1 sm:mb-3 mt-6 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-400">
+            <p className="mb-3 mt-6 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-400">
               GameUp allows any centralized games' users to swiftly convert
               their in-game rewards into $GMU tokens. Those tokens can be used
               to exchange rewards with other users, purchase in-game items from
