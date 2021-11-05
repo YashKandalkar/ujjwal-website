@@ -5,7 +5,7 @@ import "./Landing.css";
 function Landing() {
   return (
     <section id="landing-container">
-      <div className="px-4 py-12 pt-12 md:pt-16 mx-auto max-w-7xl sm:px-6 md:px-12 lg:py-24">
+      <div className="px-2 py-12 pt-12 md:pt-16 mx-auto max-w-7xl sm:px-6 md:px-4 lg:py-24">
         <div className="flex flex-wrap  lg:justify-around flex-row items-center mx-auto max-w-7xl">
           <div
             data-aos="fade-up"
@@ -25,7 +25,7 @@ function Landing() {
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
-              className="mb-3  font-bold leading-none  pr-3 sm:text-8xl lg:text-16xl"
+              className="mb-3  font-bold leading-none text-8xl mr-24  pr-4 sm:text-8xl lg:text-10xl"
             >
               PLAY TO EARN
             </h1>
@@ -51,7 +51,7 @@ function Landing() {
             <img
               className="object-cover object-center mx-auto rounded-lg "
               alt="hero"
-              style={{ width: "100%", maxWidth: 700 }}
+              style={{ width: "100%", maxWidth: 750 }}
               src="/assets/landing-hero-new.png"
             />
           </div>
