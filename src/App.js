@@ -67,7 +67,7 @@ function App() {
       <Footer />
       <div
         className={
-          `
+          `cursor-pointer
       fixed shadow-2xl rounded-full
       px-4 py-4 flex items-center justify-items-center 
       bottom-4 right-4 
