@@ -9,7 +9,7 @@ function Overview() {
           <div
             data-aos="fade-right"
             data-aos-delay="100"
-            className="mx-auto max-w-2xl lg:mx-0 flex xl:mt-0"
+            className="mx-auto max-w-3xl lg:mx-0 flex xl:mt-0"
           >
             <img
               className="object-cover z-0 object-center rounded-lg"

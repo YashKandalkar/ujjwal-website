@@ -11,12 +11,12 @@ function Landing() {
             data-aos="fade-up"
             className="flex flex-col items-start mb-4 sm:mb-16 text-left ml-4 sm:ml-8 lg:ml-0"
           >
-            <span
+            {/* <span
               className="mb-3 text-3xl lg:text-2xl font-bold tracking-widest  uppercase"
               style={{ color: "rgb(59 76 157)" }}
             >
               GAME UP
-            </span>
+            </span> */}
             <h1
               style={{
                 fontFamily: "'Heaters', 'Montserrat', sans-serif",
@@ -25,15 +25,15 @@ function Landing() {
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
-              className="mb-3 text-6xl font-bold leading-none  pr-3 sm:text-8xl lg:text-8xl"
+              className="mb-3  font-bold leading-none  pr-3 sm:text-8xl lg:text-16xl"
             >
               PLAY TO EARN
             </h1>
-            <p className="mb-3 text-2xl md:text-3xl lg:text-xl text-left text-gray-400">
+            <p className="mb-3 text-4xl md:text-3xl lg:text-3xl text-left text-gray-400">
               Use your in-game Rewards <br />
               in a Better way
             </p>
-            <div className="mt-3 max-w-7xl sm:flex">
+            <div className="mt-3 max-w-8xl sm:flex">
               <div className="mt-3 rounded-lg sm:mt-0">
                 {/* <Link
                   to="overview-container"
@@ -51,7 +51,7 @@ function Landing() {
             <img
               className="object-cover object-center mx-auto rounded-lg "
               alt="hero"
-              style={{ width: "100%", maxWidth: 600 }}
+              style={{ width: "100%", maxWidth: 700 }}
               src="/assets/landing-hero-new.png"
             />
           </div>

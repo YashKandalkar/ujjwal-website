@@ -1,5 +1,6 @@
 #landing-container {
   background-color: #070b28;
   background-size: cover;
-  min-height: 80vh;
+  background-image: url("../../css-assets/fluid.png");
+  min-height: 100vh;
 }
