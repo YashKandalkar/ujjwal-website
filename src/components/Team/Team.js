@@ -55,7 +55,7 @@ const Team = forwardRef((_, ref) => {
     mb-16
   "
       >
-        Team
+       Core Team
       </h1>
       <div className="flex flex-wrap justify-items-center justify-center flex-row px-4 sm:px-16">
         {teamMembers.map((feature, index) => (
