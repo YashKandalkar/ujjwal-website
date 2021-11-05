@@ -4,12 +4,12 @@ import "./Overview.css";
 function Overview() {
   return (
     <section id="overview-container" className="flex items-center">
-      <div className="px-4 py-12 w-full max-w-7xl sm:px-6 md:px-12 lg:py-24">
+      <div className="px-4 py-12 w-full sm:px-6 md:px-12 lg:py-24">
         <div className="flex  lg:justify-around flex-col-reverse lg:flex-row items-center">
           <div
             data-aos="fade-right"
             data-aos-delay="100"
-            className="mx-auto  flex xl:mt-0"
+            className="mx-auto max-w-lg lg:max-w-2xl 2xl:max-w-screen-lg flex xl:mt-0"
           >
             <img
               className="object-cover z-0  object-center rounded-lg"
@@ -19,7 +19,10 @@ function Overview() {
           </div>
           <div
             data-aos="fade-left"
-            className="flex flex-col max-w-2xl text-center lg:text-left lg:max-w-lg items-start lg:mb-16"
+            className="
+            flex flex-col text-center lg:text-left 
+            max-w-2xl sm:max-w-2xl lg:max-w-lg 2xl:max-w-screen-xl items-start 
+            lg:mb-16 ml-0 lg:ml-4"
           >
             <h1
               style={{

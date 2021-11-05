@@ -5,8 +5,9 @@ import "./Landing.css";
 function Landing() {
   return (
     <section id="landing-container">
-      <div className="px-2 py-12 pt-12 md:pt-16 mx-auto max-w-7xl sm:px-6 md:px-4 lg:py-24">
-        <div className="flex flex-wrap  lg:justify-around flex-row items-center mx-auto max-w-7xl">
+      <div id="landing-bg" />
+      <div className="px-2 py-12 pt-12 md:pt-16 sm:px-6 md:px-4 lg:py-24">
+        <div className="flex flex-wrap  lg:justify-around flex-row items-center">
           <div
             data-aos="fade-up"
             className="flex flex-col items-start mb-4 sm:mb-16 text-left ml-4 sm:ml-8 lg:ml-0"
@@ -25,11 +26,11 @@ function Landing() {
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
-              className="mb-3  font-bold leading-none text-8xl mr-24  pr-4 sm:text-8xl lg:text-10xl"
+              className="mb-3 font-bold leading-none text-7xl mr-24 pr-4 sm:text-8xl lg:text-8xl"
             >
               PLAY TO EARN
             </h1>
-            <p className="mb-3 text-4xl md:text-3xl lg:text-3xl text-left text-gray-400">
+            <p className="mb-3 text-2xl sm:text-4xl text-left text-gray-400">
               Use your in-game Rewards <br />
               in a Better way
             </p>
