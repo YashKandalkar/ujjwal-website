@@ -9,15 +9,16 @@ const teamMembers = [
     role: "CEO",
   },
   {
-    imagePath: "/assets/team-2.png",
-    text: "Antonio",
-    role: "Lead Blockchain Developer",
-  },
-  {
     imagePath: "/assets/team-3.png",
     text: "Ashley",
     role: "COO",
   },
+  {
+    imagePath: "/assets/team-2.png",
+    text: "Antonio",
+    role: "Lead Blockchain Developer",
+  },
+  
   {
     imagePath: "/assets/team-4.png",
     text: "Jerry",
