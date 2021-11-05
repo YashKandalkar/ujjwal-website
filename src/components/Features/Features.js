@@ -1,4 +1,4 @@
-import React from "react";
+import { forwardRef } from "react";
 import { FeaturesItem } from "..";
 import "./Features.css";
 
@@ -25,9 +25,9 @@ const features = [
   },
 ];
 
-function Features() {
+const Features = forwardRef((_, ref) => {
   return (
-    <section id="features-container" className="py-16">
+    <section ref={ref} id="features-container" className="py-16">
       <h1
         style={{
           fontFamily: "'Heaters', 'Montserrat', sans-serif",
@@ -61,6 +61,6 @@ function Features() {
       </div>
     </section>
   );
-}
+});
 
 export default Features;

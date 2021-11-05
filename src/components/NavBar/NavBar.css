@@ -12,7 +12,12 @@
   border-bottom: #fd996b solid 2px;
 }
 
-#navbar::before {
+.navbar-item-in-view {
+  border-top: #fd996b solid 2px;
+  border-bottom: #fd996b solid 2px;
+}
+
+.nav-left-triangle::before {
   position: absolute;
   content: "";
   width: 0;
@@ -24,7 +29,7 @@
 }
 
 @media only screen and (max-width: 1280px) {
-  #navbar::before {
+  .nav-left-triangle::before {
     position: absolute;
     content: "";
     width: 0;

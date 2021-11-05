@@ -1,9 +1,9 @@
-import React from "react";
+import { forwardRef } from "react";
 import "./Tokenomics.css";
 
-function Tokenomics() {
+const Tokenomics = forwardRef((_, ref) => {
   return (
-    <section id="tokenomics-container" className="py-16">
+    <section ref={ref} id="tokenomics-container" className="py-16">
       <h1
         style={{
           fontFamily: "'Heaters', 'Montserrat', sans-serif",
@@ -65,12 +65,6 @@ function Tokenomics() {
       </div>
     </section>
   );
-}
-
-// Marketing, Staking Rewards and Ecosystem: 20% (10% unlocked at TGE, 10% unlocked each month)
-// Team: 20% ( 6 months cliff, 10% unlocked each month thereafter)
-// Liquidity: 10% (20% unlocked at TGE , 20% unlocked each month thereafter)
-// Public Token Sale: 15% (25% unlocked at TGE followed by 25% every two weeks)
-// Partners: 10% (20% unlocked at TGE followed by 20% every two weeks)
+});
 
 export default Tokenomics;

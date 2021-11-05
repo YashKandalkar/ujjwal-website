@@ -10,8 +10,9 @@ import { Link } from "react-scroll";
 
 import "./NavBar.css";
 
-function NavBar() {
+function NavBar({ inView, fixNavbar }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+
   return (
     <>
       <div className="bg-gray-900 text-gray-400 flex flex-row justify-center sm:justify-end lg:px-24">
@@ -44,7 +45,16 @@ function NavBar() {
       <nav
         id="navbar"
         style={{ backgroundColor: "#252f5a" }}
-        className="relative flex flex-wrap items-center justify-between lg:pl-14 lg:pr-10 px-0 sm:px-10 py-3 ml-0 xl:ml-14"
+        className={
+          `flex flex-wrap
+        items-center justify-between lg:pl-14
+        lg:pr-10 px-0 sm:px-10
+        py-3 ml-0
+        ` +
+          (fixNavbar
+            ? ` fixed top-0 z-50 w-full`
+            : " relative xl:ml-14 nav-left-triangle")
+        }
       >
         <div className="container px-4  mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -70,7 +80,12 @@ function NavBar() {
             id="example-navbar-danger"
           >
             <ul className="flex flex-col w-full items-center lg:flex-row list-none lg:ml-auto lg:justify-end">
-              <li className="nav-item">
+              <li
+                className={
+                  "nav-item" +
+                  (inView === "landing" ? " navbar-item-in-view" : "")
+                }
+              >
                 <Link
                   to="landing-container"
                   className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
@@ -80,7 +95,12 @@ function NavBar() {
                   <span className="mx-2 text-lg">HOME</span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className={
+                  "nav-item" +
+                  (inView === "overview" ? " navbar-item-in-view" : "")
+                }
+              >
                 <Link
                   className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
                   to="overview-container"
@@ -90,7 +110,12 @@ function NavBar() {
                   <span className="mx-2 text-lg">OVERVIEW</span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className={
+                  "nav-item" +
+                  (inView === "features" ? " navbar-item-in-view" : "")
+                }
+              >
                 <Link
                   className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
                   to="features-container"
@@ -100,7 +125,12 @@ function NavBar() {
                   <span className="mx-2 text-lg">FEATURES</span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className={
+                  "nav-item" +
+                  (inView === "tokenomics" ? " navbar-item-in-view" : "")
+                }
+              >
                 <Link
                   className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
                   to="tokenomics-container"
@@ -110,7 +140,12 @@ function NavBar() {
                   <span className="mx-2 text-lg">TOKENOMICS</span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className={
+                  "nav-item" +
+                  (inView === "roadmap" ? " navbar-item-in-view" : "")
+                }
+              >
                 <Link
                   className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
                   to="roadmap-container"
@@ -120,7 +155,12 @@ function NavBar() {
                   <span className="mx-2 text-lg">ROADMAP</span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className={
+                  "nav-item" +
+                  (inView === "team" ? " navbar-item-in-view" : "")
+                }
+              >
                 <Link
                   className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
                   to="team-container"

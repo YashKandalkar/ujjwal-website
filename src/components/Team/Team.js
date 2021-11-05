@@ -1,4 +1,4 @@
-import React from "react";
+import { forwardRef } from "react";
 import { TeamMember } from "..";
 import "./Team.css";
 
@@ -30,9 +30,9 @@ const teamMembers = [
   },
 ];
 
-function Team() {
+const Team = forwardRef((_, ref) => {
   return (
-    <section id="team-container" className="py-16">
+    <section ref={ref} id="team-container" className="py-16">
       <h1
         style={{
           fontFamily: "'Heaters', 'Montserrat', sans-serif",
@@ -63,6 +63,6 @@ function Team() {
       </div>
     </section>
   );
-}
+});
 
 export default Team;

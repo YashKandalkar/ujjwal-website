@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./Overview.css";
 
-function Overview() {
+const Overview = forwardRef((_, ref) => {
   return (
-    <section id="overview-container" className="flex items-center">
+    <section ref={ref} id="overview-container" className="flex items-center">
       <div className="px-4 py-12 w-full sm:px-6 md:px-12 lg:py-24">
         <div className="flex  lg:justify-around flex-col-reverse lg:flex-row items-center">
           <div
@@ -51,6 +51,6 @@ function Overview() {
       </div>
     </section>
   );
-}
+});
 
 export default Overview;
