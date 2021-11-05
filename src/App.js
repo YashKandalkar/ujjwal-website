@@ -75,7 +75,7 @@ function App() {
       transition-all duration-200 ease-in-out
       ` + (offset < 200 ? " opacity-0" : " opacity-100")
         }
-        style={{ backgroundColor: "#262F5A", outline: "2px solid #273b71" }}
+        style={{ backgroundColor: "#262F5A", border: "2px solid #273b71" }}
         onClick={() => {
           animateScroll.scrollToTop({
             smooth: true,
