@@ -143,7 +143,9 @@ function NavBar({ inView, fixNavbar }) {
               <li
                 className={
                   "nav-item" +
-                  (inView === "roadmap" ? " navbar-item-in-view" : "")
+                  (inView === "roadmap" || inView === "partners"
+                    ? " navbar-item-in-view"
+                    : "")
                 }
               >
                 <Link

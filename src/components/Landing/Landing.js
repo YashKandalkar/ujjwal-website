@@ -11,7 +11,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
     >
       <div id="landing-bg" />
       <div className="px-2 py-12 pt-12 md:pt-16 sm:px-6 md:px-4 lg:py-24">
-        <div className="flex flex-wrap lg:justify-around flex-row items-center">
+        <div className="flex flex-wrap lg:justify-around flex-row items-center justify-items-center content-center">
           <div
             data-aos="fade-up"
             className="flex flex-col items-start mb-4 sm:mb-16 text-left ml-4 sm:ml-8 lg:ml-0"

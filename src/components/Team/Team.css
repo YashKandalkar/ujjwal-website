@@ -1,3 +1,7 @@
 #team-container {
-  background-color: #080d28;
+  background-color: transparent;
+  background-image: url("../../css-assets/fluid.png");
+  background-attachment: local;
+  background-position: right;
+  background-size: cover;
 }

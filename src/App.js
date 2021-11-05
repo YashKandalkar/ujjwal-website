@@ -13,6 +13,8 @@ import {
   Roadmap,
   Team,
   Footer,
+  // eslint-disable-next-line
+  Partners,
 } from "./components";
 
 const options = {
@@ -25,6 +27,8 @@ function App() {
   const [featuresRef, featuresInView] = useInView(options);
   const [tokenomicsRef, tokenomicsInView] = useInView(options);
   const [roadmapRef, roadmapInView] = useInView(options);
+  // eslint-disable-next-line
+  const [partnersRef, partnersInView] = useInView(options);
   const [teamRef, teamInView] = useInView(options);
 
   let inView = "landing";
@@ -39,6 +43,8 @@ function App() {
     inView = "tokenomics";
   } else if (roadmapInView) {
     inView = "roadmap";
+  } else if (partnersInView) {
+    inView = "partners";
   } else if (teamInView) {
     inView = "team";
   }
@@ -63,6 +69,7 @@ function App() {
       <Features ref={featuresRef} />
       <Tokenomics ref={tokenomicsRef} />
       <Roadmap ref={roadmapRef} />
+      {/* <Partners ref={partnersRef} /> */}
       <Team ref={teamRef} />
       <Footer />
       <div
