@@ -1,66 +1,97 @@
+// import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { forwardRef } from "react";
-// import { Link } from "react-scroll";
 import "./Landing.css";
 
 const Landing = forwardRef(({ fixNavbar }, ref) => {
   return (
-    <section
-      ref={ref}
-      id="landing-container"
-      style={{ marginTop: fixNavbar ? 83.75 : 0 }}
-    >
-      <div id="landing-bg" />
-      <div className="px-2 py-12 pt-12 md:pt-16 sm:px-6 md:px-4 lg:py-24">
-        <div className="flex flex-wrap lg:justify-around flex-row items-center justify-items-center content-center">
-          <div
-            data-aos="fade-up"
-            className="flex flex-col items-start mb-4 sm:mb-16 text-left ml-4 sm:ml-8 lg:ml-0"
-          >
-            {/* <span
-              className="mb-3 text-3xl lg:text-2xl font-bold tracking-widest  uppercase"
-              style={{ color: "rgb(59 76 157)" }}
-            >
-              GAME UP
+    <section ref={ref} id="landing-container">
+      <div className="px-2 mt-10">
+        <div className="flex flex-wrap justify-center flex-row items-center justify-items-center content-center">
+          <div className="flex flex-col items-center mb-4 sm:mb-16 text-left">
+            {/* <span className="mb-3 text-2xl text-accent font-bold tracking-widest">
+              1-2nd April
             </span> */}
             <h1
+              data-aos="fade-up"
+              data-aos-delay="5000"
               style={{
-                fontFamily: "'Heaters', 'Montserrat', sans-serif",
-                background:
-                  "linear-gradient(to bottom right, #fbbb60 0%, #f66445 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                // glow text shadow
+                textShadow:
+                  "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
+                lineHeight: "105px",
               }}
-              className="mb-3 font-bold leading-none text-7xl mr-24 pr-4 sm:text-8xl lg:text-8xl"
+              className="mb-3 mt-14 font-titleBold text-offWhite text-3xl sm:text-6xl lg:text-6xl"
             >
-              PLAY TO EARN
+              Dev Expo '22
             </h1>
-            <p className="mb-3 text-2xl sm:text-4xl text-left text-gray-400">
-              Use your in-game Rewards <br />
-              in a Better way
-            </p>
-            <div className="mt-3 max-w-8xl sm:flex">
-              <div className="mt-3 rounded-lg sm:mt-0">
-                {/* <Link
-                  to="overview-container"
-                  smooth={true}
-                  duration={500}
-                  className="items-center cursor-pointer block px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform rounded-xl hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                  style={{ backgroundColor: "rgb(59 76 157)" }}
-                >
-                  Explore
-                </Link> */}
-              </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="5300"
+              style={{
+                textShadow:
+                  "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
+                fontWeight: 600,
+              }}
+              className="mb-3 font-sora text-offWhite text-base uppercase text-center"
+            >
+              Show off your project infront of professionals!
+              {/* Unleash the speaker within you! */}
             </div>
-          </div>
-          <div data-aos="fade-up" className="mx-auto lg:mx-0 flex xl:mt-0">
-            <img
-              className="object-cover object-center mx-auto rounded-lg "
-              alt="hero"
-              style={{ width: "100%", maxWidth: 750 }}
-              src="/assets/landing-hero-new.png"
-            />
+            {/* <div className="mt-3 max-w-8xl sm:flex">
+              <div className="mt-3 rounded-lg sm:mt-0">
+                <button
+                  className={`flex items-center cursor-pointer
+                    px-8 py-3 text-lg font-medium
+                    text-center text-white transition
+                    duration-500 ease-in-out transform
+                    rounded-sm hover:bg-blue-500
+                    focus:outline-none focus:ring-2
+                    focus:ring-offset-2 bg-accent`}
+                >
+                  <FontAwesomeIcon icon={faDiscord} className="mr-2" />
+                  Join Discord
+                </button>
+              </div>
+            </div> */}
           </div>
         </div>
+      </div>
+      <div id="landing-bg">
+        {/* <video
+              autoPlay
+              muted
+              className="bg-cover"
+              style={{ height: "100vh" }}
+              loop
+            >
+              <source src="/assets/hero-background.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video> */}
+      </div>
+      <img
+        data-aos="fade-up"
+        data-aos-offset="-100"
+        src="/assets/circle-mountain.png"
+        id="bg-circle"
+        style={{
+          // backgroundColor: "rgba(200, 200, 200, 0.93)",
+          // clipPath: "ellipse(60px 40px at 75px 30px);",
+          zIndex: -2,
+          width: "66vmin",
+          height: "auto",
+          marginBottom: "0px",
+          transitionDelay: "5.7s",
+        }}
+        className="absolute bottom-0 -mb10 mx-auto left-0 right-0 "
+        alt="adwwd"
+      ></img>
+      <div id="mountain" className="bottom-0 absolute" style={{ zIndex: -1 }}>
+        {/* <img
+          src="/assets/mountain.png"
+          style={{ maxHeight: "60vmax", width: "100vw", resize: "none" }}
+          alt="background"
+        /> */}
       </div>
     </section>
   );

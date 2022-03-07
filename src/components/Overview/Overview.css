@@ -1,8 +1,8 @@
 #overview-container {
-  background-color: transparent;
+  /* background-color: transparent;
   background-image: url("../../css-assets/overview-bg.jpg");
   background-attachment: local;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   min-height: 100vh;
 }

@@ -2,27 +2,39 @@ import { forwardRef } from "react";
 import RoadmapItem from "../RoadmapItem/RoadmapItem";
 import { Chrono } from "react-chrono";
 import "./Roadmap.css";
+import {
+  faAnchor,
+  faAtom,
+  faFilter,
+  faSpider,
+} from "@fortawesome/free-solid-svg-icons";
 
 const roadmapData = [
   {
-    title: "Q3 2021",
-    text: ["Research", "Application Development"],
-    iconPath: "./assets/roadmap-1.png",
+    title: "Registration",
+    text: "Participants register on Google Forms",
+    iconPath: faFilter,
   },
   {
-    title: "Q4 2021",
-    text: ["Token Generation Event", "Partnerships", "Launch Product"],
-    iconPath: "./assets/roadmap-2.png",
+    title: "Round 1",
+    text: (
+      <>
+        Select top 10 teams
+        <br />
+        based on online contest
+      </>
+    ),
+    iconPath: faSpider,
   },
   {
     title: "Q1 2022",
     text: ["NFT marketplace", "Staking"],
-    iconPath: "./assets/roadmap-3.png",
+    iconPath: faAnchor,
   },
   {
     title: "Q2 2022",
     text: ["P2P Marketplace", "Social Network"],
-    iconPath: "./assets/roadmap-4.png",
+    iconPath: faAtom,
   },
 ];
 
@@ -30,26 +42,11 @@ const Roadmap = forwardRef((_, ref) => {
   return (
     <section ref={ref} id="roadmap-container" className="py-16">
       <h1
-        style={{
-          fontFamily: "'Heaters', 'Montserrat', sans-serif",
-          background:
-            "linear-gradient(to bottom right, #fbbb60 0%, #f66445 100%)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        }}
         data-aos="zoom-in"
-        className="
-    text-gray-100
-    text-center
-    font-bold
-    leading-none
-    text-neutral-600
-    tracking-wider
-    text-7xl
-    lg:text-8xl
-    mb-12"
+        className="text-gray-100 text-center my-10 text-5xl
+        lg:text-6xl uppercase glow font-titleBold"
       >
-        ROADMAP
+        timeline
       </h1>
 
       <Chrono
@@ -62,13 +59,12 @@ const Roadmap = forwardRef((_, ref) => {
         }}
         items={roadmapData.map((item, rIndex) => ({
           title: (
-            <div key={"title-item-" + rIndex} className="text-left">
+            <div
+              key={"title-item-" + rIndex}
+              className={rIndex % 2 ? "text-right" : "text-left"}
+            >
               <p className="text-gray-100 text-base">{item.title}</p>
-              {item.text.map((item, index) => (
-                <p key={"text-" + index} className="text-gray-300 text-base">
-                  {item}
-                </p>
-              ))}
+              <p className="text-gray-300 text-base">{item.text}</p>
             </div>
           ),
         }))}

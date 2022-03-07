@@ -7,13 +7,13 @@ import "./App.css";
 import {
   NavBar,
   Landing,
-  Features,
+  Benefits,
   Overview,
-  Tokenomics,
+  Prizes,
   Roadmap,
   Team,
   Footer,
-  // eslint-disable-next-line
+  Splash,
   Partners,
 } from "./components";
 
@@ -24,10 +24,9 @@ const options = {
 function App() {
   const [landingRef, landingInView] = useInView(options);
   const [overviewRef, overviewInView] = useInView(options);
-  const [featuresRef, featuresInView] = useInView(options);
-  const [tokenomicsRef, tokenomicsInView] = useInView(options);
+  const [benefitsRef, featuresInView] = useInView(options);
+  const [prizesRef, tokenomicsInView] = useInView(options);
   const [roadmapRef, roadmapInView] = useInView(options);
-  // eslint-disable-next-line
   const [partnersRef, partnersInView] = useInView(options);
   const [teamRef, teamInView] = useInView(options);
 
@@ -64,12 +63,13 @@ function App() {
   return (
     <div className="App">
       <NavBar inView={inView} fixNavbar={offset >= 60} />
+      <Splash />
       <Landing ref={landingRef} fixNavbar={offset >= 60} />
       <Overview ref={overviewRef} />
-      <Features ref={featuresRef} />
-      <Tokenomics ref={tokenomicsRef} />
+      <Benefits ref={benefitsRef} />
+      <Prizes ref={prizesRef} />
       <Roadmap ref={roadmapRef} />
-      {/* <Partners ref={partnersRef} /> */}
+      <Partners ref={partnersRef} />
       <Team ref={teamRef} />
       <Footer />
       <div
@@ -77,12 +77,11 @@ function App() {
           `cursor-pointer
       fixed shadow-2xl rounded-full
       px-4 py-4 flex items-center justify-items-center 
-      bottom-4 right-4 
-      md:bottom-8 md:right-8
+      bottom-4 right-4 bg-primaryDark border-accent
+      md:bottom-8 md:right-8 border-2
       transition-all duration-200 ease-in-out
       ` + (offset < 200 ? " opacity-0" : " opacity-100")
         }
-        style={{ backgroundColor: "#262F5A", border: "2px solid #273b71" }}
         onClick={() => {
           animateScroll.scrollToTop({
             smooth: true,
@@ -90,11 +89,7 @@ function App() {
           });
         }}
       >
-        <FontAwesomeIcon
-          icon={faArrowUp}
-          className="text-lg"
-          style={{ color: "rgb(251, 187, 96)" }}
-        />
+        <FontAwesomeIcon icon={faArrowUp} className="text-lg text-accent" />
       </div>
     </div>
   );

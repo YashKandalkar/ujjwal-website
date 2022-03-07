@@ -1,21 +1,19 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import {
-  faTwitter,
-  faTelegram,
-  faMedium,
-} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
 
 import "./NavBar.css";
 
-function NavBar({ inView, fixNavbar }) {
+function NavBar({ inView }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   return (
     <>
-      <div className="bg-gray-900 text-gray-400 flex flex-row justify-center sm:justify-end lg:px-24">
+      {/* <div
+        style={{ backgroundColor: "#070b28" }}
+        className=" text-gray-400 flex flex-row justify-center sm:justify-end lg:px-24"
+      >
         <div className="flex flex-row py-4">
           <a
             target="_blank"
@@ -41,28 +39,31 @@ function NavBar({ inView, fixNavbar }) {
             <FontAwesomeIcon icon={faMedium} className="mx-1" />
           </a>
         </div>
-      </div>
+      </div> */}
       <nav
         id="navbar"
-        style={{ backgroundColor: "#252f5a" }}
         className={
-          `flex flex-wrap
+          `flex flex-wrap fixed bg-transparent
         items-center justify-between lg:pl-14
         lg:pr-10 px-0 sm:px-10
         py-3 ml-0
         ` +
-          (fixNavbar
+          (true
             ? ` fixed top-0 z-50 w-full`
             : " relative xl:ml-14 nav-left-triangle")
         }
       >
-        <div className="container px-4  mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <div className="container px-4 transition-all duration-200 mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full relative transition-all duration-200 flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
               className="text-sm  leading-relaxed inline-block mr-4 px-6 sm:px-0 py-2 whitespace-nowrap uppercase text-gray-300"
               href="/"
             >
-              <img src="/assets/logo.png" alt="logo" style={{ width: 180 }} />
+              <img
+                src="/gdsc-dmce-logo.png"
+                alt="logo"
+                style={{ width: 280 }}
+              />
             </a>
             <button
               className="text-gray-300 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -79,8 +80,8 @@ function NavBar({ inView, fixNavbar }) {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col w-full items-center lg:flex-row list-none lg:ml-auto lg:justify-end">
-              <li
+            <ul className="flex glow font-titleBold flex-col w-full items-center lg:flex-row list-none lg:ml-auto lg:justify-end">
+              {/* <li
                 className={
                   "nav-item" +
                   (inView === "landing" ? " navbar-item-in-view" : "")
@@ -94,7 +95,7 @@ function NavBar({ inView, fixNavbar }) {
                 >
                   <span className="mx-2 text-lg">HOME</span>
                 </Link>
-              </li>
+              </li> */}
               <li
                 className={
                   "nav-item" +
@@ -107,7 +108,7 @@ function NavBar({ inView, fixNavbar }) {
                   smooth={true}
                   duration={400}
                 >
-                  <span className="mx-2 text-lg">OVERVIEW</span>
+                  <span className="mx-2  text-lg">about</span>
                 </Link>
               </li>
               <li
@@ -122,30 +123,43 @@ function NavBar({ inView, fixNavbar }) {
                   smooth={true}
                   duration={500}
                 >
-                  <span className="mx-2 text-lg">FEATURES</span>
+                  <span className="mx-2 text-lg">Benefits</span>
                 </Link>
               </li>
               <li
                 className={
                   "nav-item" +
-                  (inView === "tokenomics" ? " navbar-item-in-view" : "")
+                  (inView === "roadmap" ? " navbar-item-in-view" : "")
                 }
               >
                 <Link
                   className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
-                  to="tokenomics-container"
+                  to="roadmap-container"
                   smooth={true}
                   duration={600}
                 >
-                  <span className="mx-2 text-lg">TOKENOMICS</span>
+                  <span className="mx-2 text-lg">timeline</span>
                 </Link>
               </li>
               <li
                 className={
                   "nav-item" +
-                  (inView === "roadmap" || inView === "partners"
-                    ? " navbar-item-in-view"
-                    : "")
+                  (inView === "partners" ? " navbar-item-in-view" : "")
+                }
+              >
+                <Link
+                  className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
+                  to="partners-container"
+                  smooth={true}
+                  duration={700}
+                >
+                  <span className="mx-2 text-lg">sponsors</span>
+                </Link>
+              </li>
+              {/* <li
+                className={
+                  "nav-item" +
+                  (inView === "partners" ? " navbar-item-in-view" : "")
                 }
               >
                 <Link
@@ -154,9 +168,9 @@ function NavBar({ inView, fixNavbar }) {
                   smooth={true}
                   duration={700}
                 >
-                  <span className="mx-2 text-lg">ROADMAP</span>
+                  <span className="mx-2 text-lg">Partners</span>
                 </Link>
-              </li>
+              </li> */}
               <li
                 className={
                   "nav-item" +

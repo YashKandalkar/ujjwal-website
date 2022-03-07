@@ -1,0 +1,27 @@
+#quote-container {
+  animation: fade-out 1s ease-in-out 4s forwards;
+}
+
+#quote-container img {
+  animation: zoom-in 1s ease-in-out 4s forwards;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(100);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

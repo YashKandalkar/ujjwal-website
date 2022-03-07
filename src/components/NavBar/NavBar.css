@@ -1,43 +1,18 @@
 #navbar-links p:hover {
-  color: #fd996b;
+  color: #ff9def;
   cursor: pointer;
-  border-top: #fd996b solid 2px;
-  border-bottom: #fd996b solid 2px;
+  border-top: #ff9def solid 2px;
+  border-bottom: #ff9def solid 2px;
 }
 
 .nav-item:hover {
-  color: #fd996b;
+  color: #ff9def;
   cursor: pointer;
-  border-top: #fd996b solid 2px;
-  border-bottom: #fd996b solid 2px;
+  border-top: #ff9def solid 2px;
+  border-bottom: #ff9def solid 2px;
 }
 
 .navbar-item-in-view {
-  border-top: #fd996b solid 2px;
-  border-bottom: #fd996b solid 2px;
-}
-
-.nav-left-triangle::before {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  left: 0px;
-  bottom: 0px;
-  border-bottom: 90px solid #070b28;
-  border-right: 35px solid transparent;
-}
-
-@media only screen and (max-width: 1280px) {
-  .nav-left-triangle::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    left: 0px;
-    bottom: 0px;
-    border-bottom: 0px solid #070b28;
-    border-right: 0px solid transparent;
-    margin: 0px !important;
-  }
+  border-top: #ff9def solid 2px;
+  border-bottom: #ff9def solid 2px;
 }

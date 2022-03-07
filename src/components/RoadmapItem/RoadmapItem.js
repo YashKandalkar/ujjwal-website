@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function RoadmapItem({ iconPath, parity }) {
@@ -5,6 +6,7 @@ function RoadmapItem({ iconPath, parity }) {
     <div
       className={`
       flex 
+      flex-grow
       items-center
       justify-end
       flex-col
@@ -14,10 +16,9 @@ function RoadmapItem({ iconPath, parity }) {
         alignSelf: parity % 2 ? "self-start" : "self-end",
       }}
     >
-      <img
-        src={iconPath}
-        alt="icon"
-        className={`w-36 ${parity % 2 ? "md:ml-4" : "md:mr-4"}  m-0`}
+      <FontAwesomeIcon
+        icon={iconPath}
+        className="text-accent mt-6 text-7xl md:text-9xl mr-2"
       />
     </div>
   );

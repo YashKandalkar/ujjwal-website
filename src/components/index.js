@@ -1,22 +1,24 @@
 import NavBar from "./NavBar/NavBar";
 import Landing from "./Landing/Landing";
 import Overview from "./Overview/Overview";
-import Features from "./Features/Features";
+import Benefits from "./Benefits/Benefits";
 import FeaturesItem from "./FeaturesItem/FeaturesItem";
-import Tokenomics from "./Tokenomics/Tokenomics";
+import Prizes from "./Prizes/Prizes";
 import Roadmap from "./Roadmap/Roadmap";
 import Partners from "./Partners/Partners";
 import Team from "./Team/Team";
 import TeamMember from "./TeamMember/TeamMember";
 import Footer from "./Footer/Footer";
+import Splash from "./Splash/Splash";
 
 export {
   NavBar,
+  Splash,
   Landing,
   Overview,
-  Features,
+  Benefits,
   FeaturesItem,
-  Tokenomics,
+  Prizes,
   Roadmap,
   Partners,
   Team,
