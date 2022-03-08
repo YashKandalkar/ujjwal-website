@@ -80,7 +80,7 @@ function NavBar({ inView }) {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex glow font-titleBold flex-col w-full items-center lg:flex-row list-none lg:ml-auto lg:justify-end">
+            <ul className="flex glow font-sora font-semibold flex-col w-full items-center lg:flex-row list-none lg:ml-auto lg:justify-end">
               {/* <li
                 className={
                   "nav-item" +

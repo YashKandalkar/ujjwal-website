@@ -10,8 +10,12 @@ import Team from "./Team/Team";
 import TeamMember from "./TeamMember/TeamMember";
 import Footer from "./Footer/Footer";
 import Splash from "./Splash/Splash";
+import Accordion from "./Accordion/Accordion";
+import FAQ from "./FAQ/FAQ";
 
 export {
+  FAQ,
+  Accordion,
   NavBar,
   Splash,
   Landing,

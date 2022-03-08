@@ -15,6 +15,7 @@ import {
   Footer,
   Splash,
   Partners,
+  FAQ,
 } from "./components";
 
 const options = {
@@ -71,6 +72,7 @@ function App() {
       <Roadmap ref={roadmapRef} />
       <Partners ref={partnersRef} />
       <Team ref={teamRef} />
+      <FAQ />
       <Footer />
       <div
         className={
