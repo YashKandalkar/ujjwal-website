@@ -26,12 +26,19 @@ const Splash = () => {
             #ff9def 115.93%
         )`,
       }}
-      className="top-0 left-0 fixed w-full h-full z-50  flex text-sm sm:text-base md:text-lg justify-center items-center flex-col"
+      className="top-0 left-0 fixed w-full h-full z-50 flex items-center text-sm sm:text-base md:text-lg justify-center flex-col"
     >
+      <img
+        src={"/dmce-logo.png"}
+        alt="logo"
+        className="h-auto mb-12"
+        style={{ width: "80vmin" }}
+      />
       <img
         src={"/gdsc-dmce-logo.png"}
         alt="logo"
-        className="w-4/12 h-auto my-auto"
+        className="h-auto"
+        style={{ width: "80vmin" }}
       />
     </div>
   );

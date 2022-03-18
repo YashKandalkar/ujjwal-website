@@ -4,24 +4,24 @@ import "./Benefits.css";
 
 const benefits = [
   {
-    imagePath: "/assets/Tokens.png",
-    text: "Use $GMU tokens to purchase in-game items from different games",
+    imagePath: "/assets/money-bag.svg",
+    text: "Cash prize to the winners along with consolation prizes and goodies",
   },
   {
-    imagePath: "/assets/NFTMarket.png",
-    text: "NFT Marketplace to mint your unique rewards & trade",
-  },
-  {
-    imagePath: "/assets/P2P.png",
-    text: "P2P Marketplace to exchange rewards with other user",
-  },
-  {
-    imagePath: "/assets/Stacking.png",
-    text: "Stake $GMU",
+    imagePath: "/assets/review.svg",
+    text: "Get your project reviewed by experts",
   },
   {
     imagePath: "/assets/SocialNetwork.png",
-    text: "Social Network to interact with other users and explore more games",
+    text: "Community building",
+  },
+  {
+    imagePath: "/assets/certificate.svg",
+    text: "Certificates to all the final teams",
+  },
+  {
+    imagePath: "/assets/interaction.svg",
+    text: "Interaction with teams all over state",
   },
 ];
 

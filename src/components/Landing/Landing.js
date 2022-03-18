@@ -23,7 +23,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               }}
               className="mb-3 mt-14 font-titleBold text-offWhite text-3xl sm:text-6xl lg:text-6xl"
             >
-              Dev Expo '22
+              Techओत्सव '22
             </h1>
             <div
               data-aos="fade-up"

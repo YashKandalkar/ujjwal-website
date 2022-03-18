@@ -8,11 +8,18 @@ function Footer() {
       id="footer"
       className="px-18 xl:mt-16 items-center py-20 pt-28 md:pt-16 md:py-0 gap-8 md:gap-0 md:justify-around flex flex-col md:flex-row"
     >
-      <img
-        src={"/gdsc-dmce-logo.png"}
-        alt="logo"
-        className="w-96 h-auto my-auto"
-      />
+      <div>
+        <img
+          src={"/dmce-logo.png"}
+          alt="logo"
+          className="w-96 h-auto my-auto mb-6"
+        />
+        <img
+          src={"/gdsc-dmce-logo.png"}
+          alt="logo"
+          className="w-96 h-auto my-auto"
+        />
+      </div>
       <div className="flex my-auto flex-col">
         <p
           style={{ fontFamily: "'Montserrat', sans-serif" }}

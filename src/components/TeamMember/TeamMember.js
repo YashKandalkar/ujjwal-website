@@ -39,7 +39,7 @@ function TeamMember({ imagePath, text, role }) {
             height="120%"
             filterUnits="objectBoundingBox"
             primitiveUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
             <feColorMatrix
               type="matrix"
@@ -71,7 +71,7 @@ function TeamMember({ imagePath, text, role }) {
             height="120%"
             filterUnits="objectBoundingBox"
             primitiveUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
             <feColorMatrix
               type="matrix"
@@ -122,7 +122,7 @@ function TeamMember({ imagePath, text, role }) {
             height="120%"
             filterUnits="objectBoundingBox"
             primitiveUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
             <feColorMatrix
               type="matrix"

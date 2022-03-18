@@ -36,15 +36,21 @@ const Overview = forwardRef((_, ref) => {
               OVERVIEW
             </h1>
             <p className="mb-3 font-sora mt-6 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
-              GameUp allows any centralized games' users to swiftly convert
-              their in-game rewards into $GMU tokens. Those tokens can be used
-              to exchange rewards with other users, purchase in-game items from
-              other games, mint NFT of your unique rewards & Stake.
+              Techotsav is a state level project competition for undergraduate
+              engineering students oraganized by GDSC-DMCE. In this The
+              competition would be conducted in total 3 phases.
+              <br /> The first phase would be conducted in online mode where
+              registrations from all over state will take place and the
+              shortlisted groups will then move onto the phase 2.
+              <br /> The second phase will be Live online interaction with our
+              pannel and then the teams will proceed to their final stage.{" "}
+              <br /> The final teams will then have offline project
+              presentations infront of our pannel.
             </p>
-            <p className="mb-3 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
+            {/* <p className="mb-3 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
               GameUp will empower already established games to come on
               blockchain directly through our API and rewards system.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

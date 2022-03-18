@@ -24,10 +24,7 @@ const PrizesItem = ({ imagePath, text }) => {
           className="prizeFront rounded-lg shadow-2xl px-5 py-6 text-gray-50"
           style={{ backgroundColor: "rgb(29, 56, 107)" }}
         >
-          Anim irure laboris cupidatat labore nostrud esse consectetur.
-          Pariatur dolore in ex esse duis quis cupidatat minim sunt. Duis eu
-          aliquip dolore culpa elit culpa sunt pariatur sit. Minim nisi labElit
-          do culpa aliqua amet aliquip non labore enim reprehenderit.
+          Win Exciting Prizes!
         </div>
       </div>
       {/* </div> */}

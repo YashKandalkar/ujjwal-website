@@ -54,17 +54,29 @@ function NavBar({ inView }) {
         }
       >
         <div className="container px-4 transition-all duration-200 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative transition-all duration-200 flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className="text-sm  leading-relaxed inline-block mr-4 px-6 sm:px-0 py-2 whitespace-nowrap uppercase text-gray-300"
-              href="/"
-            >
-              <img
-                src="/gdsc-dmce-logo.png"
-                alt="logo"
-                style={{ width: 280 }}
-              />
-            </a>
+          <div className="w-full relative transition-all duration-200 flex items-center justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <span className="flex items-stretch">
+              <a
+                className="text-sm flex justify-center items-center h-full mr-4 px-6 sm:px-0 py-2 whitespace-nowrap uppercase text-gray-300"
+                href="/"
+              >
+                <img
+                  src="/dmce-logo-small.png"
+                  alt="logo"
+                  style={{ width: 70 }}
+                />
+              </a>
+              <a
+                className="text-sm flex justify-center items-center leading-relaxed mr-4 px-6 sm:px-0 py-2 whitespace-nowrap uppercase text-gray-300"
+                href="/"
+              >
+                <img
+                  src="/gdsc-dmce-logo-small.png"
+                  alt="logo"
+                  style={{ width: 70 }}
+                />
+              </a>
+            </span>
             <button
               className="text-gray-300 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
