@@ -2,7 +2,7 @@ import { Accordion } from "../";
 
 const sampleFaqs = [
   {
-    question: "What is Dev Expo?",
+    question: "What is Techओत्सव?",
     answer:
       "Dev Expo is a one-of-a-kind event where you can showcase your project to the world. It is a platform for developers to showcase their projects and get feedback from the world. It is a platform for developers to showcase their projects and get feedback from the world.",
   },
@@ -12,7 +12,7 @@ const sampleFaqs = [
       "Dev Expo is a one-of-a-kind event where you can showcase your project to the world. It is a platform for developers to showcase their projects and get feedback from the world. It is a platform for developers to showcase their projects and get feedback from the world.",
   },
   {
-    question: "How can I participate?",
+    question: "How many rounds are in total?",
     answer:
       "Dev Expo is a one-of-a-kind event where you can showcase your project to the world. It is a platform for developers to showcase their projects and get feedback from the world. It is a platform for developers to showcase their projects and get feedback from the world.",
   },

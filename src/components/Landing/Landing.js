@@ -35,7 +35,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               }}
               className="mb-3 font-sora text-offWhite text-base uppercase text-center"
             >
-              Show off your project infront of professionals!
+              Show off your project in front of professionals!
               {/* Unleash the speaker within you! */}
             </div>
             {/* <div className="mt-3 max-w-8xl sm:flex">
