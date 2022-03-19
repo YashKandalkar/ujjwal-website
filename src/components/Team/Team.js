@@ -54,8 +54,15 @@ const Team = forwardRef((_, ref) => {
         className="text-gray-100 text-center my-10 text-5xl
         lg:text-6xl uppercase glow font-titleBold"
       >
-        Core Team
+        Team
       </h1>
+      <div className="flex justify-center">
+        <TeamMember
+          imagePath={"/assets/team/chhaya-pawar.png"}
+          text={"Dr. Chhaya Pawar"}
+          role={"GDSC Faculty Advisor"}
+        />
+      </div>
       <div className="flex flex-wrap justify-items-center justify-center flex-row px-4 sm:px-16">
         {teamMembers.map((feature, index) => (
           <TeamMember key={index} {...feature} imagePath={teamImages[index]} />

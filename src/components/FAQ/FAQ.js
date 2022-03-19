@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { Accordion } from "../";
 
 const sampleFaqs = [
@@ -18,9 +19,9 @@ const sampleFaqs = [
   },
 ];
 
-const FAQ = () => {
+const FAQ = forwardRef((_, ref) => {
   return (
-    <section id="team-container" className="py-16">
+    <section ref={ref} id="faq-container" className="py-16">
       <h1
         data-aos="zoom-out"
         className="text-gray-100 text-left px-4 sm:px-16 my-10 text-5xl
@@ -35,6 +36,6 @@ const FAQ = () => {
       </div>
     </section>
   );
-};
+});
 
 export default FAQ;

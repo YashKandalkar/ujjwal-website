@@ -1,39 +1,39 @@
 import { forwardRef } from "react";
-import PartnersItem from "../PartnersItem/PartnersItem";
+// import PartnersItem from "../PartnersItem/PartnersItem";
 import "./Partners.css";
 
-const partners = [
-  // {
-  //   imagePath: "/assets/investor-1.png",
-  // },
-  // {
-  //   imagePath: "/assets/investor-2.png",
-  // },
-  // {
-  //   imagePath: "/assets/investor-3.png",
-  // },
-  // {
-  //   imagePath: "/assets/investor-4.png",
-  // },
-  // {
-  //   imagePath: "/assets/investor-5.png",
-  // },
-  // {
-  //   imagePath: "/assets/investor-6.png",
-  // },
-  // {
-  //   imagePath: "/assets/investor-7.png",
-  // },
-  // {
-  //   imagePath: "/assets/investor-8.png",
-  // },
-  // {
-  //   imagePath: "/assets/investor-9.png",
-  // },
-  // {
-  //   imagePath: "/assets/investor-10.png",
-  // },
-];
+// const partners = [
+// {
+//   imagePath: "/assets/investor-1.png",
+// },
+// {
+//   imagePath: "/assets/investor-2.png",
+// },
+// {
+//   imagePath: "/assets/investor-3.png",
+// },
+// {
+//   imagePath: "/assets/investor-4.png",
+// },
+// {
+//   imagePath: "/assets/investor-5.png",
+// },
+// {
+//   imagePath: "/assets/investor-6.png",
+// },
+// {
+//   imagePath: "/assets/investor-7.png",
+// },
+// {
+//   imagePath: "/assets/investor-8.png",
+// },
+// {
+//   imagePath: "/assets/investor-9.png",
+// },
+// {
+//   imagePath: "/assets/investor-10.png",
+// },
+// ];
 
 const Partners = forwardRef((_, ref) => {
   return (

@@ -8,10 +8,23 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
     <section ref={ref} id="landing-container">
       <div className="px-2 mt-10">
         <div className="flex flex-wrap justify-center flex-row items-center justify-items-center content-center">
-          <div className="flex flex-col items-center mb-4 sm:mb-16 text-left">
+          <div className="flex flex-col items-center mb-4 sm:mb-16 text-left ">
             {/* <span className="mb-3 text-2xl text-accent font-bold tracking-widest">
               1-2nd April
             </span> */}
+            <div
+              data-aos="fade-up"
+              data-aos-delay="5300"
+              style={{
+                textShadow:
+                  "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
+                fontWeight: 600,
+              }}
+              className="mt-16 font-sora text-offWhite text-base uppercase text-center"
+            >
+              GDSC-DMCE Presents
+              {/* Unleash the speaker within you! */}
+            </div>
             <h1
               data-aos="fade-up"
               data-aos-delay="5000"
@@ -21,7 +34,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
                   "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
                 lineHeight: "105px",
               }}
-              className="mb-3 mt-14 font-titleBold text-offWhite text-3xl sm:text-6xl lg:text-6xl"
+              className="mb-3  font-titleBold text-offWhite text-3xl sm:text-6xl lg:text-6xl"
             >
               Techotsav '22
             </h1>
@@ -69,6 +82,21 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               Your browser does not support the video tag.
             </video> */}
       </div>
+      <div className="flex justify-center">
+        <a
+          href="https://drive.google.com/file/d/1S9FEx9zOInQ4c4flReuHNqc1tYvwW81I/preview"
+          target={`_blank`}
+          style={{
+            textShadow:
+              "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
+            fontWeight: 600,
+          }}
+          class="bg-purple-500 hover:bg-purple-400 border-b-4 border-purple-700 hover:border-purple-500 text-xl text-gray-50 font-titleBold text-center py-4 px-14 rounded mt-5"
+        >
+          REGISTER
+        </a>
+      </div>
+
       <img
         data-aos="fade-up"
         data-aos-offset="-100"

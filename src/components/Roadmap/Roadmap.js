@@ -12,28 +12,45 @@ import {
 const roadmapData = [
   {
     title: "Registration",
-    text: "Participants register on Google Forms",
+    text: "22nd March to 5th April",
     iconPath: faFilter,
   },
   {
     title: "Round 1",
     text: (
       <>
-        Select top 10 teams
+        Results - 10th April
         <br />
-        based on online contest
+        Internal Scrutiny Round
       </>
     ),
     iconPath: faSpider,
   },
   {
-    title: "Q1 2022",
-    text: ["NFT marketplace", "Staking"],
+    title: "Round 2",
+    text: (
+      <>
+        11th - 13th April
+        <br />
+        Online Presentation Round
+      </>
+    ),
     iconPath: faAnchor,
   },
   {
-    title: "Q2 2022",
-    text: ["P2P Marketplace", "Social Network"],
+    title: "Round 3",
+    text: (
+      <>
+        Offline Event - 22nd April
+        <br />
+        Offline Presentation Round
+      </>
+    ),
+    iconPath: faAtom,
+  },
+  {
+    title: "Final Results",
+    text: <>On the spot - 22nd April</>,
     iconPath: faAtom,
   },
 ];

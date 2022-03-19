@@ -123,7 +123,7 @@ function NavBar({ inView }) {
                   <span className="mx-2  text-lg">about</span>
                 </Link>
               </li>
-              <li
+              {/* <li
                 className={
                   "nav-item" +
                   (inView === "features" ? " navbar-item-in-view" : "")
@@ -137,7 +137,7 @@ function NavBar({ inView }) {
                 >
                   <span className="mx-2 text-lg">Benefits</span>
                 </Link>
-              </li>
+              </li> */}
               <li
                 className={
                   "nav-item" +
@@ -168,6 +168,7 @@ function NavBar({ inView }) {
                   <span className="mx-2 text-lg">sponsors</span>
                 </Link>
               </li>
+
               {/* <li
                 className={
                   "nav-item" +
@@ -196,6 +197,35 @@ function NavBar({ inView }) {
                   duration={300}
                 >
                   <span className="mx-2 text-lg">TEAM</span>
+                </Link>
+              </li>
+              <li
+                className={
+                  "nav-item" +
+                  (inView === "contactUs" ? " navbar-item-in-view" : "")
+                }
+              >
+                <Link
+                  className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
+                  to="partners-container"
+                  smooth={true}
+                  duration={700}
+                >
+                  <span className="mx-2 text-lg">Contacts</span>
+                </Link>
+              </li>
+              <li
+                className={
+                  "nav-item" + (inView === "faq" ? " navbar-item-in-view" : "")
+                }
+              >
+                <Link
+                  className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
+                  to="faq-container"
+                  smooth={true}
+                  duration={700}
+                >
+                  <span className="mx-2 text-lg">FAQ</span>
                 </Link>
               </li>
             </ul>

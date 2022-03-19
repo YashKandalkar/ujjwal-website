@@ -17,6 +17,7 @@ import {
   Partners,
   FAQ,
 } from "./components";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 const options = {
   rootMargin: "-90px 0px 0px 0px",
@@ -30,6 +31,8 @@ function App() {
   const [roadmapRef, roadmapInView] = useInView(options);
   const [partnersRef, partnersInView] = useInView(options);
   const [teamRef, teamInView] = useInView(options);
+  const [faqRef, faqInView] = useInView(options);
+  const [contactUsRef, contactUsInView] = useInView(options);
 
   let inView = "landing";
 
@@ -47,6 +50,10 @@ function App() {
     inView = "partners";
   } else if (teamInView) {
     inView = "team";
+  } else if (faqInView) {
+    inView = "faq";
+  } else if (contactUsInView) {
+    inView = "contactUs";
   }
 
   const [offset, setOffset] = useState(0);
@@ -72,7 +79,8 @@ function App() {
       <Roadmap ref={roadmapRef} />
       <Partners ref={partnersRef} />
       <Team ref={teamRef} />
-      <FAQ />
+      <ContactUs ref={contactUsRef} />
+      <FAQ ref={faqRef} />
       <Footer />
       <div
         className={
