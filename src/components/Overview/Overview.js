@@ -36,14 +36,14 @@ const Overview = forwardRef((_, ref) => {
               OVERVIEW
             </h1>
             <p className="mb-3 font-sora mt-6 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
-              Techओत्सव is a state level project competition for undergraduate
-              engineering students oraganized by GDSC-DMCE. We believe every
+              Techotsav is a state level project competition for undergraduate
+              engineering students organized by GDSC-DMCE. We believe every
               engineer has a story to tell! <br />
-              This competition will allow students consolidate their knowledge
-              and professional skills as well as practice soft skills such as
-              communication, presentation, teamwork and problem-solving while
-              reinforcing their engineering knowledge hence prepare them for
-              industry readiness.
+              This competition will allow students to consolidate their
+              knowledge and professional skills as well as practice soft skills
+              such as communication, presentation, teamwork and problem-solving
+              while reinforcing their engineering knowledge hence prepare them
+              for industry readiness.
             </p>
             {/* <p className="mb-3 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
               GameUp will empower already established games to come on

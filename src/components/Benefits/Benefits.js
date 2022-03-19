@@ -13,7 +13,7 @@ const benefits = [
   },
   {
     imagePath: "/assets/SocialNetwork.png",
-    text: "Get to view solutions to various problem statements and interact with different domains skilled teams from all over the state",
+    text: "Interact with skilled teams of different domains from all over the state",
   },
   {
     imagePath: "/assets/certificate.svg",

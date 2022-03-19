@@ -56,7 +56,7 @@ function NavBar({ inView }) {
         <div className="container px-4 transition-all duration-200 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative transition-all duration-200 flex items-center justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <span className="flex items-stretch">
-              <a
+              {/* <a
                 className="text-sm flex justify-center items-center h-full mr-4 px-6 sm:px-0 py-2 whitespace-nowrap uppercase text-gray-300"
                 href="/"
               >
@@ -65,15 +65,15 @@ function NavBar({ inView }) {
                   alt="logo"
                   style={{ width: 70 }}
                 />
-              </a>
+              </a> */}
               <a
                 className="text-sm flex justify-center items-center leading-relaxed mr-4 px-6 sm:px-0 py-2 whitespace-nowrap uppercase text-gray-300"
                 href="/"
               >
                 <img
-                  src="/gdsc-dmce-logo-small.png"
+                  src="/gdsc-dmce-logo.png"
                   alt="logo"
-                  style={{ width: 70 }}
+                  style={{ width: 280 }}
                 />
               </a>
             </span>
