@@ -50,9 +50,13 @@ const Partners = forwardRef((_, ref) => {
         {/* {partners.map((feature, index) => (
           <PartnersItem key={index} {...feature} />
         ))} */}
-        <button className="px-8 py-4 bg-primary text-gray-50 font-sora mt-36 rounded-sm text-2xl">
+        <a
+          href="https://drive.google.com/file/d/1S9FEx9zOInQ4c4flReuHNqc1tYvwW81I/preview"
+          target={`_blank`}
+          className="px-8 py-4 bg-primary text-gray-50 font-sora mt-36 rounded-sm text-2xl"
+        >
           Download Brochure
-        </button>
+        </a>
       </div>
     </section>
   );

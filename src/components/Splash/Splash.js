@@ -28,12 +28,12 @@ const Splash = () => {
       }}
       className="top-0 left-0 fixed w-full h-full z-50 flex items-center text-sm sm:text-base md:text-lg justify-center flex-col"
     >
-      <img
+      {/* <img
         src={"/dmce-logo.png"}
         alt="logo"
         className="h-auto mb-12"
         style={{ width: "80vmin" }}
-      />
+      /> */}
       <img
         src={"/gdsc-dmce-logo.png"}
         alt="logo"

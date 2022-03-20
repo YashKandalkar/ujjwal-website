@@ -82,10 +82,13 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               Your browser does not support the video tag.
             </video> */}
       </div>
-      <div className="flex justify-center">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="5300"
+        className="flex justify-center"
+      >
         <a
-          href="https://drive.google.com/file/d/1S9FEx9zOInQ4c4flReuHNqc1tYvwW81I/preview"
-          target={`_blank`}
+          href="/"
           style={{
             textShadow:
               "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
