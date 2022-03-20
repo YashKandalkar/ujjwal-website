@@ -1,7 +1,7 @@
 import React from "react";
 import "./PrizeItem.css";
 
-const PrizesItem = ({ imagePath, text }) => {
+const PrizesItem = ({ imagePath, text, prize }) => {
   return (
     <div
       //   data-aos="flip-left"
@@ -24,7 +24,7 @@ const PrizesItem = ({ imagePath, text }) => {
           className="prizeFront rounded-lg shadow-2xl px-5 py-6 text-gray-50"
           style={{ backgroundColor: "rgb(29, 56, 107)" }}
         >
-          Win Exciting Prizes!
+          Win Exciting cash prizes & Swags!
         </div>
       </div>
       {/* </div> */}

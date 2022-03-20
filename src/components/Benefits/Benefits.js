@@ -5,23 +5,48 @@ import "./Benefits.css";
 const benefits = [
   {
     imagePath: "/assets/money-bag.svg",
-    text: "Cash prize to the winners along with consolation prizes and goodies",
+    text: (
+      <>
+        <span className="font-bold text-highlight">Cash prize</span> to the
+        winners along with consolation prizes and goodies
+      </>
+    ),
   },
   {
     imagePath: "/assets/review.svg",
-    text: "Get your project reviewed by experts",
+    text: (
+      <>
+        Get your project{" "}
+        <span className="font-bold text-highlight">reviewed</span> by experts
+      </>
+    ),
   },
   {
     imagePath: "/assets/SocialNetwork.png",
-    text: "Interact with skilled teams of different domains from all over the state",
+    text: (
+      <>
+        <span className="font-bold text-highlight">Network</span> with skilled
+        teams of different domains from all over the state
+      </>
+    ),
   },
   {
     imagePath: "/assets/certificate.svg",
-    text: "Certificates to all the final teams",
+    text: (
+      <>
+        <span className="font-bold text-highlight">Certificates</span> to all
+        the final teams
+      </>
+    ),
   },
   {
-    imagePath: "/assets/interaction.svg",
-    text: "Present your project in front of live audiance",
+    imagePath: "/assets/live-audience.svg",
+    text: (
+      <>
+        Present your project in front of{" "}
+        <span className="font-bold text-highlight">live audience</span>
+      </>
+    ),
   },
 ];
 

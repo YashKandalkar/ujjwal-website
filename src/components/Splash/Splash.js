@@ -7,7 +7,7 @@ const Splash = () => {
       document.querySelector("#quote-container").style.display = "none";
       document.body.style.overflowY = "auto";
       document.querySelector("html").style.overflowY = "auto";
-    }, 5000);
+    }, 2000);
     return () => {
       clearTimeout(timer);
     };

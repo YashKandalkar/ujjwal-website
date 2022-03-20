@@ -17,7 +17,7 @@ const ContactUs = forwardRef((_, ref) => {
         Contact Us
       </h1>
       <p className="font-sora px-4 sm:px-16 mb-28 text-lg text-center text-gray-50">
-        Contact us if you have any queries regaring the event!
+        Contact us if you have any queries regarding the event!
       </p>
       <div className="flex text-xl items-center gap-5 flex-col px-4 sm:px-16">
         <h2 className="text-gray-50 font-sora">
@@ -46,7 +46,7 @@ const ContactUs = forwardRef((_, ref) => {
             href="mailto:aditya.deshpande@gmail.com"
             className="text-highlight"
           >
-            aditya.deshpande@gmail.com
+            aditya15299@gmail.com
           </a>
         </h2>
         <h2 className="text-gray-50 font-sora">
@@ -62,7 +62,7 @@ const ContactUs = forwardRef((_, ref) => {
             href="mailto:aditya.deshpande@gmail.com"
             className="text-highlight"
           >
-            hashir.khan@gmail.com
+            khn24202@gmail.com
           </a>
         </h2>
         <h2 className="text-gray-50 font-sora">

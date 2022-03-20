@@ -102,7 +102,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
           width: "66vmin",
           height: "auto",
           marginBottom: "0px",
-          transitionDelay: "5.7s",
+          transitionDelay: "2.7s",
         }}
         className="absolute bottom-0 -mb10 mx-auto left-0 right-0 "
         alt="adwwd"

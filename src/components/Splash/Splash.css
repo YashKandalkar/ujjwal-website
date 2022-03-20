@@ -1,9 +1,9 @@
 #quote-container {
-  animation: fade-out 1s ease-in-out 4s forwards;
+  animation: fade-out 1s ease-in-out 1s forwards;
 }
 
 #quote-container img {
-  animation: zoom-in 1s ease-in-out 4s forwards;
+  animation: zoom-in 1s ease-in-out 1s forwards;
 }
 
 @keyframes zoom-in {

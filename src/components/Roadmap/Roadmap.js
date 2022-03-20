@@ -25,7 +25,7 @@ const roadmapData = [
     date: "14th April",
   },
   {
-    title: "Round 3",
+    title: "Round 3 - Grand Finale",
     text: "Offline Presentation Round",
     date: "22nd April",
   },

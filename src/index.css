@@ -37,15 +37,15 @@ code {
 
 body [data-aos-delay="5000"][data-aos].aos-animate,
 [data-aos][data-aos][data-aos-delay="5000"].aos-animate {
-  transition-delay: 5s;
+  transition-delay: 2s;
 }
 
 body [data-aos-delay="5300"][data-aos].aos-animate,
 [data-aos][data-aos][data-aos-delay="5300"].aos-animate {
-  transition-delay: 5.3s;
+  transition-delay: 2.3s;
 }
 
 body [data-aos-delay="5700"][data-aos].aos-animate,
 [data-aos][data-aos][data-aos-delay="5700"].aos-animate {
-  transition-delay: 5.7s;
+  transition-delay: 2.7s;
 }
