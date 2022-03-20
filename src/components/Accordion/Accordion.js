@@ -12,13 +12,9 @@ const Accordion = ({ title, content }) => {
     setHeight(!isOpened ? `${contentElement.current.scrollHeight}px` : "0px");
   };
   return (
-    <div onClick={HandleOpening} className="mb-2">
-      <div
-        className={
-          "bg-primaryDark p-4 flex justify-between items-center text-offWhite"
-        }
-      >
-        <h4 className={"font-sora text-xl select-none"}>{title}</h4>
+    <div onClick={HandleOpening} className="mb-2 w-full">
+      <div className={"p-4 flex justify-between items-center text-offWhite"}>
+        <h4 className={"font-sora text-2xl select-none"}>{title}</h4>
 
         <FontAwesomeIcon
           icon={faChevronUp}
@@ -32,9 +28,9 @@ const Accordion = ({ title, content }) => {
       <div
         ref={contentElement}
         style={{ height: height }}
-        className="bg-gray-200 overflow-hidden transition-all duration-200"
+        className="overflow-hidden transition-all duration-200"
       >
-        <p className="p-4 select-none">{content}</p>
+        <p className="p-4 pl-8 text-gray-300 select-none">{content}</p>
       </div>
     </div>
   );

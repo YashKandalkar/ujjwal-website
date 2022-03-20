@@ -30,13 +30,15 @@ const sampleFaqs = [
           of your project, GitHub/other links if any as per the given format.
           On the basis of these, top 50 teams will be shortlisted.
         </p>
-        <h3 className="text-lg font-bold">Round 2 - Online Scrutiny Round:</h3>
+        <h3 className="text-lg mt-4 font-bold">
+          Round 2 - Online Scrutiny Round:
+        </h3>
         <p>
           In this round the shortlisted teams will have to present their
           projects in front of a panel of judges and out of 50, the top 10
           teams will be shortlisted for the finale.
         </p>
-        <h3 className="text-lg font-bold">
+        <h3 className="text-lg mt-4 font-bold">
           Round 3 - Final Presentation Round:
         </h3>
         <p>
@@ -54,12 +56,49 @@ const sampleFaqs = [
   {
     question: "What is the team size limit?",
     answer:
-      "The event is open for under graduate students all over the state of Maharashtra!",
+      "You can form teams of up to 4 members, individual participation is also accepted.",
   },
   {
-    question: "Who all can participate?",
+    question: "Can I submit my previous year project?",
+    answer: "Yes! You can present any project that you made.",
+  },
+  {
+    question: "Is the competition free?",
     answer:
-      "The event is open for under graduate students all over the state of Maharashtra!",
+      "Round 1 is free for everyone, entry for Round 2 will be 200/- per team.",
+  },
+  {
+    question: "Are hardware projects allowed?",
+    answer: "Yes! You can present any technical software/hardware project.",
+  },
+  {
+    question: "Who all can get the participation certificate?",
+    answer:
+      "The teams which will be selected for Round 2 will get the participation certificate",
+  },
+  {
+    question: "Can teams with beginner level projects participate?",
+    answer:
+      "Any team with a beginner level project can participate and seek help from our mentors to improve their project and take it to an advance level.",
+  },
+  {
+    question: "Any more Questions?",
+    answer: (
+      <>
+        Join our Discord server{" "}
+        <a
+          href="https://discord.gg/ff3zQ3vmrj"
+          target={"_blank"}
+          rel="noopener noreferrer"
+          className="text-highlight"
+        >
+          here
+        </a>
+        {". "}
+        Ask any other question you have and connect with a larger community. We
+        look forward to meeting you!
+      </>
+    ),
   },
 ];
 
