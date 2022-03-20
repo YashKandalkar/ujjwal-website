@@ -4,7 +4,11 @@ import { forwardRef } from "react";
 
 const ContactUs = forwardRef((_, ref) => {
   return (
-    <section ref={ref} id="contact-us-container" className="py-16">
+    <section
+      ref={ref}
+      id="contact-us-container"
+      className="py-16 min-h-screen"
+    >
       <h1
         data-aos="zoom-out"
         className="text-gray-100 text-center px-4 sm:px-16 my-10 text-5xl
@@ -12,7 +16,7 @@ const ContactUs = forwardRef((_, ref) => {
       >
         Contact Us
       </h1>
-      <p className="font-sora px-4 sm:px-16 mb-12 text-lg text-center text-gray-50">
+      <p className="font-sora px-4 sm:px-16 mb-28 text-lg text-center text-gray-50">
         Contact us if you have any queries regaring the event!
       </p>
       <div className="flex text-xl items-center gap-5 flex-col px-4 sm:px-16">

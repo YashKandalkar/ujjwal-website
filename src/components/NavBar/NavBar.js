@@ -207,7 +207,7 @@ function NavBar({ inView }) {
               >
                 <Link
                   className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
-                  to="partners-container"
+                  to="contact-us-container"
                   smooth={true}
                   duration={700}
                 >
