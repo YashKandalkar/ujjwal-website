@@ -74,8 +74,10 @@ function App() {
       <Splash />
       <Landing ref={landingRef} fixNavbar={offset >= 60} />
       <Overview ref={overviewRef} />
-      <Benefits ref={benefitsRef} />
-      <Prizes ref={prizesRef} />
+      <div id="benefits-prizes">
+        <Benefits ref={benefitsRef} />
+        <Prizes ref={prizesRef} />
+      </div>
       <Roadmap ref={roadmapRef} />
       <Partners ref={partnersRef} />
       <Team ref={teamRef} />

@@ -13,7 +13,7 @@ function FeaturesItem({ imagePath, text }) {
       }}
     >
       <img src={imagePath} style={{ maxWidth: 150 }} alt="feature icon" />
-      <p className="text-gray-400 pt-4">{text}</p>
+      <p className="text-gray-400 text-sm pt-4">{text}</p>
     </div>
   );
 }

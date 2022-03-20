@@ -29,7 +29,7 @@ const ContactUs = forwardRef((_, ref) => {
             // color={"rgb(96, 165, 250)"}
             className={"mr-2 ml-4"}
           />
-          <a href="mailto:chhaya.pawar@gmail.com" className="text-accent">
+          <a href="mailto:chhaya.pawar@gmail.com" className="text-highlight">
             chhaya.pawar@gmail.com
           </a>
         </h2>
@@ -42,7 +42,10 @@ const ContactUs = forwardRef((_, ref) => {
             // color={"rgb(96, 165, 250)"}
             className={"mr-2 ml-4"}
           />
-          <a href="mailto:aditya.deshpande@gmail.com" className="text-accent">
+          <a
+            href="mailto:aditya.deshpande@gmail.com"
+            className="text-highlight"
+          >
             aditya.deshpande@gmail.com
           </a>
         </h2>
@@ -55,7 +58,10 @@ const ContactUs = forwardRef((_, ref) => {
             // color={"rgb(96, 165, 250)"}
             className={"mr-2 ml-4"}
           />
-          <a href="mailto:aditya.deshpande@gmail.com" className="text-accent">
+          <a
+            href="mailto:aditya.deshpande@gmail.com"
+            className="text-highlight"
+          >
             hashir.khan@gmail.com
           </a>
         </h2>
@@ -68,7 +74,10 @@ const ContactUs = forwardRef((_, ref) => {
             // color={"rgb(96, 165, 250)"}
             className={"mr-2 ml-4"}
           />
-          <a href="mailto:aditya.deshpande@gmail.com" className="text-accent">
+          <a
+            href="mailto:aditya.deshpande@gmail.com"
+            className="text-highlight"
+          >
             manas.buchade@gmail.com
           </a>
         </h2>

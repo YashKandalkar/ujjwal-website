@@ -211,7 +211,7 @@ function NavBar({ inView }) {
                   smooth={true}
                   duration={700}
                 >
-                  <span className="mx-2 text-lg">Contacts</span>
+                  <span className="mx-2 text-lg">Contact</span>
                 </Link>
               </li>
               <li

@@ -36,11 +36,13 @@ const Overview = forwardRef((_, ref) => {
               OVERVIEW
             </h1>
             <p className="mb-3 font-sora mt-6 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
-              Techotsav is a state level project competition for undergraduate
-              engineering students organized by GDSC-DMCE. We believe every
-              engineer has a story to tell! <br />
+              <A b>Techotsav</A> is a state level project competition for
+              undergraduate engineering students organized by{" "}
+              <A>Computer Department DMCE</A> & <A>GDSC-DMCE</A>. <br />
+              We believe every engineer has a story to tell! <br />
               This competition will allow students to consolidate their
-              knowledge and professional skills as well as practice soft skills
+              <A> knowledge</A> and <A>professional skills</A> as well as
+              practice <A>soft skills </A>
               such as communication, presentation, teamwork and problem-solving
               while reinforcing their engineering knowledge hence prepare them
               for industry readiness.
@@ -55,5 +57,9 @@ const Overview = forwardRef((_, ref) => {
     </section>
   );
 });
+
+const A = ({ children, b }) => (
+  <span className={`text-highlight ${b && "font-bold"}`}>{children}</span>
+);
 
 export default Overview;

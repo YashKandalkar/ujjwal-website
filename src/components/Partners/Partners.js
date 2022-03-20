@@ -55,7 +55,7 @@ const Partners = forwardRef((_, ref) => {
           target={`_blank`}
           className="px-8 py-4 bg-primary text-gray-50 font-sora mt-36 rounded-sm text-2xl"
         >
-          Download Brochure
+          View Brochure
         </a>
       </div>
     </section>

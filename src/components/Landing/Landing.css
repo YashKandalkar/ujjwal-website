@@ -1,6 +1,6 @@
 #landing-container {
   /* min-height: calc(100vh - 77.375px); */
-  min-height: 100vh;
+  min-height: 110vh;
   overflow: hidden;
   background-color: transparent;
 }

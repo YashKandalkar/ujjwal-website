@@ -9,11 +9,13 @@ module.exports = {
         offWhite: "#FBE3FF",
         primary: "rgb(138, 66, 255)",
         primaryDark: "#001A5C",
+        highlight: "#0DBE51",
       },
       fontFamily: {
         title: "Uomo Expanded",
         titleBold: "Uomo Expanded Bold",
         sora: "Sora",
+        poppins: "Poppins",
       },
     },
   },

@@ -1,29 +1,25 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-
-function RoadmapItem({ iconPath, title, text, parity }) {
+function RoadmapItem({ title, text, date, parity }) {
   return (
     <div
       className={`
       flex 
       flex-grow
-      items-center
-      justify-end
+      border-accentDark
+      rounded-lg
+      w-full
+      border-2 
       flex-col
-      ${parity % 2 ? "md:flex-row" : "md:flex-row-reverse"}
       `}
       style={{
         alignSelf: parity % 2 ? "self-start" : "self-end",
+        backgroundColor: "#070b28",
       }}
     >
-      {/* <FontAwesomeIcon
-        icon={iconPath}
-        className="text-accent mt-6 text-7xl md:text-9xl mr-2"
-      /> */}
-      {/* <div className="border-2 p-3 rounded-lg text-gray-50 font-sora border-accentDark">
-        <h4 className="text-lg">{title}</h4>
-        <p>{text}</p>
-      </div> */}
+      <div className="p-3 text-base text-gray-50 font-poppins ">
+        <h4 className="text-xl font-bold mb-2">{title}</h4>
+        <p className="text-gray-400">{text}</p>
+        <div className="text-highlight text-base mt-2">{date}</div>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faMedium } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
 
 function Footer() {
@@ -21,10 +21,7 @@ function Footer() {
         />
       </div>
       <div className="flex my-auto flex-col">
-        <p
-          style={{ fontFamily: "'Montserrat', sans-serif" }}
-          className="text-3xl sm:text-4xl text-gray-100 mb-3"
-        >
+        <p className="text-3xl font-sora sm:text-4xl text-gray-100 mb-3">
           Contact Us
         </p>
         <a href="mailto:gdscdmce@gmail.com" className="text-gray-400 text-xl">
@@ -32,10 +29,7 @@ function Footer() {
         </a>
       </div>
       <div className="flex my-auto flex-col">
-        <p
-          style={{ fontFamily: "'Montserrat', sans-serif" }}
-          className="text-3xl sm:text-4xl text-gray-100 mb-3"
-        >
+        <p className="text-3xl font-sora sm:text-4xl text-gray-100 mb-3">
           Socials
         </p>
         <div className="flex justify-items-center sm:justify-start flex-row sm:flex-col">
@@ -52,13 +46,18 @@ function Footer() {
             />
             <p className="text-gray-400 hidden sm:block text-xl">Twitter</p>
           </a>
-          <a href="/" className="flex items-center flex-row mb-1">
+          <a
+            href="https://www.instagram.com/gdsc.dmce/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center flex-row mb-1"
+          >
             <FontAwesomeIcon
-              icon={faMedium}
+              icon={faInstagram}
               className="mr-0 sm:mr-2 text-xl"
               style={{ color: "#1e5ecb" }}
             />
-            <p className="text-gray-400 hidden sm:block text-xl">Medium</p>
+            <p className="text-gray-400 hidden sm:block text-xl">Instagram</p>
           </a>
         </div>
       </div>
