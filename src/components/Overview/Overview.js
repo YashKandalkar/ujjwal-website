@@ -40,7 +40,8 @@ const Overview = forwardRef((_, ref) => {
             <p className="mb-3 font-sora mt-6 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
               <A b>Techotsav</A> is a state level project competition for
               undergraduate engineering students organized by{" "}
-              <A>Computer Department of DMCE </A> & <A>GDSC-DMCE</A>. <br />
+              <A>The Computer Department of DMCE </A> & <A>GDSC-DMCE</A>.{" "}
+              <br />
               We believe every engineer has a story to tell! <br />
               This competition will allow students to consolidate their
               <A> knowledge</A> and <A>professional skills</A> as well as

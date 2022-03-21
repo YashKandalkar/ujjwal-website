@@ -79,6 +79,12 @@ const Roadmap = forwardRef((_, ref) => {
               ))}
             </div>
           </Chrono>
+          <img
+            src="/assets/flag-finish.svg"
+            alt="flag"
+            className="absolute right-0 mx-auto"
+            style={{ width: 40, left: "35px", bottom: -60 }}
+          />
         </div>
       </div>
     </section>
