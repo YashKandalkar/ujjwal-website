@@ -6,7 +6,7 @@ import "./Landing.css";
 const Landing = forwardRef(({ fixNavbar }, ref) => {
   return (
     <section ref={ref} id="landing-container" className="relative">
-      <div className="px-2 mt-10">
+      <div className="px-2 mt-16 sm:mt-10">
         <div className="flex flex-wrap justify-center flex-row items-center justify-items-center content-center">
           <div className="flex flex-col items-center mb-4 sm:mb-16 text-left ">
             {/* <span className="mb-3 text-2xl text-accent font-bold tracking-widest">
@@ -20,9 +20,17 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
                   "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
                 fontWeight: 600,
               }}
-              className="mt-10 font-sora text-offWhite text-base uppercase text-center"
+              className="mt-10 font-sora text-offWhite text-sm uppercase text-center"
             >
-              GDSC-DMCE Presents
+              <span className="text-highlight">
+                Google Developer Student Club
+              </span>{" "}
+              <span className="lowercase">and</span>
+              <br />
+              <span className="text-highlight">
+                the Department of Computer Engineering
+              </span>
+              <span className="lowercase">,</span> DMCE <br /> Presents
             </div>
             <h1
               data-aos="fade-up"
@@ -44,7 +52,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
                   "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
                 fontWeight: 600,
               }}
-              className="mb-3 font-sora text-offWhite text-base uppercase text-center"
+              className="mb-3 font-sora text-offWhite text-sm sm:text-base uppercase text-center"
             >
               Show off your project in front of professionals
             </div>

@@ -40,7 +40,7 @@ const Partners = forwardRef((_, ref) => {
     <section ref={ref} id="partners-container" className="py-16">
       <h1
         data-aos="zoom-out"
-        className="text-gray-100 text-center my-10 text-5xl
+        className="text-gray-100 text-center my-10 text-4xl
         lg:text-6xl uppercase glow font-titleBold"
       >
         Sponsors
@@ -51,9 +51,9 @@ const Partners = forwardRef((_, ref) => {
           <PartnersItem key={index} {...feature} />
         ))} */}
         <a
-          href="https://drive.google.com/file/d/1S9FEx9zOInQ4c4flReuHNqc1tYvwW81I/preview"
+          href="https://drive.google.com/file/d/11z8wQ55-_CrhfFAtPjJzZ1KJbamCvHrC/preview"
           target={`_blank`}
-          className="px-8 py-4 bg-primary text-gray-50 font-sora mt-36 rounded-sm text-2xl"
+          className="px-8 py-4 bg-primary text-gray-50 font-sora mt-36 rounded-sm text-base sm:text-2xl"
         >
           View Brochure
         </a>

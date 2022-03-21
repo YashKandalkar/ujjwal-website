@@ -11,15 +11,15 @@ const ContactUs = forwardRef((_, ref) => {
     >
       <h1
         data-aos="zoom-out"
-        className="text-gray-100 text-center px-4 sm:px-16 my-10 text-5xl
-    lg:text-6xl uppercase glow font-titleBold"
+        className="text-gray-100 text-center px-4 sm:px-16 my-10 text-3xl
+    sm:text-3xl lg:text-6xl uppercase glow font-titleBold"
       >
         Contact Us
       </h1>
-      <p className="font-sora px-4 sm:px-16 mb-28 text-lg text-center text-gray-50">
+      <p className="font-sora px-4 sm:px-16 mb-28 text-base sm:text-lg text-center text-gray-50">
         Contact us if you have any queries regarding the event!
       </p>
-      <div className="flex text-xl gap-5 flex-col px-4 sm:px-16">
+      <div className="flex text-base sm:text-xl gap-5 flex-col px-4 sm:px-16">
         <div className="mx-auto">
           <div>
             <h2 className="text-sm mb-2 text-accent">
@@ -38,7 +38,7 @@ const ContactUs = forwardRef((_, ref) => {
                 href="mailto:chhaya.pawar@gmail.com"
                 className="text-highlight"
               >
-                chhaya.pawar@gmail.com
+                chhaya.pawar@dmce.ac.in
               </a>
             </h2>
           </div>

@@ -9,23 +9,31 @@ function Footer() {
       className="px-18 xl:mt-16 items-center py-20 pt-28 md:pt-16 md:py-0 gap-8 md:gap-0 md:justify-around flex flex-col md:flex-row"
     >
       <div>
-        <img
-          src={"/dmce-logo.png"}
-          alt="logo"
-          className="w-96 h-auto my-auto mb-6"
-        />
-        <img
-          src={"/gdsc-dmce-logo.png"}
-          alt="logo"
-          className="w-96 h-auto my-auto"
-        />
+        <a
+          href="https://dmce.ac.in"
+          target={"_blank"}
+          rel="noopener noreferrer"
+        >
+          <img
+            src={"/dmce-logo.png"}
+            alt="logo"
+            className="w-96 h-auto my-auto mb-6"
+          />
+        </a>
+        <a href="/">
+          <img
+            src={"/gdsc-dmce-logo.png"}
+            alt="logo"
+            className="w-96 h-auto my-auto"
+          />
+        </a>
       </div>
       <div className="flex my-auto flex-col">
         <p className="text-3xl font-sora sm:text-4xl text-gray-100 mb-3">
           Contact Us
         </p>
-        <a href="mailto:gdscdmce@gmail.com" className="text-gray-400 text-xl">
-          gdscdmce@gmail.com
+        <a href="mailto:gdsc@dmce.ac.in" className="text-gray-400 text-xl">
+          gdsc@dmce.ac.in
         </a>
       </div>
       <div className="flex my-auto flex-col">

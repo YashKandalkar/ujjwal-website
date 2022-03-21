@@ -5,28 +5,28 @@ import "./Roadmap.css";
 
 const roadmapData = [
   {
-    title: "Registration (Round 1)",
+    title: "Registration",
     text: "Teams will register on a Google Form",
     date: "22nd March - 5th April",
   },
   {
-    title: "Round 1 Results",
-    text: "Top 50 teams will be selected for Round 2",
+    title: "Shortlisting Round",
+    text: "Top 50 teams will be selected for Online Scrutiny",
     date: "10th April",
   },
   {
-    title: "Round 2",
-    text: "Online Presentation Round",
+    title: "Online Scrutiny",
+    text: "The selected teams will present their project in an online meet",
     date: "11th - 13th April",
   },
   {
-    title: "Round 2 - Results",
-    text: "Top 10 teams will be selected for Round 3",
+    title: "Online Scrutiny Results",
+    text: "Top 10 teams will be selected for the Grand Finale",
     date: "14th April",
   },
   {
-    title: "Round 3 - Grand Finale",
-    text: "Offline Presentation Round",
+    title: "Grand Finale",
+    text: "The selected teams will present their project at DMCE",
     date: "22nd April",
   },
   {

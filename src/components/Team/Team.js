@@ -51,7 +51,7 @@ const Team = forwardRef((_, ref) => {
     <section ref={ref} id="team-container" className="py-16">
       <h1
         data-aos="zoom-out"
-        className="text-gray-100 text-center my-10 text-5xl
+        className="text-gray-100 text-center my-10 text-3xl
         lg:text-6xl uppercase glow font-titleBold"
       >
         Organizers
