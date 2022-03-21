@@ -59,6 +59,20 @@ function Footer() {
             />
             <p className="text-gray-400 hidden sm:block text-xl">Instagram</p>
           </a>
+          <a
+            href="https://www.linkedin.com/company/gdsc-dmce/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center flex-row mb-1"
+          >
+            <img
+              src={"/assets/icons8-linkedin.svg"}
+              alt="linkedin"
+              className="mr-0 sm:mr-2 text-xl"
+              style={{ color: "#1e5ecb", width: 22, height: 22 }}
+            />
+            <p className="text-gray-400 hidden sm:block text-xl">Linkedin</p>
+          </a>
         </div>
       </div>
     </footer>

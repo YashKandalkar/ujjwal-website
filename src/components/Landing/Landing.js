@@ -46,7 +46,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               }}
               className="mb-3 font-sora text-offWhite text-base uppercase text-center"
             >
-              Show off your project in front of professionals!
+              Show off your project in front of professionals
             </div>
             <div
               data-aos="fade-up"
@@ -54,7 +54,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               className="text-center mt-4"
             >
               <span className="mb-3 text-center text-4xl text-accent font-bold tracking-widest">
-                22<sup>nd</sup> March - 22<sup>nd</sup> April
+                5<sup>th</sup> - 22<sup>nd</sup> April
               </span>
             </div>
           </div>

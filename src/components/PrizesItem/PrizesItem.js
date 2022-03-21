@@ -21,7 +21,7 @@ const PrizesItem = ({ imagePath, text, prize }) => {
           <p className="text-gray-200 pt-4 text-3xl">{text}</p>
         </div>
         <div
-          className="prizeFront rounded-lg shadow-2xl px-5 py-6 text-gray-50"
+          className="prizeFront flex items-center justify-center text-center rounded-lg shadow-2xl px-5 py-6 text-gray-50"
           style={{ backgroundColor: "rgb(29, 56, 107)" }}
         >
           Win Exciting cash prizes & Swags!

@@ -62,9 +62,7 @@ const ContactUs = forwardRef((_, ref) => {
             </h2>
           </div>
           <div className="mt-8">
-            <h2 className="text-sm mb-2 text-accent">
-              GDSC DMCE Faculty Advisor
-            </h2>
+            <h2 className="text-sm mb-2 text-accent">Collaboration Lead</h2>
             <h2 className="text-gray-50 font-sora">
               Hashir Khan:{" "}
               <FontAwesomeIcon icon={faPhone} className={"mr-2 ml-4"} />
@@ -83,9 +81,7 @@ const ContactUs = forwardRef((_, ref) => {
             </h2>
           </div>
           <div className="mt-8">
-            <h2 className="text-sm mb-2 text-accent">
-              GDSC DMCE Faculty Advisor
-            </h2>
+            <h2 className="text-sm mb-2 text-accent">Social Media Lead</h2>
             <h2 className="text-gray-50 font-sora">
               Manas Buchade:{" "}
               <FontAwesomeIcon icon={faPhone} className={"mr-2 ml-4"} />
