@@ -7,8 +7,8 @@ const sampleFaqs = [
     answer: (
       <>
         <p>
-          Technotsav is a state level project presentation competition
-          organised by GDSC -DMCE and Dept of Computer Engineering.
+          Techotsav is a state level project presentation competition organised
+          by GDSC -DMCE and Dept of Computer Engineering.
         </p>
 
         <p>
@@ -23,24 +23,20 @@ const sampleFaqs = [
     question: "What are the different rounds?",
     answer: (
       <>
-        <h3 className="text-lg font-bold">Round 1 - Registration process:</h3>
+        <h3 className="text-lg font-bold">Registration process:</h3>
         <p>
           Here participants will have to submit their project related details
           for e.g. project abstract, presentation, a 2 min video demonstration
           of your project, GitHub/other links if any as per the given format.
           On the basis of these, top 50 teams will be shortlisted.
         </p>
-        <h3 className="text-lg mt-4 font-bold">
-          Round 2 - Online Scrutiny Round:
-        </h3>
+        <h3 className="text-lg mt-4 font-bold">Online Scrutiny Round:</h3>
         <p>
           In this round the shortlisted teams will have to present their
           projects in front of a panel of judges and out of 50, the top 10
           teams will be shortlisted for the finale.
         </p>
-        <h3 className="text-lg mt-4 font-bold">
-          Round 3 - Final Presentation Round:
-        </h3>
+        <h3 className="text-lg mt-4 font-bold">Final Presentation Round:</h3>
         <p>
           The Top 10 finalists will have to present their prototypes in front
           of eminent industry experts and they will declare the top 3 projects.
@@ -65,7 +61,7 @@ const sampleFaqs = [
   {
     question: "Is the competition free?",
     answer:
-      "Round 1 is free for everyone, entry for Round 2 will be 200/- per team.",
+      "Registration is free for everyone, entry for Online Scrutiny Round will be 200/- per team.",
   },
   {
     question: "Are hardware projects allowed?",
@@ -74,7 +70,7 @@ const sampleFaqs = [
   {
     question: "Who all can get the participation certificate?",
     answer:
-      "The teams which will be selected for Round 2 will get the participation certificate",
+      "The teams which will be selected for Online Scrutiny Round will get the participation certificate",
   },
   {
     question: "Can teams with beginner level projects participate?",

@@ -30,7 +30,7 @@ const Accordion = ({ title, content }) => {
         style={{ height: height }}
         className="overflow-hidden transition-all duration-200"
       >
-        <p className="p-4 pl-8 text-gray-300 select-none">{content}</p>
+        <div className="p-4 pl-8 text-gray-300 select-none">{content}</div>
       </div>
     </div>
   );

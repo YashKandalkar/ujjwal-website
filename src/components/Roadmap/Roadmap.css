@@ -4,7 +4,8 @@
     rgba(147, 90, 237, 0.32) 0%,
     rgba(148, 90, 237, 0) 114%
   );
-  min-height: 220vh;
+  /* min-height: 220vh; */
+  padding-bottom: 4rem;
   background-color: transparent;
   /* background by SVGBackgrounds.com */
 }
@@ -59,4 +60,19 @@ timeline-main-wrapper {
 
 .timeline-card-content {
   min-height: auto !important;
+}
+
+@media only screen and (max-width: 640px) {
+  .vertical_alternating {
+    margin-top: 0px !important;
+  }
+
+  .vertical_alternating ::after {
+    height: 100% !important;
+    top: 0px !important;
+  }
+
+  .timeline-card-content {
+    height: auto !important;
+  }
 }

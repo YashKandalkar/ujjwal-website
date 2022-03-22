@@ -25,78 +25,102 @@ const ContactUs = forwardRef((_, ref) => {
             <h2 className="text-sm mb-2 text-accent">
               GDSC DMCE Faculty Advisor
             </h2>
-            <h2 className="text-gray-50 font-sora">
+            <h2 className="text-gray-50 flex flex-col lg:flex-row font-sora">
               Dr. Chhaya Pawar:{" "}
-              <FontAwesomeIcon icon={faPhone} className={"mr-2 ml-4"} />
-              9930998699,
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                // color={"rgb(96, 165, 250)"}
-                className={"mr-2 ml-4"}
-              />
-              <a
-                href="mailto:chhaya.pawar@gmail.com"
-                className="text-highlight"
-              >
-                chhaya.pawar@dmce.ac.in
-              </a>
+              <span className="flex flex-col sm:flex-row">
+                <span>
+                  <FontAwesomeIcon icon={faPhone} className={"mr-2 ml-4"} />
+                  9930998699,
+                </span>
+                <span>
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    // color={"rgb(96, 165, 250)"}
+                    className={"mr-2 ml-4"}
+                  />
+                  <a
+                    href="mailto:chhaya.pawar@gmail.com"
+                    className="text-highlight"
+                  >
+                    chhaya.pawar@dmce.ac.in
+                  </a>
+                </span>
+              </span>
             </h2>
           </div>
           <div className="mt-8">
             <h2 className="text-sm mb-2 text-accent">GDSC DMCE Lead</h2>
-            <h2 className="text-gray-50 font-sora">
+            <h2 className="text-gray-50 flex flex-col lg:flex-row font-sora">
               Aditya Deshpande:{" "}
-              <FontAwesomeIcon icon={faPhone} className={"mr-2 ml-4"} />
-              7506188799,
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                // color={"rgb(96, 165, 250)"}
-                className={"mr-2 ml-4"}
-              />
-              <a
-                href="mailto:aditya.deshpande@gmail.com"
-                className="text-highlight"
-              >
-                aditya15299@gmail.com
-              </a>
+              <span className="flex flex-col sm:flex-row">
+                <span>
+                  <FontAwesomeIcon icon={faPhone} className={"mr-2 ml-4"} />
+                  7506188799,
+                </span>
+                <span>
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    // color={"rgb(96, 165, 250)"}
+                    className={"mr-2 ml-4"}
+                  />
+                  <a
+                    href="mailto:aditya.deshpande@gmail.com"
+                    className="text-highlight"
+                  >
+                    aditya15299@gmail.com
+                  </a>
+                </span>
+              </span>
             </h2>
           </div>
           <div className="mt-8">
             <h2 className="text-sm mb-2 text-accent">Collaboration Lead</h2>
-            <h2 className="text-gray-50 font-sora">
+            <h2 className="text-gray-50 flex flex-col lg:flex-row font-sora">
               Hashir Khan:{" "}
-              <FontAwesomeIcon icon={faPhone} className={"mr-2 ml-4"} />
-              8828443231,
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                // color={"rgb(96, 165, 250)"}
-                className={"mr-2 ml-4"}
-              />
-              <a
-                href="mailto:aditya.deshpande@gmail.com"
-                className="text-highlight"
-              >
-                khn24202@gmail.com
-              </a>
+              <span className="flex flex-col sm:flex-row">
+                <span>
+                  <FontAwesomeIcon icon={faPhone} className={"mr-2 ml-4"} />
+                  8828443231,
+                </span>
+                <span>
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    // color={"rgb(96, 165, 250)"}
+                    className={"mr-2 ml-4"}
+                  />
+                  <a
+                    href="mailto:aditya.deshpande@gmail.com"
+                    className="text-highlight"
+                  >
+                    khn24202@gmail.com
+                  </a>
+                </span>
+              </span>
             </h2>
           </div>
           <div className="mt-8">
             <h2 className="text-sm mb-2 text-accent">Social Media Lead</h2>
-            <h2 className="text-gray-50 font-sora">
+            <h2 className="text-gray-50 flex flex-col lg:flex-row font-sora">
               Manas Buchade:{" "}
-              <FontAwesomeIcon icon={faPhone} className={"mr-2 ml-4"} />
-              8097081182,
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                // color={"rgb(96, 165, 250)"}
-                className={"mr-2 ml-4"}
-              />
-              <a
-                href="mailto:aditya.deshpande@gmail.com"
-                className="text-highlight"
-              >
-                manas.buchade@gmail.com
-              </a>
+              <span className="flex flex-col sm:flex-row">
+                <span>
+                  <FontAwesomeIcon icon={faPhone} className={"mr-2 ml-4"} />
+                  8097081182,
+                </span>
+                <span>
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    // color={"rgb(96, 165, 250)"}
+                    className={"mr-2 ml-4"}
+                  />
+                  <a
+                    href="mailto:aditya.deshpande@gmail.com"
+                    className="text-highlight"
+                  >
+                    manas.buchade@gmail.com
+                  </a>
+                </span>
+              </span>
             </h2>
           </div>
         </div>

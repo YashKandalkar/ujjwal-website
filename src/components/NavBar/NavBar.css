@@ -5,14 +5,70 @@
   border-bottom: #ff9def solid 2px;
 }
 
+.nav-item {
+  margin: 2px 0;
+}
+
 .nav-item:hover {
   color: #ff9def;
   cursor: pointer;
   border-top: #ff9def solid 2px;
   border-bottom: #ff9def solid 2px;
+  margin-top: -2px !important;
+  margin-bottom: -2px !important;
 }
 
 .navbar-item-in-view {
   border-top: #ff9def solid 2px;
   border-bottom: #ff9def solid 2px;
+  margin-top: -2px !important;
+  margin-bottom: -2px !important;
+}
+
+nav li:nth-child(1) {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeDown 0.3s ease-in-out forwards;
+}
+
+nav li:nth-child(2) {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeDown 0.3s ease-in-out forwards;
+}
+
+nav li:nth-child(3) {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeDown 0.3s ease-in-out forwards;
+}
+
+nav li:nth-child(4) {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeDown 0.3s ease-in-out forwards;
+}
+
+nav li:nth-child(5) {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeDown 0.3s ease-in-out forwards;
+}
+
+nav li:nth-child(6) {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeDown 0.3s ease-in-out forwards;
+}
+
+/* fade down animation */
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

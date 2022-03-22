@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-AOS.init({ delay: 350, duration: 1000 });
+AOS.init({ delay: 350, duration: 500 });
 
 ReactDOM.render(
   <React.StrictMode>

@@ -61,7 +61,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               data-aos-delay="5300"
               className="text-center mt-4"
             >
-              <span className="mb-3 text-center text-4xl text-accent font-bold tracking-widest">
+              <span className="mb-3 text-center text-2xl sm:text-4xl text-accent font-bold tracking-widest">
                 5<sup>th</sup> - 22<sup>nd</sup> April
               </span>
             </div>
@@ -92,7 +92,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
             fontWeight: 600,
           }}
-          className="bg-purple-500 hover:bg-purple-400 border-b-4 border-purple-700 hover:border-purple-500 text-xl text-gray-50 font-titleBold text-center py-4 px-14 rounded mt-16"
+          className="bg-purple-500 hover:bg-purple-400 border-b-4 border-purple-700 hover:border-purple-500 text-xl text-gray-50 font-titleBold text-center py-2 px-8 sm:py-4 sm:px-14 rounded mt-2 sm:mt-16"
         >
           REGISTER
         </a>

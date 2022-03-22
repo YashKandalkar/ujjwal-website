@@ -51,11 +51,13 @@ const Roadmap = forwardRef((_, ref) => {
           <img
             src="/assets/flag.svg"
             alt="flag"
-            className="absolute right-0 mx-auto"
+            className="hidden sm:block absolute right-0 mx-auto"
             style={{ width: 40, left: "36px", top: 6 }}
           />
           <Chrono
-            mode="VERTICAL_ALTERNATING"
+            mode={
+              window.innerWidth > 640 ? "VERTICAL_ALTERNATING" : "VERTICAL"
+            }
             hideControls
             theme={{
               cardBgColor: "rgb(145, 81, 192)",
@@ -82,7 +84,7 @@ const Roadmap = forwardRef((_, ref) => {
           <img
             src="/assets/flag-finish.svg"
             alt="flag"
-            className="absolute right-0 mx-auto"
+            className="hidden sm:block absolute right-0 mx-auto"
             style={{ width: 40, left: "35px", bottom: -60 }}
           />
         </div>

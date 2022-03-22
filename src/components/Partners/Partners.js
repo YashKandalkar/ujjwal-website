@@ -51,7 +51,7 @@ const Partners = forwardRef((_, ref) => {
           <PartnersItem key={index} {...feature} />
         ))} */}
         <a
-          href="https://drive.google.com/file/d/11z8wQ55-_CrhfFAtPjJzZ1KJbamCvHrC/preview"
+          href="https://drive.google.com/file/d/1XRi2ORFM28gPv_8lsmuPC7b9NCxUMFLp/preview"
           target={`_blank`}
           className="px-8 py-4 bg-primary text-gray-50 font-sora mt-36 rounded-sm text-base sm:text-2xl"
         >

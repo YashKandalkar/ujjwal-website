@@ -69,7 +69,7 @@ const Team = forwardRef((_, ref) => {
           }
         />
       </div>
-      <div className="flex flex-wrap justify-items-center justify-center flex-row px-4 sm:px-16">
+      <div className="overflow-x-auto flex-nowrap whitespace-nowrap mx-4 sm:mx-16">
         {teamMembers.map((feature, index) => (
           <TeamMember key={index} {...feature} imagePath={teamImages[index]} />
         ))}

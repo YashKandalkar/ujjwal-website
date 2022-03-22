@@ -1,3 +1,5 @@
+import "./RoadmapItem.css";
+
 function RoadmapItem({ title, text, date, parity }) {
   return (
     <div
