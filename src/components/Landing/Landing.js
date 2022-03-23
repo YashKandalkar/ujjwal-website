@@ -9,9 +9,6 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
       <div className="px-2 mt-16 sm:mt-10">
         <div className="flex flex-wrap justify-center flex-row items-center justify-items-center content-center">
           <div className="flex flex-col items-center mb-4 sm:mb-16 text-left ">
-            {/* <span className="mb-3 text-2xl text-accent font-bold tracking-widest">
-              1-2nd April
-            </span> */}
             <div
               data-aos="fade-up"
               data-aos-delay="5300"
@@ -92,7 +89,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
             fontWeight: 600,
           }}
-          className="bg-purple-500 hover:bg-purple-400 border-b-4 border-purple-700 hover:border-purple-500 text-xl text-gray-50 font-titleBold text-center py-2 px-8 sm:py-4 sm:px-14 rounded mt-2 sm:mt-16"
+          className="bg-purple-500 hover:bg-purple-400 border-b-4 border-purple-700 hover:border-purple-500 text-xl text-gray-50 font-titleBold text-center py-2 px-8 sm:py-4 sm:px-14 rounded mt-16"
         >
           REGISTER
         </a>
@@ -100,12 +97,10 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
 
       <img
         data-aos="fade-up"
-        data-aos-offset="-100"
+        data-aos-offset="-900"
         src="/assets/circle-mountain.png"
         id="bg-circle"
         style={{
-          // backgroundColor: "rgba(200, 200, 200, 0.93)",
-          // clipPath: "ellipse(60px 40px at 75px 30px);",
           zIndex: -2,
           width: "66vmin",
           height: "auto",

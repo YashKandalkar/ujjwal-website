@@ -7,7 +7,7 @@ const roadmapData = [
   {
     title: "Registration",
     text: "Teams will register on a Google Form",
-    date: "22nd March - 5th April",
+    date: "25th March - 5th April",
   },
   {
     title: "Shortlisting Round",

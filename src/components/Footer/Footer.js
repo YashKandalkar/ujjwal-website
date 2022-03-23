@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer
       id="footer"
-      className="px-18 xl:mt-16 items-center py-20 pt-28 md:pt-16 md:py-0 gap-8 md:gap-0 md:justify-around flex flex-col md:flex-row"
+      className="px-6 xl:mt-16 items-center py-20 pt-28 md:pt-16 md:py-0 gap-8 md:justify-around flex flex-col md:flex-row"
     >
       <div>
         <a
@@ -35,6 +35,16 @@ function Footer() {
         <a href="mailto:gdsc@dmce.ac.in" className="text-gray-400 text-xl">
           gdsc@dmce.ac.in
         </a>
+        <hr className="border-gray-500 my-2" />
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <p className="text-gray-400">
+            DATTA MEGHE COLLEGE OF ENGINEERING <br />
+            SEC-3, AIROLI, NAVI MUMBAI
+            <br />
+            MAHARASHTRA - 400708 <br />
+            INDIA <br />
+          </p>
+        </div>
       </div>
       <div className="flex my-auto flex-col">
         <p className="text-3xl font-sora sm:text-4xl text-gray-100 mb-3">
@@ -62,7 +72,7 @@ function Footer() {
           >
             <FontAwesomeIcon
               icon={faInstagram}
-              className="mr-0 sm:mr-2 text-xl"
+              className="mr-4 sm:mr-2 text-xl"
               style={{ color: "#1e5ecb" }}
             />
             <p className="text-gray-400 hidden sm:block text-xl">Instagram</p>
