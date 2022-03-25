@@ -36,7 +36,7 @@ function Footer() {
           gdsc@dmce.ac.in
         </a>
         <hr className="border-gray-500 my-2" />
-        <div class="col-lg-3 col-md-6 footer-contact">
+        <div className="col-lg-3 col-md-6 footer-contact">
           <p className="text-gray-400">
             DATTA MEGHE COLLEGE OF ENGINEERING <br />
             SEC-3, AIROLI, NAVI MUMBAI

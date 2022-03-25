@@ -1,4 +1,5 @@
 import React, { forwardRef } from "react";
+import Mascot from "../Mascot/Mascot";
 import "./Overview.css";
 
 const Overview = forwardRef((_, ref) => {
@@ -8,19 +9,17 @@ const Overview = forwardRef((_, ref) => {
       id="overview-container"
       className="flex bg-primaryDark items-center"
     >
-      <div className="px-4 py-12 w-full sm:px-6 md:px-12 lg:py-24">
-        <div className="flex  lg:justify-around flex-col-reverse lg:flex-row items-center">
-          <div
-            data-aos="fade-right"
-            data-aos-duration="500"
-            data-aos-delay="100"
-            className="mx-auto max-w-lg lg:max-w-lg 2xl:max-w-screen-md flex xl:mt-0"
+      <div className="px-4 pt-12 w-full sm:px-6 md:px-12 lg:pt-24">
+        <div className="flex lg:justify-around flex-col lg:flex-row items-center">
+          <h1
+            className={`glow mb-3 block lg:hidden mt-5 text-gray-100 mx-auto
+                lg:mx-0 text-4xl lg:text-5xl 
+              `}
           >
-            <img
-              className="object-cover z-0  object-center rounded-lg"
-              alt="hero"
-              src="/assets/teacher-student.png"
-            />
+            OVERVIEW
+          </h1>
+          <div style={{ height: 320, maxWidth: 400 }}>
+            <Mascot />
           </div>
           <div
             data-aos="fade-left"
@@ -31,7 +30,7 @@ const Overview = forwardRef((_, ref) => {
             lg:mb-16 ml-0 lg:ml-4"
           >
             <h1
-              className={`glow mb-3 text-gray-100 mx-auto
+              className={`glow mb-3 hidden lg:block text-gray-100 mx-auto
                 lg:mx-0 text-4xl lg:text-5xl 
               `}
             >

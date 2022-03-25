@@ -52,11 +52,11 @@ const benefits = [
 
 const Benefits = forwardRef((_, ref) => {
   return (
-    <section ref={ref} id="features-container" className="py-16">
+    <section ref={ref} id="features-container" className="pb-16">
       <h1
         data-aos="fade-down"
         className="
-        text-gray-100 text-center mt-10 text-5xl
+        text-gray-100 text-center text-5xl
         lg:text-6xl uppercase glow font-titleBold
         "
       >
