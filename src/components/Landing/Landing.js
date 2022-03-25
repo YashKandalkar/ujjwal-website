@@ -83,7 +83,9 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
         className="flex justify-center"
       >
         <a
-          href="/"
+          href="https://forms.gle/sMYCAmAFRpvrE66m9"
+          target={"_blank"}
+          rel="noopener noreferrer"
           style={{
             textShadow:
               "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
