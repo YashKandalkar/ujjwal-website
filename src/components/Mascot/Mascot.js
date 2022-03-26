@@ -2,7 +2,7 @@ import React, { useRef, useState, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useAnimations, useGLTF } from "@react-three/drei";
 
-function Scene({ canvasRef, setCanvasHovered, ...props }) {
+function Scene({ canvasRef, setText, setCanvasHovered, ...props }) {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [canvasCenter, setCanvasCenter] = useState({ x: 0, y: 0 });
   const group = useRef();
@@ -42,7 +42,11 @@ function Scene({ canvasRef, setCanvasHovered, ...props }) {
   return (
     <group
       onPointerOver={() => setCanvasHovered(true)}
-      onPointerOut={() => setCanvasHovered(false)}
+      onPointerOut={() => {
+        setCanvasHovered(false);
+        setText("Hello! I am Luna!");
+      }}
+      onClick={() => setText("Register for Techotsav!")}
       ref={group}
       {...props}
       dispose={null}
@@ -191,6 +195,7 @@ function Scene({ canvasRef, setCanvasHovered, ...props }) {
 const Mascot = () => {
   const canvasRef = useRef();
   const [canvasHovered, setCanvasHovered] = useState(false);
+  const [text, setText] = useState("Hello! I am Luna!");
 
   return (
     <>
@@ -199,8 +204,12 @@ const Mascot = () => {
           className="absolute animate-fadeUp text-xl text-accent text-center -top-10 flex justify-center"
           style={{ width: canvasRef.current?.clientWidth || 300 }}
         >
-          <span className="rounded-lg p-2 z-50 backdrop-filter backdrop-blur-xl">
-            Hello! I am Luna!
+          <span
+            className={`rounded-lg p-2 z-50 backdrop-filter backdrop-blur-xl ${
+              text.startsWith("Hello") ? "text-accent" : "text-highlight"
+            }`}
+          >
+            {text}
           </span>
         </div>
       )}
@@ -224,6 +233,7 @@ const Mascot = () => {
         <Suspense fallback={"Loading"}>
           <Scene
             setCanvasHovered={setCanvasHovered}
+            setText={setText}
             canvasRef={canvasRef}
             scale={3.3}
           />
