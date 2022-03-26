@@ -191,7 +191,17 @@ const Mascot = () => {
       style={{ height: "100%" }}
       camera={{ position: [0, 0, 10] }}
     >
-      <pointLight intensity={0.4} position={[100, 200, 200]} />
+      <directionalLight
+        intensity={1.3}
+        position={[200, 400, 400]}
+        color={"#C097DE"}
+      />
+      <directionalLight
+        intensity={0.7}
+        position={[-100, -200, 200]}
+        color={"#C097DE"}
+      />
+      {/* <directionalLight intensity={0.01} position={[-100, -200, 200]} /> */}
       <Suspense fallback={"Loading"}>
         <Scene canvasRef={canvasRef} scale={3.3} />
       </Suspense>

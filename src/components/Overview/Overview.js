@@ -18,7 +18,12 @@ const Overview = forwardRef((_, ref) => {
           >
             OVERVIEW
           </h1>
-          <div style={{ height: 320, maxWidth: 400 }}>
+          <div
+            style={{
+              height: window.innerWidth > 480 ? 320 : 180,
+              maxWidth: 400,
+            }}
+          >
             <Mascot />
           </div>
           <div
