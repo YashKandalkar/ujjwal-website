@@ -17,6 +17,23 @@ module.exports = {
         sora: "Sora",
         poppins: "Poppins",
       },
+      animation: {
+        fadeUp: "fadeUp 0.1s ease-in-out forwards",
+      },
+
+      keyframes: (theme) => ({
+        fadeUp: {
+          "0%": {
+            transform: "translateY(-12px)",
+            backdropFilter: "blur(5px)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: 1,
+            backdropFilter: "blur(5px)",
+          },
+        },
+      }),
     },
   },
   variants: {

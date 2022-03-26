@@ -2,7 +2,7 @@ import React, { useRef, useState, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useAnimations, useGLTF } from "@react-three/drei";
 
-function Scene({ canvasRef, ...props }) {
+function Scene({ canvasRef, setCanvasHovered, ...props }) {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [canvasCenter, setCanvasCenter] = useState({ x: 0, y: 0 });
   const group = useRef();
@@ -40,7 +40,13 @@ function Scene({ canvasRef, ...props }) {
   }, [actions, canvasRef]);
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group
+      onPointerOver={() => setCanvasHovered(true)}
+      onPointerOut={() => setCanvasHovered(false)}
+      ref={group}
+      {...props}
+      dispose={null}
+    >
       <group position={[0, -1.5, 0]}>
         <group>
           <group position={[0, 2.08, 0]}>
@@ -184,28 +190,46 @@ function Scene({ canvasRef, ...props }) {
 
 const Mascot = () => {
   const canvasRef = useRef();
+  const [canvasHovered, setCanvasHovered] = useState(false);
+
   return (
-    <Canvas
-      ref={canvasRef}
-      shadows
-      style={{ height: "100%" }}
-      camera={{ position: [0, 0, 10] }}
-    >
-      <directionalLight
-        intensity={1.3}
-        position={[200, 400, 400]}
-        color={"#C097DE"}
-      />
-      <directionalLight
-        intensity={0.7}
-        position={[-100, -200, 200]}
-        color={"#C097DE"}
-      />
-      {/* <directionalLight intensity={0.01} position={[-100, -200, 200]} /> */}
-      <Suspense fallback={"Loading"}>
-        <Scene canvasRef={canvasRef} scale={3.3} />
-      </Suspense>
-    </Canvas>
+    <>
+      {canvasHovered && (
+        <div
+          className="absolute animate-fadeUp text-xl text-accent text-center -top-10 flex justify-center"
+          style={{ width: canvasRef.current?.clientWidth || 300 }}
+        >
+          <span className="rounded-lg p-2 z-50 backdrop-filter backdrop-blur-xl">
+            Hello! I am Luna!
+          </span>
+        </div>
+      )}
+      <Canvas
+        ref={canvasRef}
+        shadows
+        style={{ height: "100%" }}
+        camera={{ position: [0, 0, 10] }}
+      >
+        <directionalLight
+          intensity={1.3}
+          position={[200, 400, 400]}
+          color={"#C097DE"}
+        />
+        <directionalLight
+          intensity={0.7}
+          position={[-100, -200, 200]}
+          color={"#C097DE"}
+        />
+        {/* <directionalLight intensity={0.01} position={[-100, -200, 200]} /> */}
+        <Suspense fallback={"Loading"}>
+          <Scene
+            setCanvasHovered={setCanvasHovered}
+            canvasRef={canvasRef}
+            scale={3.3}
+          />
+        </Suspense>
+      </Canvas>
+    </>
   );
 };
 

@@ -19,6 +19,7 @@ const Overview = forwardRef((_, ref) => {
             OVERVIEW
           </h1>
           <div
+            className="relative"
             style={{
               height: window.innerWidth > 480 ? 320 : 180,
               maxWidth: 400,
