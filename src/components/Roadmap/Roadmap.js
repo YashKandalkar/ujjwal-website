@@ -7,7 +7,7 @@ const roadmapData = [
   {
     title: "Registration",
     text: "Teams will register on a Google Form",
-    date: "25th March - 5th April",
+    date: "25th March - 8th April",
   },
   {
     title: "Shortlisting Round",
@@ -27,12 +27,12 @@ const roadmapData = [
   {
     title: "Grand Finale",
     text: "The selected teams will present their project at DMCE",
-    date: "22nd April",
+    date: "21st April",
   },
   {
     title: "Final Results",
     text: "Top 3 teams will be announced on the spot!",
-    date: "22nd April",
+    date: "21st April",
   },
 ];
 
@@ -72,8 +72,9 @@ const Roadmap = forwardRef((_, ref) => {
               />
             ))}
             <div className="chrono-icons">
-              {roadmapData.map(() => (
+              {roadmapData.map((_, ind) => (
                 <img
+                  key={"roadmap-icon-" + ind}
                   src="/assets/star.png"
                   style={{ marginTop: 2 }}
                   alt="star"

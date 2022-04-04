@@ -35,12 +35,24 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               style={{
                 textShadow:
                   "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
-                lineHeight: "105px",
+                lineHeight: "80px",
               }}
               className="font-titleBold text-offWhite text-3xl sm:text-6xl lg:text-6xl"
             >
               Techotsav '22
             </h1>
+            <div
+              // data-aos="fade-up"
+              data-aos-delay="5300"
+              style={{
+                textShadow:
+                  "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
+                fontWeight: 600,
+              }}
+              className="mb-3 font-sora text-highlight text-sm sm:text-base uppercase text-left"
+            >
+              Powered by Ugam, a Merkle Company
+            </div>
             <div
               data-aos="fade-up"
               data-aos-delay="5300"
@@ -49,7 +61,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
                   "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
                 fontWeight: 600,
               }}
-              className="mb-3 font-sora text-offWhite text-sm sm:text-base uppercase text-center"
+              className="mb-1 font-sora text-offWhite text-sm sm:text-base uppercase text-center"
             >
               Show off your project in front of professionals
             </div>
@@ -59,7 +71,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               className="text-center mt-4"
             >
               <span className="mb-3 text-center text-2xl sm:text-4xl text-accent font-bold tracking-widest">
-                5<sup>th</sup> - 22<sup>nd</sup> April
+                5<sup>th</sup> - 21<sup>st</sup> April
               </span>
             </div>
           </div>

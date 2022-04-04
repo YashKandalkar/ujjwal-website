@@ -71,7 +71,7 @@ function App() {
   return (
     <div className="App">
       <NavBar inView={inView} fixNavbar={offset >= 60} />
-      <Splash />
+      {/* <Splash /> */}
       <Landing ref={landingRef} fixNavbar={offset >= 60} />
       <Overview ref={overviewRef} />
       <div id="benefits-prizes">
