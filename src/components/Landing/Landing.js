@@ -11,7 +11,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
           <div className="flex flex-col items-center mb-4 sm:mb-16 text-left ">
             <div
               data-aos="fade-up"
-              data-aos-delay="5300"
+              data-aos-delay="4900"
               style={{
                 textShadow:
                   "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
@@ -42,7 +42,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               Techotsav '22
             </h1>
             <div
-              // data-aos="fade-up"
+              data-aos="fade-up"
               data-aos-delay="5300"
               style={{
                 textShadow:

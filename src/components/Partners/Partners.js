@@ -4,7 +4,7 @@ import "./Partners.css";
 
 const partners = [
   {
-    imagePath: "/assets/Ugam.png",
+    imagePath: "/assets/Ugam.svg",
     name: "Ugam",
     type: "Title Sponsor",
     url: "https://www.ugamsolutions.com/",

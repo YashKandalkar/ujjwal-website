@@ -79,7 +79,9 @@ const Prizes = forwardRef((_, ref) => {
           prize={prizesTexts[2]}
         />
       </div>
-      <span></span>
+      <div className="text-gray-300 text-center mt-10">
+        All the winning team members will get a certificate!
+      </div>
     </section>
   );
 });

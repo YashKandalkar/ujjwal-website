@@ -35,14 +35,19 @@ code {
     0px 0px 21.4421px rgba(49, 156, 255, 0.5);
 }
 
+body [data-aos-delay="4900"][data-aos].aos-animate,
+[data-aos][data-aos][data-aos-delay="4900"].aos-animate {
+  transition-delay: 2s;
+}
+
 body [data-aos-delay="5000"][data-aos].aos-animate,
 [data-aos][data-aos][data-aos-delay="5000"].aos-animate {
-  transition-delay: 2s;
+  transition-delay: 2.3s;
 }
 
 body [data-aos-delay="5300"][data-aos].aos-animate,
 [data-aos][data-aos][data-aos-delay="5300"].aos-animate {
-  transition-delay: 2.3s;
+  transition-delay: 2.4s;
 }
 
 body [data-aos-delay="5700"][data-aos].aos-animate,
