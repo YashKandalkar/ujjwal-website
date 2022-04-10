@@ -8,7 +8,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
     <section ref={ref} id="landing-container" className="relative">
       <div className="px-2 mt-16 sm:mt-10">
         <div className="flex flex-wrap justify-center flex-row items-center justify-items-center content-center">
-          <div className="flex flex-col items-center mb-4 sm:mb-16 text-left ">
+          <div className="flex flex-col items-center mb-4 sm:mb-10 text-left ">
             <div
               data-aos="fade-up"
               data-aos-delay="4900"
@@ -16,16 +16,14 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
                 textShadow:
                   "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
                 fontWeight: 600,
+                fontSize: 12,
               }}
-              className="mt-10 font-sora text-offWhite text-sm uppercase text-center"
+              className="mt-10 font-sora text-offWhite uppercase text-center"
             >
+              <span className="text-highlight">GDSC</span>{" "}
+              <span className="lowercase"> and </span>
               <span className="text-highlight">
-                Google Developer Student Club
-              </span>{" "}
-              <span className="lowercase">and</span>
-              <br />
-              <span className="text-highlight">
-                the Department of Computer Engineering
+                Dept. of Computer Engineering
               </span>
               <span className="lowercase">,</span> DMCE <br /> Presents
             </div>
@@ -49,9 +47,9 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
                   "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
                 fontWeight: 600,
               }}
-              className="mb-3 font-sora text-highlight text-sm sm:text-base uppercase text-left"
+              className="mb-3 mt-0 font-sora text-offWhite text-sm sm:text-base uppercase text-center"
             >
-              Powered by Ugam, a Merkle Company
+              Show off your project in front of professionals
             </div>
             <div
               data-aos="fade-up"
@@ -61,19 +59,41 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
                   "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
                 fontWeight: 600,
               }}
-              className="mb-1 font-sora text-offWhite text-sm sm:text-base uppercase text-center"
+              className="font-sora flex whitespace-nowrap flex-col mt-2 items-center text-highlight text-sm sm:text-base uppercase text-left"
             >
-              Show off your project in front of professionals
+              Powered by
+              <a
+                href={"https://www.ugamsolutions.com/"}
+                target={"_blank"}
+                style={{ width: "100%" }}
+                rel={"noopener noreferrer"}
+                className="ml-6 backdrop-filter backdrop-blur-sm"
+              >
+                <img
+                  className="mx-auto"
+                  src={"/assets/Ugam.svg"}
+                  style={{
+                    height: "auto",
+                    width: "100%",
+                    maxWidth: 150,
+                  }}
+                  alt="partner logo"
+                />
+              </a>
             </div>
-            <div
+            {/* <div
               data-aos="fade-up"
               data-aos-delay="5300"
-              className="text-center mt-4"
+              className="text-center mt-8"
             >
-              <span className="mb-3 text-center text-2xl sm:text-4xl text-accent font-bold tracking-widest">
+              <span
+                style={{ backdropFilter: "blur(4px)" }}
+                className={`mb-3 text-center backdrop-filter text-2xl sm:text-4xl
+                text-accent rounded-sm font-bold tracking-widest`}
+              >
                 5<sup>th</sup> - 21<sup>st</sup> April
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -91,6 +111,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
       </div>
       <div
         data-aos="fade-up"
+        data-aos-offset="-10000"
         data-aos-delay="5300"
         className="flex justify-center"
       >
