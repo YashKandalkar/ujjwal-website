@@ -6,7 +6,7 @@ const VerifyCertificate = () => {
   const [verificationCode, setVerificationCode] = useState("");
 
   const onSubmitClick = () => {
-    fetch("http://gdsc-website.herokuapp.com/fetch-certificate-details", {
+    fetch("https://gdsc-website.herokuapp.com/fetch-certificate-details", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
