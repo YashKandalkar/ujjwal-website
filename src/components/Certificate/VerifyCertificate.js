@@ -86,11 +86,16 @@ const VerifyCertificate = () => {
                 </span>
               </div>
             </div> */}
-            <div className="box-content  pt-0 flex">
-              <div className="pm-certificate-container bg-blue-100 rounded-md">
+            <div className="box-content pt-0 flex">
+              <div className="pm-certificate-container p-6 bg-blue-100 rounded-md">
                 <div className="mb-3">
                   <div className="text-center">
-                    <h1 className="text-4xl">Certificate of participation</h1>
+                    <h1 className="text-4xl">
+                      Certificate of{" "}
+                      {certData.participation_description === "participant"
+                        ? "Participation"
+                        : "Excellence"}
+                    </h1>
                   </div>
                 </div>
                 <div className="pm-certificate-block">
@@ -110,6 +115,13 @@ const VerifyCertificate = () => {
                       {"has been awarded a certificate for"}
                     </span>
                     <span className="text-xl block">
+                      {certData.participation_description === "participant"
+                        ? "participating in"
+                        : `securing the ${ordinal_suffix_of(
+                            parseInt(certData.participation_description)
+                          )} rank in`}
+                    </span>
+                    <span className="text-xl block">
                       {certData.event_name}
                     </span>
                   </div>
@@ -118,12 +130,12 @@ const VerifyCertificate = () => {
                     {/* <span className="block text-xl">
                       Verify at (url with hash id)
                     </span> */}
-                    <span className="block text-sl">
-                      GDSC-DMCE has confirmed the identity of the individual
-                      and their participation
-                    </span>
                     <span className="text-sl block">
                       Date of the Event: {certData.event_date}
+                    </span>
+                    <span className="block text-sm pt-4">
+                      GDSC-DMCE has confirmed the identity of the individual
+                      and their participation.
                     </span>
                   </div>
                 </div>
@@ -135,5 +147,20 @@ const VerifyCertificate = () => {
     </div>
   );
 };
+
+function ordinal_suffix_of(i) {
+  var j = i % 10,
+    k = i % 100;
+  if (j === 1 && k !== 11) {
+    return i + "st";
+  }
+  if (j === 2 && k !== 12) {
+    return i + "nd";
+  }
+  if (j === 3 && k !== 13) {
+    return i + "rd";
+  }
+  return i + "th";
+}
 
 export default VerifyCertificate;
