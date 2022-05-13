@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import Mascot from "../Mascot/Mascot";
 import "./Overview.css";
 
-const Overview = forwardRef((_, ref) => {
+const Overview = forwardRef(({ location }, ref) => {
   return (
     <section
       ref={ref}
@@ -25,7 +25,7 @@ const Overview = forwardRef((_, ref) => {
               maxWidth: 400,
             }}
           >
-            <Mascot />
+            <Mascot location={location} />
           </div>
           <div
             data-aos="fade-left"
@@ -43,17 +43,10 @@ const Overview = forwardRef((_, ref) => {
               OVERVIEW
             </h1>
             <p className="mb-3 font-sora mt-6 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
-              <A b>Techotsav</A> is a state level project competition for
-              undergraduate engineering students organized by{" "}
-              <A>The Computer Department of DMCE </A> & <A>GDSC-DMCE</A>.{" "}
-              <br />
-              We believe every engineer has a story to tell! <br />
-              This competition will allow students to consolidate their
-              <A> knowledge</A> and <A>professional skills</A> as well as
-              practice <A>soft skills </A>
-              such as communication, presentation, teamwork and problem-solving
-              while reinforcing their engineering knowledge hence prepare them
-              for industry readiness.
+              <A>Google Developer Student Clubs</A> - DMCE is an international
+              community backed by <A>Google</A> for groups of students
+              interested in Google developer techonologies. It creates a bridge
+              for students between <A>theory and practice.</A>
             </p>
             {/* <p className="mb-3 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
               GameUp will empower already established games to come on

@@ -3,97 +3,54 @@ import { Accordion } from "../";
 
 const sampleFaqs = [
   {
-    question: "What is Techotsav?",
+    question: "What is GDSC?",
     answer: (
       <>
         <p>
-          Techotsav is a state level project presentation competition organised
-          by GDSC -DMCE and Dept of Computer Engineering.
-        </p>
-
-        <p>
-          It aims at promoting quality projects, an opportunity for forthcoming
-          developers to get their projects reviewed by eminent industrial
-          experts and resource persons from trending domains.
+          Google Developer Student Clubs - DMCE is an international community
+          backed by Google for groups of students interested in Google
+          developer techonologies. It creates a bridge for students between
+          theory and practice.
         </p>
       </>
     ),
   },
   {
-    question: "What are the different rounds?",
+    question: "What are the different activities under GDSC?",
     answer: (
       <>
-        <h3 className="text-lg font-bold">Registration process:</h3>
         <p>
-          Here participants will have to submit their project related details
-          for e.g. project abstract, presentation, a 2 min video demonstration
-          of your project, GitHub/other links if any as per the given format.
-          On the basis of these, top 50 teams will be shortlisted.
-        </p>
-        <h3 className="text-lg mt-4 font-bold">Online Scrutiny Round:</h3>
-        <p>
-          In this round the shortlisted teams will have to present their
-          projects in front of a panel of judges and out of 50, the top 10
-          teams will be shortlisted for the finale.
-        </p>
-        <h3 className="text-lg mt-4 font-bold">Final Presentation Round:</h3>
-        <p>
-          The Top 10 finalists will have to present their prototypes in front
-          of eminent industry experts and they will declare the top 3 projects.
+          Students are introduced to two real-life problems that can be solved
+          by using the engineering design process. DSC provides them with
+          platform which helps them in developing problem solving skills as
+          well as communication skills as they begin to ask questions, interact
+          with different Techbrains and exchange ideas.
         </p>
       </>
     ),
   },
   {
-    question: "Who all can participate?",
-    answer:
-      "The event is open for under graduate students all over the state of Maharashtra!",
-  },
-  {
-    question: "What is the team size limit?",
-    answer:
-      "You can form teams of up to 4 members, individual participation is also accepted.",
-  },
-  {
-    question: "Can I submit my previous year project?",
-    answer: "Yes! You can present any project that you made.",
-  },
-  {
-    question: "Is the competition free?",
-    answer:
-      "Registration is free for everyone, entry for Online Scrutiny Round will be 200/- per team.",
-  },
-  {
-    question: "Are hardware projects allowed?",
-    answer: "Yes! You can present any technical software/hardware project.",
-  },
-  {
-    question: "Who all can get the participation certificate?",
-    answer:
-      "The teams which will be selected for Online Scrutiny Round will get the participation certificate",
-  },
-  {
-    question: "Can teams with beginner level projects participate?",
-    answer:
-      "Any team with a beginner level project can participate and seek help from our mentors to improve their project and take it to an advance level.",
-  },
-  {
-    question: "Any more Questions?",
+    question: "What is DSC summit?",
     answer: (
-      <>
-        Join our Discord server{" "}
-        <a
-          href="https://discord.gg/ff3zQ3vmrj"
-          target={"_blank"}
-          rel="noopener noreferrer"
-          className="text-highlight"
-        >
-          here
-        </a>
-        {". "}
-        Ask any other question you have and connect with a larger community. We
-        look forward to meeting you!
-      </>
+      <p>
+        DSC leads are invited to attend a summit that are truly transformative
+        in helping educators integrating Google technology into their daily
+        lives thus helps in building their application skills, technological
+        skills and leadership skills.
+      </p>
+    ),
+  },
+  {
+    question: "How does GDSC help to grow the local community?",
+    answer: (
+      <p>
+        DSC leads are connected to the members of Google and Google developer
+        communities ( Google developer groups, Google developer experts etc.)
+        and other programs including women Tec makers scholars, alumina of the
+        former google student ambassador program, interns, facilators of
+        applied CS programs etc. collaborations are encouraged to support each
+        other.
+      </p>
     ),
   },
 ];

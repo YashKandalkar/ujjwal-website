@@ -74,7 +74,7 @@ function NavBar({ inView }) {
                 <span className="mx-2  text-lg">about</span>
               </Link>
             </li>
-            <li
+            {/* <li
               style={{
                 animationDelay: window.innerWidth < 1024 ? "200ms" : "2.1s",
               }}
@@ -91,23 +91,23 @@ function NavBar({ inView }) {
               >
                 <span className="mx-2 text-lg">timeline</span>
               </Link>
-            </li>
+            </li>*/}
             <li
               style={{
                 animationDelay: window.innerWidth < 1024 ? "300ms" : "2.2s",
               }}
               className={
                 "nav-item" +
-                (inView === "partners" ? " navbar-item-in-view" : "")
+                (inView === "certificate" ? " navbar-item-in-view" : "")
               }
             >
               <Link
                 className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
-                to="partners-container"
+                to="certificate-container"
                 smooth={true}
                 duration={700}
               >
-                <span className="mx-2 text-lg">sponsors</span>
+                <span className="mx-2 text-lg">Verify Certificate</span>
               </Link>
             </li>
             <li
@@ -124,7 +124,7 @@ function NavBar({ inView }) {
                 smooth={true}
                 duration={300}
               >
-                <span className="mx-2 text-lg">TEAM</span>
+                <span className="mx-2 text-lg">Team</span>
               </Link>
             </li>
             <li

@@ -3,6 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { animateScroll } from "react-scroll";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useLocation,
+} from "react-router-dom";
+
 import "./App.css";
 import {
   NavBar,
@@ -10,26 +18,40 @@ import {
   Benefits,
   Overview,
   Prizes,
-  Roadmap,
   Team,
   Footer,
   Splash,
-  Partners,
   FAQ,
 } from "./components";
+import Certificate from "./components/Certificate/Certificate";
 import ContactUs from "./components/ContactUs/ContactUs";
+import VerifyCertificate from "./components/Certificate/VerifyCertificate";
 
 const options = {
   rootMargin: "-90px 0px 0px 0px",
 };
 
 function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/verify" element={<VerifyCertificate />}></Route>
+          <Route path="/" element={<MainApp />}></Route>
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+
+const MainApp = () => {
+  const location = useLocation();
   const [landingRef, landingInView] = useInView(options);
   const [overviewRef, overviewInView] = useInView(options);
   const [benefitsRef, featuresInView] = useInView(options);
   const [prizesRef, tokenomicsInView] = useInView(options);
   const [roadmapRef, roadmapInView] = useInView(options);
-  const [partnersRef, partnersInView] = useInView(options);
+  const [certificateRef, certificateInView] = useInView(options);
   const [teamRef, teamInView] = useInView(options);
   const [faqRef, faqInView] = useInView(options);
   const [contactUsRef, contactUsInView] = useInView(options);
@@ -46,8 +68,8 @@ function App() {
     inView = "tokenomics";
   } else if (roadmapInView) {
     inView = "roadmap";
-  } else if (partnersInView) {
-    inView = "partners";
+  } else if (certificateInView) {
+    inView = "certificate";
   } else if (teamInView) {
     inView = "team";
   } else if (faqInView) {
@@ -68,18 +90,20 @@ function App() {
     };
   }, []);
 
-  return (
-    <div className="App">
+  return location.pathname === "/" ? (
+    <>
       <NavBar inView={inView} fixNavbar={offset >= 60} />
       <Splash />
       <Landing ref={landingRef} fixNavbar={offset >= 60} />
-      <Overview ref={overviewRef} />
+      <Overview ref={overviewRef} location={location.pathname} />
       <div id="benefits-prizes">
         <Benefits ref={benefitsRef} />
+        {/* events */}
         <Prizes ref={prizesRef} />
       </div>
-      <Roadmap ref={roadmapRef} />
-      <Partners ref={partnersRef} />
+      <Certificate ref={certificateRef} />
+      {/* <Roadmap ref={roadmapRef} />
+<Partners ref={partnersRef} /> */}
       <Team ref={teamRef} />
       <ContactUs ref={contactUsRef} />
       <FAQ ref={faqRef} />
@@ -87,12 +111,12 @@ function App() {
       <div
         className={
           `cursor-pointer
-      fixed shadow-2xl rounded-full
-      px-4 py-4 flex items-center justify-items-center 
-      bottom-4 right-4 bg-primaryDark border-accent
-      md:bottom-8 md:right-8 border-2
-      transition-all duration-200 ease-in-out
-      ` + (offset < 200 ? " opacity-0" : " opacity-100")
+fixed shadow-2xl rounded-full
+px-4 py-4 flex items-center justify-items-center 
+bottom-4 right-4 bg-primaryDark border-accent
+md:bottom-8 md:right-8 border-2
+transition-all duration-200 ease-in-out
+` + (offset < 200 ? " opacity-0" : " opacity-100")
         }
         onClick={() => {
           animateScroll.scrollToTop({
@@ -103,8 +127,9 @@ function App() {
       >
         <FontAwesomeIcon icon={faArrowUp} className="text-lg text-accent" />
       </div>
-    </div>
+    </>
+  ) : (
+    <></>
   );
-}
-
+};
 export default App;

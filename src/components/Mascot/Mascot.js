@@ -1,8 +1,9 @@
 import React, { useRef, useState, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useAnimations, useGLTF } from "@react-three/drei";
+import { useLocation } from "react-router-dom";
 
-function Scene({ canvasRef, setText, setCanvasHovered, ...props }) {
+function Scene({ canvasRef, setText, setCanvasHovered, location, ...props }) {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [canvasCenter, setCanvasCenter] = useState({ x: 0, y: 0 });
   const group = useRef();
@@ -26,18 +27,22 @@ function Scene({ canvasRef, setText, setCanvasHovered, ...props }) {
       x: rect.left + rect.width / 2,
       y: rect.top + rect.height / 2,
     });
-    document.onscroll = function () {
-      rect = canvasRef.current.getBoundingClientRect();
-      setCanvasCenter({
-        x: rect.left + rect.width / 2,
-        y: rect.top + rect.height / 2,
-      });
-    };
+    if (location === "/" && canvasRef.current !== null) {
+      document.onscroll = function () {
+        if (canvasRef.current !== null) {
+          rect = canvasRef.current.getBoundingClientRect();
+          setCanvasCenter({
+            x: rect.left + rect.width / 2,
+            y: rect.top + rect.height / 2,
+          });
+        }
+      };
+    }
     return () => {
       document.onmousemove = null;
       document.onscroll = null;
     };
-  }, [actions, canvasRef]);
+  }, [actions, canvasRef, location]);
 
   return (
     <group
@@ -192,7 +197,7 @@ function Scene({ canvasRef, setText, setCanvasHovered, ...props }) {
   );
 }
 
-const Mascot = () => {
+const Mascot = ({ location }) => {
   const canvasRef = useRef();
   const [canvasHovered, setCanvasHovered] = useState(false);
   const [text, setText] = useState("Hello! I am Luna!");
@@ -236,6 +241,7 @@ const Mascot = () => {
             setText={setText}
             canvasRef={canvasRef}
             scale={3.3}
+            location={location}
           />
         </Suspense>
       </Canvas>

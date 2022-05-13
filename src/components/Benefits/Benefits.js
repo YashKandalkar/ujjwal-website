@@ -7,8 +7,8 @@ const benefits = [
     imagePath: "/assets/money-bag.svg",
     text: (
       <>
-        <span className="font-bold text-highlight">Cash prize</span> to the
-        winners along with consolation prizes and goodies
+        Win exciting <span className="font-bold text-highlight">Prizes</span>{" "}
+        with in various contests and workshops
       </>
     ),
   },
@@ -16,8 +16,8 @@ const benefits = [
     imagePath: "/assets/review.svg",
     text: (
       <>
-        Get your project{" "}
-        <span className="font-bold text-highlight">reviewed</span> by experts
+        Get your projects reviewed by{" "}
+        <span className="font-bold text-highlight">industry experts</span>
       </>
     ),
   },
@@ -26,7 +26,7 @@ const benefits = [
     text: (
       <>
         <span className="font-bold text-highlight">Network</span> with skilled
-        teams of different domains from all over the state
+        developers from all over the world
       </>
     ),
   },
@@ -34,8 +34,8 @@ const benefits = [
     imagePath: "/assets/certificate.svg",
     text: (
       <>
-        <span className="font-bold text-highlight">Certificates</span> to all
-        the final teams
+        Earn <span className="font-bold text-highlight">Certificates</span> to
+        by attending seminars and events
       </>
     ),
   },
@@ -43,8 +43,8 @@ const benefits = [
     imagePath: "/assets/live-audience.svg",
     text: (
       <>
-        Present your project in front of{" "}
-        <span className="font-bold text-highlight">live audience</span>
+        <span className="font-bold text-highlight">Hands-on workshops</span> on
+        different domains conducted by domain experts
       </>
     ),
   },

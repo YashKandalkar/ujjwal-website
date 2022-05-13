@@ -18,14 +18,11 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
                 fontWeight: 600,
                 fontSize: 12,
               }}
-              className="mt-10 font-sora text-offWhite uppercase text-center"
+              className="mt-28 font-sora text-offWhite uppercase text-center"
             >
-              <span className="text-highlight">GDSC</span>{" "}
-              <span className="lowercase"> and </span>
               <span className="text-highlight">
-                Dept. of Computer Engineering
+                Datta Meghe College of Engineering
               </span>
-              <span className="lowercase">,</span> DMCE <br /> Presents
             </div>
             <h1
               data-aos="fade-up"
@@ -35,9 +32,9 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
                   "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
                 lineHeight: "80px",
               }}
-              className="font-titleBold text-offWhite text-3xl sm:text-6xl lg:text-6xl"
+              className="font-titleBold text-offWhite text-3xl sm:text-6xl lg:text-6xl mt-0"
             >
-              Techotsav '22
+              GDSC DMCE
             </h1>
             <div
               data-aos="fade-up"
@@ -49,51 +46,8 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               }}
               className="mb-3 mt-0 font-sora text-offWhite text-sm sm:text-base uppercase text-center"
             >
-              Show off your project in front of professionals
+              Let's Learn And Grow Together
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="5300"
-              style={{
-                textShadow:
-                  "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
-                fontWeight: 600,
-              }}
-              className="font-sora flex whitespace-nowrap flex-col mt-2 items-center text-highlight text-sm sm:text-base uppercase text-left"
-            >
-              Powered by
-              <a
-                href={"https://www.ugamsolutions.com/"}
-                target={"_blank"}
-                style={{ width: "100%" }}
-                rel={"noopener noreferrer"}
-                className="ml-6 backdrop-filter backdrop-blur-sm"
-              >
-                <img
-                  className="mx-auto"
-                  src={"/assets/Ugam.svg"}
-                  style={{
-                    height: "auto",
-                    width: "100%",
-                    maxWidth: 150,
-                  }}
-                  alt="partner logo"
-                />
-              </a>
-            </div>
-            {/* <div
-              data-aos="fade-up"
-              data-aos-delay="5300"
-              className="text-center mt-8"
-            >
-              <span
-                style={{ backdropFilter: "blur(4px)" }}
-                className={`mb-3 text-center backdrop-filter text-2xl sm:text-4xl
-                text-accent rounded-sm font-bold tracking-widest`}
-              >
-                5<sup>th</sup> - 21<sup>st</sup> April
-              </span>
-            </div> */}
           </div>
         </div>
       </div>
@@ -116,9 +70,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
         className="flex justify-center"
       >
         <a
-          href="https://forms.gle/sMYCAmAFRpvrE66m9"
-          target={"_blank"}
-          rel="noopener noreferrer"
+          href="#overview-container"
           style={{
             textShadow:
               "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
@@ -126,7 +78,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
           }}
           className="bg-purple-500 hover:bg-purple-400 border-b-4 border-purple-700 hover:border-purple-500 text-xl text-gray-50 font-titleBold text-center py-2 px-8 sm:py-4 sm:px-14 rounded mt-16"
         >
-          REGISTER
+          Learn More
         </a>
       </div>
 

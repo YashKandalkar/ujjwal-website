@@ -54,7 +54,7 @@ const Team = forwardRef((_, ref) => {
         className="text-gray-100 text-center my-10 text-3xl
         lg:text-6xl uppercase glow font-titleBold"
       >
-        Organizers
+        Team
       </h1>
       <div className="flex justify-center">
         <TeamMember
