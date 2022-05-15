@@ -15,7 +15,6 @@ import "./App.css";
 import {
   NavBar,
   Landing,
-  Benefits,
   Overview,
   Prizes,
   Team,
@@ -96,11 +95,6 @@ const MainApp = () => {
       <Splash />
       <Landing ref={landingRef} fixNavbar={offset >= 60} />
       <Overview ref={overviewRef} location={location.pathname} />
-      <div id="benefits-prizes">
-        <Benefits ref={benefitsRef} />
-        {/* events */}
-        <Prizes ref={prizesRef} />
-      </div>
       <Certificate ref={certificateRef} />
       {/* <Roadmap ref={roadmapRef} />
 <Partners ref={partnersRef} /> */}

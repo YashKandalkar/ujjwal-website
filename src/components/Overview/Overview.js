@@ -45,7 +45,7 @@ const Overview = forwardRef(({ location }, ref) => {
             <p className="mb-3 font-sora mt-6 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
               <A>Google Developer Student Clubs</A> - DMCE is an international
               community backed by <A>Google</A> for groups of students
-              interested in Google developer techonologies. It creates a bridge
+              interested in Google developer technologies. It creates a bridge
               for students between <A>theory and practice.</A>
             </p>
             {/* <p className="mb-3 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">

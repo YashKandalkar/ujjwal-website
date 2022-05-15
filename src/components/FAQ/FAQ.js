@@ -9,7 +9,7 @@ const sampleFaqs = [
         <p>
           Google Developer Student Clubs - DMCE is an international community
           backed by Google for groups of students interested in Google
-          developer techonologies. It creates a bridge for students between
+          developer technologies. It creates a bridge for students between
           theory and practice.
         </p>
       </>
@@ -20,7 +20,7 @@ const sampleFaqs = [
     answer: (
       <>
         <p>
-          Students are introduced to two real-life problems that can be solved
+          Students are introduced to real-life problems that can be solved
           by using the engineering design process. DSC provides them with
           platform which helps them in developing problem solving skills as
           well as communication skills as they begin to ask questions, interact
@@ -46,9 +46,9 @@ const sampleFaqs = [
       <p>
         DSC leads are connected to the members of Google and Google developer
         communities ( Google developer groups, Google developer experts etc.)
-        and other programs including women Tec makers scholars, alumina of the
+        and other programs including Women Techmakers, scholars, alumina of the
         former google student ambassador program, interns, facilators of
-        applied CS programs etc. collaborations are encouraged to support each
+        applied CS programs. Collaborations are encouraged to support each
         other.
       </p>
     ),
