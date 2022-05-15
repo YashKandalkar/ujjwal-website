@@ -16,7 +16,6 @@ import {
   NavBar,
   Landing,
   Overview,
-  Prizes,
   Team,
   Footer,
   Splash,
@@ -47,8 +46,6 @@ const MainApp = () => {
   const location = useLocation();
   const [landingRef, landingInView] = useInView(options);
   const [overviewRef, overviewInView] = useInView(options);
-  const [benefitsRef, featuresInView] = useInView(options);
-  const [prizesRef, tokenomicsInView] = useInView(options);
   const [roadmapRef, roadmapInView] = useInView(options);
   const [certificateRef, certificateInView] = useInView(options);
   const [teamRef, teamInView] = useInView(options);
