@@ -51,7 +51,7 @@ function Scene({ canvasRef, setText, setCanvasHovered, location, ...props }) {
         setCanvasHovered(false);
         setText("Hello! I am Luna!");
       }}
-      onClick={() => setText("Register for Techotsav!")}
+      onClick={() => setText("I'm the Mascot of GDSC-DMCE!")}
       ref={group}
       {...props}
       dispose={null}

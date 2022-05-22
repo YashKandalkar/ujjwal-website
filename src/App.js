@@ -15,9 +15,7 @@ import "./App.css";
 import {
   NavBar,
   Landing,
-  Benefits,
   Overview,
-  Prizes,
   Team,
   Footer,
   Splash,
@@ -48,8 +46,6 @@ const MainApp = () => {
   const location = useLocation();
   const [landingRef, landingInView] = useInView(options);
   const [overviewRef, overviewInView] = useInView(options);
-  const [benefitsRef, featuresInView] = useInView(options);
-  const [prizesRef, tokenomicsInView] = useInView(options);
   const [roadmapRef, roadmapInView] = useInView(options);
   const [certificateRef, certificateInView] = useInView(options);
   const [teamRef, teamInView] = useInView(options);
@@ -96,11 +92,6 @@ const MainApp = () => {
       <Splash />
       <Landing ref={landingRef} fixNavbar={offset >= 60} />
       <Overview ref={overviewRef} location={location.pathname} />
-      <div id="benefits-prizes">
-        <Benefits ref={benefitsRef} />
-        {/* events */}
-        <Prizes ref={prizesRef} />
-      </div>
       <Certificate ref={certificateRef} />
       {/* <Roadmap ref={roadmapRef} />
 <Partners ref={partnersRef} /> */}

@@ -44,7 +44,7 @@ const VerifyCertificate = () => {
               Verify Certificate
             </label>
             <input
-              className="rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="rounded-md text-center w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="certificate-fetch"
               type="text"
               placeholder="Certificate code"
@@ -92,7 +92,7 @@ const VerifyCertificate = () => {
                   <div className="text-center">
                     <h1 className="text-4xl">
                       Certificate of{" "}
-                      {certData.participation_description === "participant"
+                      {certData.participation_description === "participation"
                         ? "Participation"
                         : "Excellence"}
                     </h1>
@@ -115,7 +115,7 @@ const VerifyCertificate = () => {
                       {"has been awarded a certificate for"}
                     </span>
                     <span className="text-xl block">
-                      {certData.participation_description === "participant"
+                      {certData.participation_description === "participation"
                         ? "participating in"
                         : `securing the ${ordinal_suffix_of(
                             parseInt(certData.participation_description)
