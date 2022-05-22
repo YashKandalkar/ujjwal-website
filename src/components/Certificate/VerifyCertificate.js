@@ -1,11 +1,12 @@
 import { useState } from "react";
-// import "../App.css";
 
 const VerifyCertificate = () => {
   const [certData, setCertData] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [verificationCode, setVerificationCode] = useState("");
 
   const onSubmitClick = () => {
+    setLoading(true);
     fetch("https://gdsc-website.herokuapp.com/fetch-certificate-details", {
       method: "POST",
       headers: {
@@ -23,19 +24,22 @@ const VerifyCertificate = () => {
             event_date: new Date(data[1]).toLocaleDateString(),
             participation_description: data[2],
           });
-          setVerificationCode("");
         } else {
           alert(
             "Participant data not found! Please check the verification code."
           );
+          setVerificationCode("");
         }
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
 
   return (
     <div className="bg-gray-900 m-0 p-0 h-screen">
       {!certData ? (
-        <form className="rounded justify-center flex h-full flex-col items-center p-8 mb-4">
+        <div className="rounded justify-center flex h-full flex-col items-center p-8 mb-4">
           <div className="mb-4">
             <label
               className="block text-7xl text-gray-100 font-bold mb-12"
@@ -49,43 +53,44 @@ const VerifyCertificate = () => {
               type="text"
               placeholder="Certificate code"
               onChange={(e) => setVerificationCode(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  onSubmitClick();
+                }
+              }}
               value={verificationCode}
             />
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              disabled={loading}
+              className="bg-blue-500 flex items-center text-lg hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
               onClick={onSubmitClick}
             >
-              Submit
+              Submit{" "}
+              {loading && (
+                <img
+                  className="w-6 h-6 ml-4"
+                  src="/assets/loading.svg"
+                  alt="loading"
+                />
+              )}
             </button>
           </div>
-        </form>
+        </div>
       ) : (
         <>
-          {/* <h1 className="text-white-400 text-gray-100 text-center text-5xl pt-24 font-bold pl-8">
-            Certificate Details
-          </h1> */}
           <div className="flex flex-wrap items-center h-full bg-gray-900 md:justify-evenly p-10 pb-4">
-            {/* <div
-              className="box-content w-400 sm:2/3 p-4 mb-4
-              border-4 bg-black-800 h-full text-center"
+            <div
+              className="absolute top-4 left-4 cursor-pointer"
+              onClick={() => {
+                setCertData(null);
+                setVerificationCode("");
+              }}
             >
-              <div className="text-white-600 text-2xl">
-                <span className="block font-bold mt-1 mb-auto">
-                  Certificate awarded to {certData.participants_name}
-                </span>
-                <span className="block mt-1">
-                  date:&nbsp;{certData.event_date}
-                </span>
-                <span className="block mt-1">{certData.event_name}</span>
-                {/* <span className="block mt-3">User's account is verified.</span> 
-                <span className="block mt-1">
-                  This certificate was awarded by GDSC-DMCE.
-                </span>
-              </div>
-            </div> */}
+              <img src="/assets/left-arrow.png" alt="back arrow" />
+            </div>
             <div className="box-content pt-0 flex">
               <div className="pm-certificate-container p-6 bg-blue-100 rounded-md">
                 <div className="mb-3">
@@ -102,11 +107,7 @@ const VerifyCertificate = () => {
                   <div
                     className="pm-certificate-name mb-4 text-center"
                     style={{ borderBottom: "1px solid #888" }}
-                  >
-                    {/* <span className="no-underline bold text-lg mb-2">
-                      GDSC DMCE
-                    </span> */}
-                  </div>
+                  ></div>
                   <div className="pm-earned text-center">
                     <span className="text-3xl block">
                       {certData.participants_name}
@@ -127,15 +128,15 @@ const VerifyCertificate = () => {
                   </div>
                   <div className="text-center">
                     <span className=" block underline"></span>
-                    {/* <span className="block text-xl">
-                      Verify at (url with hash id)
-                    </span> */}
                     <span className="text-sl block">
                       Date of the Event: {certData.event_date}
                     </span>
                     <span className="block text-sm pt-4">
                       GDSC-DMCE has confirmed the identity of the individual
                       and their participation.
+                    </span>
+                    <span className="block text-sm pt-1">
+                      Certificate Code: {verificationCode}
                     </span>
                   </div>
                 </div>
