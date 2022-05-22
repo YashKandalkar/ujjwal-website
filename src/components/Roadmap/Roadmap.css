@@ -4,22 +4,10 @@
     rgba(147, 90, 237, 0.32) 0%,
     rgba(148, 90, 237, 0) 114%
   );
-  /* min-height: 220vh; */
   padding-bottom: 4rem;
   background-color: transparent;
   /* background by SVGBackgrounds.com */
 }
-
-/* .card-content-wrapper { */
-/* outline: 3px solid theme("colors.accentDark"); */
-/* border-radius: 12px;
-  padding: 8px; */
-/* background-color: theme("colors.accentDark"); */
-/* } */
-
-/* .css-1ktfga5-TriangleIconWrapper {
-  background-color: theme("colors.accentDark") !important; */
-/* } */
 
 div[class*="TimelineVerticalWrapper"],
 timeline-main-wrapper {
@@ -38,7 +26,6 @@ timeline-main-wrapper {
 
 .timeline-card-content {
   height: 100% !important;
-  /* background-color: red !important; */
 }
 
 .card-title {

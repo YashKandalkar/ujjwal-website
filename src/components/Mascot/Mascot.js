@@ -234,7 +234,6 @@ const Mascot = ({ location }) => {
           position={[-100, -200, 200]}
           color={"#C097DE"}
         />
-        {/* <directionalLight intensity={0.01} position={[-100, -200, 200]} /> */}
         <Suspense fallback={"Loading"}>
           <Scene
             setCanvasHovered={setCanvasHovered}

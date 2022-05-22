@@ -8,10 +8,8 @@ const PrizesItem = ({ imagePath, text, prize }) => {
       className="prizeContainer"
       style={{
         width: 300,
-        // backgroundColor: "rgb(29, 56, 107)",
       }}
     >
-      {/* <div className="prizeContainer"> */}
       <div className="card mx-auto">
         <div
           className="prizeBack rounded-lg shadow-2xl px-3 py-6 text-gray-50 text-center"
@@ -27,7 +25,6 @@ const PrizesItem = ({ imagePath, text, prize }) => {
           {prize}
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };

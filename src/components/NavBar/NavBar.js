@@ -74,24 +74,6 @@ function NavBar({ inView }) {
                 <span className="mx-2  text-lg">about</span>
               </Link>
             </li>
-            {/* <li
-              style={{
-                animationDelay: window.innerWidth < 1024 ? "200ms" : "2.1s",
-              }}
-              className={
-                "nav-item" +
-                (inView === "roadmap" ? " navbar-item-in-view" : "")
-              }
-            >
-              <Link
-                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
-                to="roadmap-container"
-                smooth={true}
-                duration={600}
-              >
-                <span className="mx-2 text-lg">timeline</span>
-              </Link>
-            </li>*/}
             <li
               style={{
                 animationDelay: window.innerWidth < 1024 ? "300ms" : "2.2s",

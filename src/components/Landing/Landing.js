@@ -1,5 +1,3 @@
-// import { faDiscord } from "@fortawesome/free-brands-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { forwardRef } from "react";
 import "./Landing.css";
 
@@ -51,18 +49,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
           </div>
         </div>
       </div>
-      <div id="landing-bg">
-        {/* <video
-              autoPlay
-              muted
-              className="bg-cover"
-              style={{ height: "100vh" }}
-              loop
-            >
-              <source src="/assets/hero-background.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video> */}
-      </div>
+      <div id="landing-bg" />
       <div
         data-aos="fade-up"
         data-aos-offset="-10000"

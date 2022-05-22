@@ -45,7 +45,6 @@ const Partners = forwardRef((_, ref) => {
   return (
     <section ref={ref} id="partners-container" className="py-16">
       <h1
-        // data-aos="zoom-out"
         className="text-gray-100 text-center my-10 text-4xl
         lg:text-6xl uppercase glow font-titleBold"
       >
@@ -56,17 +55,7 @@ const Partners = forwardRef((_, ref) => {
         style={{ minHeight: "80vh" }}
         className="flex px-10 flex-wrap justify-items-center gap-y-10 items-center justify-center flex-col sm:px-16"
       >
-        {/* {partners.map((partnerItem, index) => (
-          <PartnersItem key={index} {...partnerItem} />
-        ))} */}
         <PartnersItem titleSponsor {...partners[0]} width={450} />
-        {/* <a
-          href="https://drive.google.com/file/d/1R_tpVIsoWs1v6KPWmH6b1ANiQ-KF3hcc/preview"
-          target={`_blank`}
-          className="px-8 py-4 bg-primary text-gray-50 font-sora mt-36 rounded-sm text-base sm:text-2xl"
-        >
-          View Brochure
-        </a> */}
       </div>
       <div className="flex flex-wrap gap-y-10 items-baseline justify-center flex-row px-4 sm:px-16">
         <PartnersItem {...partners[1]} width={150} />

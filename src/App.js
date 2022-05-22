@@ -7,7 +7,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
   useLocation,
 } from "react-router-dom";
 
@@ -17,7 +16,7 @@ import {
   Landing,
   Overview,
   Benefits,
-  Prizes,
+  Events,
   Team,
   Footer,
   Splash,
@@ -49,7 +48,7 @@ const MainApp = () => {
   const [landingRef, landingInView] = useInView(options);
   const [overviewRef, overviewInView] = useInView(options);
   const [benefitsRef, featuresInView] = useInView(options);
-  const [prizesRef, tokenomicsInView] = useInView(options);
+  const [prizesRef, prizesInView] = useInView(options);
   const [roadmapRef, roadmapInView] = useInView(options);
   const [certificateRef, certificateInView] = useInView(options);
   const [teamRef, teamInView] = useInView(options);
@@ -64,8 +63,8 @@ const MainApp = () => {
     inView = "overview";
   } else if (featuresInView) {
     inView = "features";
-  } else if (tokenomicsInView) {
-    inView = "tokenomics";
+  } else if (prizesInView) {
+    inView = "prizes";
   } else if (roadmapInView) {
     inView = "roadmap";
   } else if (certificateInView) {
@@ -99,7 +98,7 @@ const MainApp = () => {
       <div id="benefits-prizes">
         <Benefits ref={benefitsRef} />
         {/* events */}
-        <Prizes ref={prizesRef} />
+        <Events ref={prizesRef} />
       </div>
       <Certificate ref={certificateRef} />
       {/* <Roadmap ref={roadmapRef} />

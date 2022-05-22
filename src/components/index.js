@@ -3,7 +3,7 @@ import Landing from "./Landing/Landing";
 import Overview from "./Overview/Overview";
 import Benefits from "./Benefits/Benefits";
 import FeaturesItem from "./FeaturesItem/FeaturesItem";
-import Prizes from "./Prizes/Prizes";
+import Events from "./Events/Events";
 import Roadmap from "./Roadmap/Roadmap";
 import Partners from "./Partners/Partners";
 import Team from "./Team/Team";
@@ -22,7 +22,7 @@ export {
   Overview,
   Benefits,
   FeaturesItem,
-  Prizes,
+  Events,
   Roadmap,
   Partners,
   Team,
