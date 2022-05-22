@@ -1,7 +1,6 @@
 import React, { useRef, useState, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useAnimations, useGLTF } from "@react-three/drei";
-import { useLocation } from "react-router-dom";
 
 function Scene({ canvasRef, setText, setCanvasHovered, location, ...props }) {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });

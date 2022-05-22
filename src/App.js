@@ -49,7 +49,7 @@ const MainApp = () => {
   const [overviewRef, overviewInView] = useInView(options);
   const [benefitsRef, featuresInView] = useInView(options);
   const [prizesRef, prizesInView] = useInView(options);
-  const [roadmapRef, roadmapInView] = useInView(options);
+  const [, roadmapInView] = useInView(options);
   const [certificateRef, certificateInView] = useInView(options);
   const [teamRef, teamInView] = useInView(options);
   const [faqRef, faqInView] = useInView(options);
@@ -97,12 +97,9 @@ const MainApp = () => {
       <Overview ref={overviewRef} location={location.pathname} />
       <div id="benefits-prizes">
         <Benefits ref={benefitsRef} />
-        {/* events */}
         <Events ref={prizesRef} />
       </div>
       <Certificate ref={certificateRef} />
-      {/* <Roadmap ref={roadmapRef} />
-<Partners ref={partnersRef} /> */}
       <Team ref={teamRef} />
       <ContactUs ref={contactUsRef} />
       <FAQ ref={faqRef} />
