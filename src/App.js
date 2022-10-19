@@ -21,6 +21,7 @@ import {
   Footer,
   Splash,
   FAQ,
+  Roadmap,
 } from "./components";
 import Certificate from "./components/Certificate/Certificate";
 import ContactUs from "./components/ContactUs/ContactUs";
@@ -49,7 +50,7 @@ const MainApp = () => {
   const [overviewRef, overviewInView] = useInView(options);
   const [benefitsRef, featuresInView] = useInView(options);
   const [prizesRef, prizesInView] = useInView(options);
-  const [, roadmapInView] = useInView(options);
+  const [roadmapRef, roadmapInView] = useInView(options);
   const [certificateRef, certificateInView] = useInView(options);
   const [teamRef, teamInView] = useInView(options);
   const [faqRef, faqInView] = useInView(options);
@@ -92,17 +93,18 @@ const MainApp = () => {
   return location.pathname === "/" ? (
     <>
       <NavBar inView={inView} fixNavbar={offset >= 60} />
-      <Splash />
+      {/* <Splash /> */}
       <Landing ref={landingRef} fixNavbar={offset >= 60} />
       <Overview ref={overviewRef} location={location.pathname} />
       <div id="benefits-prizes">
-        <Benefits ref={benefitsRef} />
-        <Events ref={prizesRef} />
+        {/* <Benefits ref={benefitsRef} /> */}
+        {/* <Events ref={prizesRef} /> */}
       </div>
-      <Certificate ref={certificateRef} />
+      <Roadmap ref={roadmapRef} />
+      {/* <Certificate ref={certificateRef} /> */}
       <Team ref={teamRef} />
       <ContactUs ref={contactUsRef} />
-      <FAQ ref={faqRef} />
+      {/* <FAQ ref={faqRef} /> */}
       <Footer />
       <div
         className={

@@ -18,14 +18,13 @@ const Overview = forwardRef(({ location }, ref) => {
           >
             OVERVIEW
           </h1>
-          <div
-            className="relative"
-            style={{
-              height: window.innerWidth > 480 ? 320 : 180,
-              maxWidth: 400,
-            }}
-          >
-            <Mascot location={location} />
+          <div className="relative flex justify-center items-center">
+            <iframe
+              title="Ujjwal's Overview"
+              width={400}
+              height={220}
+              src="https://drive.google.com/file/d/1t0ZMLtyApco6XSjZpHRP-7UaP5sBXXVG/preview"
+            ></iframe>
           </div>
           <div
             data-aos="fade-left"
@@ -43,10 +42,8 @@ const Overview = forwardRef(({ location }, ref) => {
               OVERVIEW
             </h1>
             <p className="mb-3 font-sora mt-6 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
-              <A>Google Developer Student Clubs</A> - DMCE is an international
-              community backed by <A>Google</A> for groups of students
-              interested in Google developer technologies. It creates a bridge
-              for students between <A>theory and practice.</A>
+              <A>Ujjwal</A> - is an Automated Street Light <br />
+              <A>Fault Detection</A> system, especially built for rural areas.
             </p>
             {/* <p className="mb-3 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
               GameUp will empower already established games to come on

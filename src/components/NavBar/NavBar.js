@@ -33,11 +33,8 @@ function NavBar({ inView }) {
               className="text-sm flex justify-center items-center leading-relaxed mr-4 px-6 sm:px-0 py-2 whitespace-nowrap uppercase text-gray-300"
               href="/"
             >
-              <img
-                src="/gdsc-dmce-logo.png"
-                alt="logo"
-                style={{ width: 280 }}
-              />
+              <img src="/favicon-96x96.png" alt="logo" style={{ width: 40 }} />
+              <span className="ml-2 text-4xl">Ujjwal</span>
             </a>
           </span>
           <button
@@ -80,16 +77,16 @@ function NavBar({ inView }) {
               }}
               className={
                 "nav-item" +
-                (inView === "certificate" ? " navbar-item-in-view" : "")
+                (inView === "roadmap" ? " navbar-item-in-view" : "")
               }
             >
               <Link
                 className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-300 hover:opacity-75"
-                to="certificate-container"
+                to="roadmap-container"
                 smooth={true}
                 duration={700}
               >
-                <span className="mx-2 text-lg">Verify Certificate</span>
+                <span className="mx-2 text-lg">Journey</span>
               </Link>
             </li>
             <li
@@ -127,7 +124,7 @@ function NavBar({ inView }) {
                 <span className="mx-2 text-lg">Contact</span>
               </Link>
             </li>
-            <li
+            {/* <li
               style={{
                 animationDelay: window.innerWidth < 1024 ? "600ms" : "2.5s",
               }}
@@ -143,7 +140,7 @@ function NavBar({ inView }) {
               >
                 <span className="mx-2 text-lg">FAQ</span>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -1,8 +1,8 @@
 #roadmap-container {
   background: linear-gradient(
     0deg,
-    rgba(147, 90, 237, 0.32) 0%,
-    rgba(148, 90, 237, 0) 114%
+    rgba(148, 90, 237, 0) 0%,
+    theme("colors.blue.800") 100%
   );
   padding-bottom: 4rem;
   background-color: transparent;

@@ -5,33 +5,29 @@ import "./Roadmap.css";
 
 const roadmapData = [
   {
-    title: "Registration",
-    text: "Teams will register on a Google Form",
+    title: "Idea Selection",
+    // went through 250+ ideas and selected the one that resonated with us the most
+    text: "Went through 250+ ideas and selected the one that resonated with us the most",
     date: "25th March - 8th April",
   },
   {
-    title: "Shortlisting Round",
-    text: "Top 50 teams will be selected for Online Scrutiny",
+    title: "Internal Hackathon",
+    text: "Selected in the top 10 team of our college",
     date: "10th April",
   },
   {
-    title: "Online Scrutiny",
-    text: "The selected teams will present their project in an online meet",
+    title: "SIH Selection",
+    text: "One of the 5 teams selected under the same problem statement",
     date: "11th - 13th April",
   },
   {
-    title: "Online Scrutiny Results",
-    text: "Top 10 teams will be selected for the Grand Finale",
+    title: "SIH Grand Finale",
+    text: "Won the 1st Prize in the Grand Finale at IIT Kanpur",
     date: "14th April",
   },
   {
-    title: "Grand Finale",
-    text: "The selected teams will present their project at DMCE",
-    date: "21st April",
-  },
-  {
-    title: "Final Results",
-    text: "Top 3 teams will be announced on the spot!",
+    title: "To be continued...",
+    text: "We are working on the project and will update you soon",
     date: "21st April",
   },
 ];
@@ -45,7 +41,7 @@ const Roadmap = forwardRef((_, ref) => {
           className="text-gray-100 text-center my-10 text-5xl
         lg:text-6xl uppercase glow font-titleBold"
         >
-          timeline
+          Journey
         </h1>
         <div className="relative">
           <img

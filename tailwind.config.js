@@ -1,3 +1,4 @@
+const colors = require("tailwindcss/colors");
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
@@ -8,8 +9,8 @@ module.exports = {
         accentDark: "#9151C0",
         offWhite: "#FBE3FF",
         primary: "rgb(138, 66, 255)",
-        primaryDark: "#001A5C",
-        highlight: "#0DBE51",
+        primaryDark: colors.blue[800],
+        highlight: colors.yellow[500],
       },
       fontFamily: {
         title: "Uomo Expanded",

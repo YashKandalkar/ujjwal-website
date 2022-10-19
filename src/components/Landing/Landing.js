@@ -18,9 +18,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               }}
               className="mt-28 font-sora text-offWhite uppercase text-center"
             >
-              <span className="text-highlight">
-                Datta Meghe College of Engineering
-              </span>
+              <span className="text-highlight">Shallow Blue Presents</span>
             </div>
             <h1
               data-aos="fade-up"
@@ -32,7 +30,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               }}
               className="font-titleBold text-offWhite text-3xl sm:text-6xl lg:text-6xl mt-0"
             >
-              GDSC DMCE
+              Ujjwal
             </h1>
             <div
               data-aos="fade-up"
@@ -44,7 +42,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               }}
               className="mb-3 mt-0 font-sora text-offWhite text-sm sm:text-base uppercase text-center"
             >
-              Let's Learn And Grow Together!
+              An Automated Street Light Fault Detection System
             </div>
           </div>
         </div>
@@ -58,17 +56,24 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
       >
         <a
           href="#overview-container"
+          onClick={(e) => {
+            e.preventDefault();
+
+            document.querySelector("#overview-container").scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
           style={{
             textShadow:
               "0px 0px 5.53871px rgba(49, 181, 255, 0.26), 0px 0px 21.4421px rgba(49, 156, 255, 0.5)",
             fontWeight: 600,
           }}
-          className="bg-purple-500 hover:bg-purple-400 border-b-4 border-purple-700 hover:border-purple-500 text-xl text-gray-50 font-titleBold text-center py-2 px-8 sm:py-4 sm:px-14 rounded mt-16"
+          className="bg-yellow-300 hover:bg-yellow-400 border-b-4 border-yellow-700 hover:border-yellow-500 text-xl text-gray-800 font-titleBold text-center py-2 px-8 sm:py-4 sm:px-14 rounded mt-16"
         >
           Learn More
         </a>
       </div>
-
+      {/* 
       <img
         data-aos="fade-up"
         data-aos-offset="-900"
@@ -88,7 +93,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
         id="mountain"
         className="bottom-0 absolute"
         style={{ zIndex: -1 }}
-      />
+      /> */}
     </section>
   );
 });

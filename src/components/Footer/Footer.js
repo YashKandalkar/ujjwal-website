@@ -10,43 +10,40 @@ function Footer() {
     >
       <div>
         <a
-          href="https://dmce.ac.in"
-          target={"_blank"}
-          rel="noopener noreferrer"
+          href="/"
+          className="text-4xl font-bold text-white flex flex-row justify-center items-center"
         >
           <img
-            src={"/dmce-logo.png"}
+            src={"/favicon-96x96.png"}
             alt="logo"
-            className="w-96 h-auto my-auto mb-6"
+            className="w-16 h-auto my-auto"
           />
-        </a>
-        <a href="/">
-          <img
-            src={"/gdsc-dmce-logo.png"}
-            alt="logo"
-            className="w-96 h-auto my-auto"
-          />
+          <h1>
+            <span className="text-4xl">Ujjwal</span>
+          </h1>
         </a>
       </div>
       <div className="flex my-auto flex-col">
         <p className="text-3xl font-sora sm:text-4xl text-gray-100 mb-3">
           Contact Us
         </p>
-        <a href="mailto:gdsc@dmce.ac.in" className="text-gray-400 text-xl">
-          gdsc@dmce.ac.in
+        <a
+          href="mailto:manas.buchade@gmail.com"
+          className="text-gray-400 text-xl"
+        >
+          manas.buchade@gmail.com
         </a>
         <hr className="border-gray-500 my-2" />
         <div className="col-lg-3 col-md-6 footer-contact">
-          <p className="text-gray-400">
-            DATTA MEGHE COLLEGE OF ENGINEERING <br />
-            SEC-3, AIROLI, NAVI MUMBAI
-            <br />
-            MAHARASHTRA - 400708 <br />
-            INDIA <br />
-          </p>
+          <a
+            href="mailto:yashsk.yk@gmail.com"
+            className="text-gray-400 text-xl"
+          >
+            yashsk.yk@gmail.com
+          </a>
         </div>
       </div>
-      <div className="flex my-auto flex-col">
+      {/* <div className="flex my-auto flex-col">
         <p className="text-3xl font-sora sm:text-4xl text-gray-100 mb-3">
           Socials
         </p>
@@ -91,8 +88,8 @@ function Footer() {
             />
             <p className="text-gray-400 hidden sm:block text-xl">Linkedin</p>
           </a>
-        </div>
-      </div>
+        </div> 
+      </div>*/}
     </footer>
   );
 }
