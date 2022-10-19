@@ -39,7 +39,7 @@ const teamImages = [
   "/assets/team/manas.png",
   "/assets/team/yash.png",
   "/assets/team/nirmiti.png",
-  "/assets/team/WhatsApp Image 2022-02-27 at 2.16.png",
+  "/assets/team/raj.png",
   "/assets/team/aarushi.png",
   "/assets/team/dhruv.png",
 ];
