@@ -17,7 +17,7 @@ const ContactUs = forwardRef((_, ref) => {
         Contact Us
       </h1>
       <p className="font-sora px-4 sm:px-16 mb-28 text-base sm:text-lg text-center text-gray-50">
-        Contact us if you have any queries regarding the project!
+        Reach out to us if you have any queries regarding the project
       </p>
       <div className="flex text-base sm:text-xl gap-5 flex-col px-4 sm:px-16">
         <div className="mx-auto">
