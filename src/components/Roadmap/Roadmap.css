@@ -1,9 +1,10 @@
 #roadmap-container {
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     rgba(148, 90, 237, 0) 0%,
     theme("colors.blue.800") 100%
-  );
+  ); */
+  background: transparent;
   padding-bottom: 4rem;
   background-color: transparent;
   /* background by SVGBackgrounds.com */

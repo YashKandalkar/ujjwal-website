@@ -52,7 +52,7 @@ const Team = forwardRef((_, ref) => {
         className="text-gray-100 text-center my-10 text-3xl
         lg:text-6xl uppercase glow font-titleBold"
       >
-        Team
+        the Team
       </h1>
       <div className="overflow-x-auto flex-nowrap whitespace-nowrap mx-4 sm:mx-16">
         {teamMembers.map((data, index) => (

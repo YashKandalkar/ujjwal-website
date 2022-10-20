@@ -8,27 +8,28 @@ const roadmapData = [
     title: "Idea Selection",
     // went through 250+ ideas and selected the one that resonated with us the most
     text: "Went through 250+ ideas and selected the one that resonated with us the most",
-    date: "25th March - 8th April",
+    date: "February 2022",
   },
   {
-    title: "Internal Hackathon",
-    text: "Selected in the top 10 team of our college",
-    date: "10th April",
+    title: "DMCE Internal Hackathon",
+    text: "Got selected in the top 10 teams of our college",
+    date: "April 2022",
   },
   {
-    title: "SIH Selection",
-    text: "One of the 5 teams selected under the same problem statement",
-    date: "11th - 13th April",
+    title: "SIH Finale Selection",
+    text: "One of the top 5 teams shortlisted for the finale of the hackathon.",
+    date: "June 2022",
   },
   {
     title: "SIH Grand Finale",
-    text: "Won the 1st Prize in the Grand Finale at IIT Kanpur",
-    date: "14th April",
+    text: "Won the 1st Prize in the Grand Finale at IIT Kanpur!",
+    image: "/assets/sih-win.jpeg",
+    date: "August 2022",
   },
   {
     title: "To be continued...",
-    text: "We are working on the project and will update you soon",
-    date: "21st April",
+    text: "We are working on implementing the solution and will be launching it soon!",
+    date: "",
   },
 ];
 

@@ -1,6 +1,6 @@
 import "./RoadmapItem.css";
 
-function RoadmapItem({ title, text, date, parity }) {
+function RoadmapItem({ title, text, date, parity, image }) {
   return (
     <div
       className={`
@@ -20,6 +20,7 @@ function RoadmapItem({ title, text, date, parity }) {
       <div className="p-3 text-base text-gray-50 font-poppins ">
         <h4 className="text-xl font-bold mb-2">{title}</h4>
         <p className="text-gray-400">{text}</p>
+        {/* {image && <img src={image} alt="thumb" />} */}
         <div className="text-highlight text-base mt-2">{date}</div>
       </div>
     </div>

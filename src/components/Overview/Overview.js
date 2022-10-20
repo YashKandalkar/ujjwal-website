@@ -42,8 +42,9 @@ const Overview = forwardRef(({ location }, ref) => {
               OVERVIEW
             </h1>
             <p className="mb-3 font-sora mt-6 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
-              <A>Ujjwal</A> - is an Automated Street Light <br />
-              <A>Fault Detection</A> system, especially built for rural areas.
+              <A>Ujjwal</A> aims to fix the faulty streetlight in your locality{" "}
+              <A>as soon as possible </A> so you do not have to worry about
+              stepping out in the <A>dark</A>.
             </p>
             {/* <p className="mb-3 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
               GameUp will empower already established games to come on

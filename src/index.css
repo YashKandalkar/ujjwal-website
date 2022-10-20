@@ -41,20 +41,20 @@ code {
 
 body [data-aos-delay="4900"][data-aos].aos-animate,
 [data-aos][data-aos][data-aos-delay="4900"].aos-animate {
-  transition-delay: 2s;
+  transition-delay: 0.5s;
 }
 
 body [data-aos-delay="5000"][data-aos].aos-animate,
 [data-aos][data-aos][data-aos-delay="5000"].aos-animate {
-  transition-delay: 2.3s;
+  transition-delay: 0.8s;
 }
 
 body [data-aos-delay="5300"][data-aos].aos-animate,
 [data-aos][data-aos][data-aos-delay="5300"].aos-animate {
-  transition-delay: 2.4s;
+  transition-delay: 0.9s;
 }
 
 body [data-aos-delay="5700"][data-aos].aos-animate,
 [data-aos][data-aos][data-aos-delay="5700"].aos-animate {
-  transition-delay: 2.7s;
+  transition-delay: 1.2s;
 }

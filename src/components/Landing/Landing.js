@@ -18,7 +18,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               }}
               className="mt-28 font-sora text-offWhite uppercase text-center"
             >
-              <span className="text-highlight">Shallow Blue Presents</span>
+              {/* <span className="text-highlight">Shallow Blue Presents</span> */}
             </div>
             <h1
               data-aos="fade-up"
@@ -42,7 +42,7 @@ const Landing = forwardRef(({ fixNavbar }, ref) => {
               }}
               className="mb-3 mt-0 font-sora text-offWhite text-sm sm:text-base uppercase text-center"
             >
-              An Automated Street Light Fault Detection System
+              An Automated Streetlight Fault Detection System
             </div>
           </div>
         </div>

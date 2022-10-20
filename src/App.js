@@ -26,6 +26,7 @@ import {
 import Certificate from "./components/Certificate/Certificate";
 import ContactUs from "./components/ContactUs/ContactUs";
 import VerifyCertificate from "./components/Certificate/VerifyCertificate";
+import Gallery from "./components/Gallery/Gallery";
 
 const options = {
   rootMargin: "-90px 0px 0px 0px",
@@ -101,6 +102,7 @@ const MainApp = () => {
         {/* <Events ref={prizesRef} /> */}
       </div>
       <Roadmap ref={roadmapRef} />
+      <Gallery />
       {/* <Certificate ref={certificateRef} /> */}
       <Team ref={teamRef} />
       <ContactUs ref={contactUsRef} />

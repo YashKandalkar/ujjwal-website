@@ -55,7 +55,7 @@ function NavBar({ inView }) {
           <ul className="flex glow font-sora font-semibold flex-col w-full items-center lg:flex-row list-none lg:ml-auto lg:justify-end">
             <li
               style={{
-                animationDelay: window.innerWidth < 1024 ? "100ms" : "2s",
+                animationDelay: window.innerWidth < 1024 ? "100ms" : "0.5s",
               }}
               className={
                 "nav-item" +
@@ -73,7 +73,7 @@ function NavBar({ inView }) {
             </li>
             <li
               style={{
-                animationDelay: window.innerWidth < 1024 ? "300ms" : "2.2s",
+                animationDelay: window.innerWidth < 1024 ? "300ms" : "0.7s",
               }}
               className={
                 "nav-item" +
@@ -91,7 +91,7 @@ function NavBar({ inView }) {
             </li>
             <li
               style={{
-                animationDelay: window.innerWidth < 1024 ? "400ms" : "2.3s",
+                animationDelay: window.innerWidth < 1024 ? "400ms" : "0.9s",
               }}
               className={
                 "nav-item" + (inView === "team" ? " navbar-item-in-view" : "")
@@ -108,7 +108,7 @@ function NavBar({ inView }) {
             </li>
             <li
               style={{
-                animationDelay: window.innerWidth < 1024 ? "500ms" : "2.4s",
+                animationDelay: window.innerWidth < 1024 ? "500ms" : "1.2s",
               }}
               className={
                 "nav-item" +
