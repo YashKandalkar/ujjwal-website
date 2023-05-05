@@ -4,14 +4,14 @@ import "./Team.css";
 
 const teamMembers = [
   {
-    text: "Manas Buchade",
-    github: "https://github.com/manasb15",
-    linkedin: "https://www.linkedin.com/in/thisismanas/",
-  },
-  {
     text: "Yash Kandalkar",
     github: "https://github.com/YashKandalkar",
     linkedin: "https://www.linkedin.com/in/yash-kandalkar-b5890b1aa/",
+  },
+  {
+    text: "Manas Buchade",
+    github: "https://github.com/manasb15",
+    linkedin: "https://www.linkedin.com/in/thisismanas/",
   },
   {
     text: "Nirmiti Bhoir",
@@ -36,8 +36,8 @@ const teamMembers = [
 ];
 
 const teamImages = [
-  "/assets/team/manas.png",
   "/assets/team/yash.png",
+  "/assets/team/manas.png",
   "/assets/team/nirmiti.png",
   "/assets/team/raj.png",
   "/assets/team/aarushi.png",

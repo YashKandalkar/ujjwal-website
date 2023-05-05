@@ -21,23 +21,6 @@ const ContactUs = forwardRef((_, ref) => {
       </p>
       <div className="flex text-base sm:text-xl gap-5 flex-col px-4 sm:px-16">
         <div className="mx-auto">
-          <div>
-            <h2 className="text-gray-50 flex flex-col lg:flex-row font-sora">
-              Manas Buchade:{" "}
-              <span className="flex flex-col sm:flex-row">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faEnvelope}
-                    // color={"rgb(96, 165, 250)"}
-                    className={"mr-2 ml-4"}
-                  />
-                  <a href="manas.buchade@gmail.com" className="text-highlight">
-                    manas.buchade@gmail.com
-                  </a>
-                </span>
-              </span>
-            </h2>
-          </div>
           <div className="mt-8">
             <h2 className="text-gray-50 flex flex-col lg:flex-row font-sora">
               Yash Kandalkar:{" "}
@@ -53,6 +36,23 @@ const ContactUs = forwardRef((_, ref) => {
                     className="text-highlight"
                   >
                     yashsk.yk@gmail.com
+                  </a>
+                </span>
+              </span>
+            </h2>
+          </div>
+          <div>
+            <h2 className="text-gray-50 flex flex-col lg:flex-row font-sora">
+              Manas Buchade:{" "}
+              <span className="flex flex-col sm:flex-row">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    // color={"rgb(96, 165, 250)"}
+                    className={"mr-2 ml-4"}
+                  />
+                  <a href="manas.buchade@gmail.com" className="text-highlight">
+                    manas.buchade@gmail.com
                   </a>
                 </span>
               </span>

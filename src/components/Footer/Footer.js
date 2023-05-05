@@ -27,13 +27,6 @@ function Footer() {
         <p className="text-3xl font-sora sm:text-4xl text-gray-100 mb-3">
           Contact Us
         </p>
-        <a
-          href="mailto:manas.buchade@gmail.com"
-          className="text-gray-400 text-xl"
-        >
-          manas.buchade@gmail.com
-        </a>
-        <hr className="border-gray-500 my-2" />
         <div className="col-lg-3 col-md-6 footer-contact">
           <a
             href="mailto:yashsk.yk@gmail.com"
@@ -42,6 +35,13 @@ function Footer() {
             yashsk.yk@gmail.com
           </a>
         </div>
+        <hr className="border-gray-500 my-2" />
+        <a
+          href="mailto:manas.buchade@gmail.com"
+          className="text-gray-400 text-xl"
+        >
+          manas.buchade@gmail.com
+        </a>
       </div>
       {/* <div className="flex my-auto flex-col">
         <p className="text-3xl font-sora sm:text-4xl text-gray-100 mb-3">
