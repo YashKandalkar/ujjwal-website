@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6335422e.chunk.css",
+    "main.js": "/static/js/main.28de9a6e.chunk.js",
+    "main.js.map": "/static/js/main.28de9a6e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1271d111.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1271d111.js.map",
+    "static/css/2.451a09c2.chunk.css": "/static/css/2.451a09c2.chunk.css",
+    "static/js/2.5ee986cd.chunk.js": "/static/js/2.5ee986cd.chunk.js",
+    "static/js/2.5ee986cd.chunk.js.map": "/static/js/2.5ee986cd.chunk.js.map",
+    "static/js/3.4c4c489c.chunk.js": "/static/js/3.4c4c489c.chunk.js",
+    "static/js/3.4c4c489c.chunk.js.map": "/static/js/3.4c4c489c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.451a09c2.chunk.css.map": "/static/css/2.451a09c2.chunk.css.map",
+    "static/css/main.6335422e.chunk.css.map": "/static/css/main.6335422e.chunk.css.map",
+    "static/js/2.5ee986cd.chunk.js.LICENSE.txt": "/static/js/2.5ee986cd.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Uomo Expanded.329c9841.otf",
+    "static/media/Landing.css": "/static/media/streetlight-bg.1bdd96f2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1271d111.js",
+    "static/css/2.451a09c2.chunk.css",
+    "static/js/2.5ee986cd.chunk.js",
+    "static/css/main.6335422e.chunk.css",
+    "static/js/main.28de9a6e.chunk.js"
+  ]
+}
